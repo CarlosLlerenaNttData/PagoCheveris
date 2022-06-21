@@ -1,0 +1,40 @@
+{% include 'header' %}
+
+import Nimble
+import Quick
+
+@testable import {{ module_info.product_module_name }}
+
+final class {{ module_info.name }}PresenterTest: QuickSpec {
+
+    override func spec() {
+        beforeEach {
+        }
+
+        afterEach {
+        }
+
+        describe("A {{ module_info.name }} Presenter") {
+        }
+    }
+
+
+    // MARK: Mock Classes
+
+    private class MockInteractor: {{ module_info.name }}InteractorInput {
+    }
+
+    private class MockRouter: {{ module_info.name }}RouterInput {
+    }
+
+    private class MockView: {{ module_info.name }}ViewInput {
+
+        func setUpInitialState() {
+        }
+
+        func moduleInput() -> {{ module_info.name }}ModuleInput {
+
+            return {{ module_info.name }}Presenter()
+	    }
+    }
+}

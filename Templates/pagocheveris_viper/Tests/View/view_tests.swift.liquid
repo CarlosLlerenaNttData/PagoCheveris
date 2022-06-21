@@ -1,0 +1,32 @@
+{% include 'header' %}
+
+import Nimble
+import Quick
+
+@testable import {{ module_info.product_module_name }}
+
+final class {{ module_info.name }}ViewTest: QuickSpec {
+
+    override func spec() {
+        beforeEach {
+        }
+
+        afterEach {
+        }
+
+        describe("A {{ module_info.name }} View") {
+        }
+    }
+
+
+    // MARK: Mock Classes
+
+    private class MockOutput: {{ module_info.name }}ViewOutput {
+
+        var viewIsReadyCount = 0
+
+        func viewIsReady() {
+            viewIsReadyCount += 1
+        }
+    }
+}

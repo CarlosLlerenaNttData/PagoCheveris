@@ -1,0 +1,27 @@
+### Headers settings
+company: NTT DATA Europe & Latam
+
+### Xcode project settings
+project_name: PagoCheveris
+xcodeproj_path: PagoCheveris.xcodeproj
+
+# Needed for @testable import in tests. Should be the same as "project_target"
+product_module_name: PagoCheveris
+
+### Code generation settings section
+# The main project target name
+project_target: PagoCheveris
+
+### Tests generation settings section
+# The tests target name
+test_target: PagoCheverisUITests
+
+# The file path for new modules
+project_file_path: /PagoCheveris/Features/FEATURE_NAME/Modules
+
+# The file path for new tests
+test_file_path: /PagoCheverisTests/Features/FEATURE_NAME/Modules
+
+### Templates
+templates:
+- {name: pagocheveris_viper}

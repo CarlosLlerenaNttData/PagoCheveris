@@ -1,0 +1,16 @@
+{% include 'header' %}
+
+import Foundation
+
+class {{ module_info.name }}ModuleInitializer: NSObject {
+{% capture lowerCamelCaseModuleName %}{{ module_info.name | slice: 0 | downcase}}{{ module_info.name | slice: 1, module_info.name.size }}{% endcapture %}
+    // TODO: Connect with object on storyboard
+    @IBOutlet weak var {{ lowerCamelCaseModuleName }}ViewController: {{ module_info.name }}ViewController!
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        let configurator = {{ module_info.name }}ModuleConfigurator()
+        configurator.configureModuleForViewInput({{ lowerCamelCaseModuleName }}ViewController)
+    }
+}

@@ -1,0 +1,32 @@
+{% include 'header' %}
+
+import UIKit
+
+class {{ module_info.name }}ViewController: UIViewController {
+
+    var output: {{ module_info.name }}ViewOutput!
+
+
+    // MARK: Life cycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+	    // TODO: View set up code goes here. Please remove this comment.
+
+        output.viewIsReady()
+    }
+}
+
+
+// MARK: {{module_info.name}}ViewInput Methods
+
+extension {{ module_info.name }}ViewController: {{module_info.name}}ViewInput {
+
+    func setUpInitialState() {
+    }
+
+    func moduleInput() -> {{ module_info.name }}ModuleInput {
+        return output as! {{ module_info.name }}ModuleInput
+    }
+}

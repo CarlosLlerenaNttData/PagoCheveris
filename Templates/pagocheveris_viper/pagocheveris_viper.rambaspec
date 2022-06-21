@@ -1,0 +1,49 @@
+# Template information :section
+name: "swifty_viper"
+summary: "Swift VIPER module template with UIViewController playing as a View."
+author: "Valeriy Popov"
+version: "0.1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+# Configurator
+- {name: Application Logic/Configurator/Configurator.swift, path: Code/Configurator/configurator.swift.liquid}
+- {name: Application Logic/Configurator/Initializer.swift, path: Code/Configurator/initializer.swift.liquid}
+
+# Interactor layer
+- {name: Application Logic/Interactor/Interactor.swift, path: Code/Interactor/interactor.swift.liquid}
+- {name: Application Logic/Interactor/InteractorInput.swift, path: Code/Interactor/interactor_input.swift.liquid}
+- {name: Application Logic/Interactor/InteractorOutput.swift, path: Code/Interactor/interactor_output.swift.liquid}
+
+# Presenter layer
+- {name: User Interface/Presenter/ModuleInput.swift, path: Code/Presenter/module_input.swift.liquid}
+- {name: User Interface/Presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
+
+# Router layer
+- {name: User Interface/Router/Router.swift, path: Code/Router/router.swift.liquid}
+- {name: User Interface/Router/RouterInput.swift, path: Code/Router/router_input.swift.liquid}
+
+# View layer
+- {name: User Interface/View/ViewController.swift, path: Code/View/viewcontroller.swift.liquid}
+- {name: User Interface/View/ViewInput.swift,  path: Code/View/view_input.swift.liquid}
+- {name: User Interface/View/ViewOutput.swift, path: Code/View/view_output.swift.liquid}
+
+# The declarations for test files
+test_files:
+
+# Configurators tests
+- {name: Application Logic/Configurator/ConfiguratorTest.swift, path: Tests/Configurator/configurator_tests.swift.liquid}
+
+# Interactor tests
+- {name: Application Logic/Interactor/InteractorTest.swift, path: Tests/Interactor/interactor_tests.swift.liquid}
+
+# Router tests
+- {name: User Interface/Router/RouterTest.swift, path: Tests/Router/router_tests.swift.liquid}
+
+# Presenter tests
+- {name: User Interface/Presenter/PresenterTest.swift, path: Tests/Presenter/presenter_tests.swift.liquid}
+
+# View tests
+- {name: User Interface/View/ViewTest.swift, path: Tests/View/view_tests.swift.liquid}

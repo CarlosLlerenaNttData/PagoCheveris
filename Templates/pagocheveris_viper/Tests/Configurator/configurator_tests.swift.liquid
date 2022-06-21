@@ -1,0 +1,60 @@
+{% include 'header' %}
+
+import Nimble
+import Quick
+
+@testable import {{ module_info.product_module_name }}
+
+final class {{ module_info.name }}ModuleConfiguratorTest: QuickSpec {
+
+    override func spec() {
+        var viewController: {{ module_info.name }}ViewControllerMock!
+        var configurator: {{ module_info.name }}ModuleConfigurator!
+
+        beforeEach {
+            viewController = {{ module_info.name }}ViewControllerMock()
+
+            configurator = {{ module_info.name }}ModuleConfigurator()
+            configurator.configureModuleForViewInput(viewController)
+        }
+
+        afterEach {
+            viewController = nil
+            configurator = nil
+        }
+
+        describe("A {{ module_info.name }}ModuleConfigurator") {
+            it("should configure the viewController") {
+                expect(viewController.output).toNot(beNil())
+                expect(viewController.output).to(beAKindOf({{ module_info.name }}Presenter.self))
+            }
+
+            it("should configure the presenter") {
+                let presenter = viewController.output as? {{ module_info.name }}Presenter
+
+                expect(presenter?.view).toNot(beNil())
+                expect(presenter?.view).to(beAKindOf({{ module_info.name }}ViewController.self))
+
+                expect(presenter?.router).toNot(beNil())
+                expect(presenter?.router).to(beAKindOf({{ module_info.name }}Router.self))
+
+                expect(presenter?.interactor).toNot(beNil())
+                expect(presenter?.interactor).to(beAKindOf({{ module_info.name }}Interactor.self))
+            }
+
+            it("should configure the interactor") {
+                let presenter = viewController.output as? {{ module_info.name }}Presenter
+                let interactor = presenter?.interactor as? {{ module_info.name }}Interactor
+
+                expect(interactor?.output).toNot(beNil())
+                expect(interactor?.output).to(beAKindOf({{ module_info.name }}Presenter.self))
+            }
+        }
+    }
+
+
+    // MARK: Mock Classes
+
+    private class {{ module_info.name }}ViewControllerMock: {{ module_info.name }}ViewController {
+    }
+}

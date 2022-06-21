@@ -1,0 +1,25 @@
+{% include 'header' %}
+
+import Nimble
+import Quick
+
+@testable import {{ module_info.product_module_name }}
+
+final class {{ module_info.name }}RouterTest: QuickSpec {
+
+    override func spec() {
+        beforeEach {
+        }
+
+        afterEach {
+        }
+
+        describe("A {{ module_info.name }} Router") {
+        }
+    }
+
+
+    // MARK: Mock Classes
+
+    // Add your mock classes here and make them private. Please remove this comment.
+}

@@ -1,0 +1,32 @@
+{% include 'header' %}
+
+class {{ module_info.name }}Presenter {
+
+    weak var view: {{ module_info.name }}ViewInput!
+    var interactor: {{ module_info.name }}InteractorInput!
+    var router: {{ module_info.name }}RouterInput!
+}
+
+
+// MARK: {{ module_info.name }}ModuleInput methods
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ModuleInput {
+
+    func initializeModule() {
+    }
+}
+
+
+// MARK: {{ module_info.name }}ViewOutput methods
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
+
+    func viewIsReady() {
+    }
+}
+
+
+// MARK: {{ module_info.name }}InteractorOutput methods
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}InteractorOutput {
+}

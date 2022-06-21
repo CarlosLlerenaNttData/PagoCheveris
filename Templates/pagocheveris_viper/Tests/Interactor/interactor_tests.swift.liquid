@@ -1,0 +1,26 @@
+{% include 'header' %}
+
+import Nimble
+import Quick
+
+@testable import {{ module_info.product_module_name }}
+
+final class {{ module_info.name }}InteractorTest: QuickSpec {
+
+    override func spec() {
+        beforeEach {
+        }
+
+        afterEach {
+        }
+
+        describe("A {{ module_info.name }} Interactor") {
+        }
+    }
+
+
+    // MARK: Mock Classes
+
+    private class MockPresenter: {{ module_info.name }}InteractorOutput {
+    }
+}
