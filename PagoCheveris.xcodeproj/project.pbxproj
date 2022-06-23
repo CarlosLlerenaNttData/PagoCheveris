@@ -16,6 +16,7 @@
 		2F7E08C8285BE6F0009F4416 /* PagoCheverisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08C7285BE6F0009F4416 /* PagoCheverisTests.swift */; };
 		2F7E08D2285BE6F0009F4416 /* PagoCheverisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08D1285BE6F0009F4416 /* PagoCheverisUITests.swift */; };
 		2F7E08D4285BE6F0009F4416 /* PagoCheverisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08D3285BE6F0009F4416 /* PagoCheverisUITestsLaunchTests.swift */; };
+		2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFDBE17286411050041DBD3 /* PagoCheverisUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,7 @@
 				2F7E08C6285BE6F0009F4416 /* PagoCheverisTests */,
 				2F7E08D0285BE6F0009F4416 /* PagoCheverisUITests */,
 				2F7E08AE285BE6F0009F4416 /* Products */,
+				2FFDBE142864107E0041DBD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +130,13 @@
 			path = PagoCheverisUITests;
 			sourceTree = "<group>";
 		};
+		2FFDBE142864107E0041DBD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +153,9 @@
 			dependencies = (
 			);
 			name = PagoCheveris;
+			packageProductDependencies = (
+				2FFDBE17286411050041DBD3 /* PagoCheverisUI */,
+			);
 			productName = PagoCheveris;
 			productReference = 2F7E08AD285BE6F0009F4416 /* PagoCheveris.app */;
 			productType = "com.apple.product-type.application";
@@ -598,6 +611,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FFDBE17286411050041DBD3 /* PagoCheverisUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PagoCheverisUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F7E08A5285BE6EF009F4416 /* Project object */;
 }
