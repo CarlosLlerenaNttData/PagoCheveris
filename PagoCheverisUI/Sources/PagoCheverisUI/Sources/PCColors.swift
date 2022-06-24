@@ -113,13 +113,13 @@ public struct PCColors {
     /// The color for the `tintColor` property of a textField.
     public static let textFieldTint = UIColor.loadColor(named: Name.textFieldTint)
     
-    /// The outline color for a BiBTextField in an activated state.
+    /// The outline color for a PCTextField in an activated state.
     public static let textFieldActivatedOutline = UIColor.loadColor(named: Name.textFieldActivatedOutline)
     
-    /// The outline color for a BiBTextField in a focused state.
+    /// The outline color for a PCTextField in a focused state.
     public static let textFieldFocusedOutline = UIColor.loadColor(named: Name.textFieldFocusedOutline)
     
-    /// The outline color for a BiBTextField in an inactive state.
+    /// The outline color for a PCTextField in an inactive state.
     public static let textFieldInactiveOutline = UIColor.loadColor(named: Name.textFieldInactiveOutline)
     
     /// The tint color for a tab bar item.
