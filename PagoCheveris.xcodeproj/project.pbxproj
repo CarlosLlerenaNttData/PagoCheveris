@@ -22,6 +22,7 @@
 		2FC7CB4628690FC900FAADE6 /* UIStoryboard+Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB4528690FC900FAADE6 /* UIStoryboard+Storyboards.swift */; };
 		2FC7CB52286911B900FAADE6 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB51286911B900FAADE6 /* Routable.swift */; };
 		2FC7CB552869140C00FAADE6 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC7CB542869140C00FAADE6 /* KeychainAccess */; };
+		2FC7CB582869145E00FAADE6 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB572869145E00FAADE6 /* KeychainService.swift */; };
 		2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFDBE17286411050041DBD3 /* PagoCheverisUI */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		2FC7CB4328690FA100FAADE6 /* UIStoryboard+StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+StoryboardIdentifiable.swift"; sourceTree = "<group>"; };
 		2FC7CB4528690FC900FAADE6 /* UIStoryboard+Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Storyboards.swift"; sourceTree = "<group>"; };
 		2FC7CB51286911B900FAADE6 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		2FC7CB572869145E00FAADE6 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		2FC7CB3F28690F0500FAADE6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2FC7CB562869144E00FAADE6 /* Services */,
 				2FC7CB50286911AD00FAADE6 /* Navigation */,
 				2FC7CB4028690F0C00FAADE6 /* Extensions */,
 			);
@@ -168,6 +171,14 @@
 				2FC7CB51286911B900FAADE6 /* Routable.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		2FC7CB562869144E00FAADE6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2FC7CB572869145E00FAADE6 /* KeychainService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		2FFDBE142864107E0041DBD3 /* Frameworks */ = {
@@ -322,6 +333,7 @@
 				2F7E08B5285BE6F0009F4416 /* ViewController.swift in Sources */,
 				2F7E08B1285BE6F0009F4416 /* AppDelegate.swift in Sources */,
 				2F7E08B3285BE6F0009F4416 /* SceneDelegate.swift in Sources */,
+				2FC7CB582869145E00FAADE6 /* KeychainService.swift in Sources */,
 				2FC7CB4428690FA100FAADE6 /* UIStoryboard+StoryboardIdentifiable.swift in Sources */,
 				2FC7CB4628690FC900FAADE6 /* UIStoryboard+Storyboards.swift in Sources */,
 			);
