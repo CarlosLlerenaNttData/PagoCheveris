@@ -8,7 +8,7 @@
 import UIKit
 
 /**
- This BiButton subclass displays a bordered styled button.
+ This PCbutton subclass displays a bordered styled button.
 */
 public class PCButtonSecondary: PCButton {
     

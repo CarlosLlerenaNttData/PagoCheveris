@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alert Pan Modal View Controller-->
+        <scene sceneID="R9m-uP-I1s">
+            <objects>
+                <viewController storyboardIdentifier="PCAlertPanModalViewController" id="Q2g-JW-8pm" customClass="PCAlertPanModalViewController" customModule="PagoCheverisUI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NYD-wl-Bep">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9tW-G0-h7T">
+                                <rect key="frame" x="15" y="312.5" width="384" height="271"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtd-i2-cOG">
+                                        <rect key="frame" x="0.0" y="100" width="384" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCi-H8-fnc">
+                                        <rect key="frame" x="0.0" y="140.5" width="384" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xL-8l-F3f" customClass="PCButtonSecondary" customModule="PagoCheverisUI">
+                                        <rect key="frame" x="0.0" y="181" width="186.5" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="FMB-OG-jZd"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="secondaryButton:" destination="Q2g-JW-8pm" eventType="touchUpInside" id="GEe-g3-Hzw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xA1-D4-Cwz" customClass="PCButtonPrimary" customModule="PagoCheverisUI">
+                                        <rect key="frame" x="197.5" y="181" width="186.5" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="3f8-bC-Bdo"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="primaryButton:" destination="Q2g-JW-8pm" eventType="touchUpInside" id="5Bl-hE-yaY"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DZR-0c-uhr">
+                                        <rect key="frame" x="162" y="20" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="qYq-a2-c1M"/>
+                                            <constraint firstAttribute="height" constant="60" id="ryD-jv-2gS"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Mtd-i2-cOG" firstAttribute="top" secondItem="9tW-G0-h7T" secondAttribute="top" priority="750" constant="20" id="1R5-TI-wls"/>
+                                    <constraint firstItem="xA1-D4-Cwz" firstAttribute="leading" secondItem="3xL-8l-F3f" secondAttribute="trailing" constant="11" id="2RR-9g-fgH"/>
+                                    <constraint firstItem="3xL-8l-F3f" firstAttribute="leading" secondItem="9tW-G0-h7T" secondAttribute="leading" id="50g-yh-gCV"/>
+                                    <constraint firstAttribute="bottom" secondItem="xA1-D4-Cwz" secondAttribute="bottom" constant="30" id="JKF-FM-Q2i"/>
+                                    <constraint firstItem="yCi-H8-fnc" firstAttribute="top" secondItem="Mtd-i2-cOG" secondAttribute="bottom" constant="20" id="JgJ-CR-1bs"/>
+                                    <constraint firstAttribute="trailing" secondItem="yCi-H8-fnc" secondAttribute="trailing" id="Mt9-dr-eQy"/>
+                                    <constraint firstItem="DZR-0c-uhr" firstAttribute="centerX" secondItem="9tW-G0-h7T" secondAttribute="centerX" id="NIl-NU-3Q1"/>
+                                    <constraint firstItem="xA1-D4-Cwz" firstAttribute="top" secondItem="yCi-H8-fnc" secondAttribute="bottom" constant="20" id="Oyr-rA-YNz"/>
+                                    <constraint firstItem="yCi-H8-fnc" firstAttribute="top" secondItem="DZR-0c-uhr" secondAttribute="bottom" priority="750" constant="20" id="Vzj-oi-5C4"/>
+                                    <constraint firstItem="3xL-8l-F3f" firstAttribute="top" secondItem="yCi-H8-fnc" secondAttribute="bottom" constant="20" id="Xfm-xP-O2c"/>
+                                    <constraint firstItem="xA1-D4-Cwz" firstAttribute="leading" secondItem="9tW-G0-h7T" secondAttribute="leading" priority="750" id="Z40-dk-jMe"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mtd-i2-cOG" secondAttribute="trailing" id="d4u-cZ-quX"/>
+                                    <constraint firstItem="Mtd-i2-cOG" firstAttribute="top" secondItem="DZR-0c-uhr" secondAttribute="bottom" constant="20" id="ej5-n9-HwY"/>
+                                    <constraint firstItem="DZR-0c-uhr" firstAttribute="top" secondItem="9tW-G0-h7T" secondAttribute="top" constant="20" id="gVa-ze-nNl"/>
+                                    <constraint firstAttribute="trailing" secondItem="xA1-D4-Cwz" secondAttribute="trailing" id="oAZ-sI-LlJ"/>
+                                    <constraint firstItem="yCi-H8-fnc" firstAttribute="leading" secondItem="9tW-G0-h7T" secondAttribute="leading" id="rKU-BS-JlC"/>
+                                    <constraint firstItem="3xL-8l-F3f" firstAttribute="width" secondItem="xA1-D4-Cwz" secondAttribute="width" id="si3-LA-lQA"/>
+                                    <constraint firstItem="Mtd-i2-cOG" firstAttribute="leading" secondItem="9tW-G0-h7T" secondAttribute="leading" id="yhj-oM-LC9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xDo-R8-gfg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xDo-R8-gfg" firstAttribute="trailing" secondItem="9tW-G0-h7T" secondAttribute="trailing" constant="15" id="Bvr-ZN-aIy"/>
+                            <constraint firstItem="9tW-G0-h7T" firstAttribute="centerY" secondItem="NYD-wl-Bep" secondAttribute="centerY" id="aZg-Rf-xMa"/>
+                            <constraint firstItem="9tW-G0-h7T" firstAttribute="leading" secondItem="xDo-R8-gfg" secondAttribute="leading" constant="15" id="rbn-X1-V0K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="9tW-G0-h7T" id="YSs-Sa-jb7"/>
+                        <outlet property="iconImageView" destination="DZR-0c-uhr" id="uYM-Nz-fIr"/>
+                        <outlet property="messageLabel" destination="yCi-H8-fnc" id="J6k-eQ-por"/>
+                        <outlet property="primaryButton" destination="xA1-D4-Cwz" id="j2E-mB-9tA"/>
+                        <outlet property="secondaryButton" destination="3xL-8l-F3f" id="AiL-xr-MWp"/>
+                        <outlet property="titleLabel" destination="Mtd-i2-cOG" id="Gee-T8-vaB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="46V-vf-lSW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

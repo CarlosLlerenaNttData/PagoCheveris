@@ -8,7 +8,7 @@
 import UIKit
 
 /**
- This BiButton subclass displays a filled styled button.
+ This PCbutton subclass displays a filled styled button.
 */
 public class PCButtonPrimary: PCButton {
     
