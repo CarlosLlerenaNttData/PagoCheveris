@@ -21,6 +21,7 @@
 		2FC7CB4428690FA100FAADE6 /* UIStoryboard+StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB4328690FA100FAADE6 /* UIStoryboard+StoryboardIdentifiable.swift */; };
 		2FC7CB4628690FC900FAADE6 /* UIStoryboard+Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB4528690FC900FAADE6 /* UIStoryboard+Storyboards.swift */; };
 		2FC7CB52286911B900FAADE6 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB51286911B900FAADE6 /* Routable.swift */; };
+		2FC7CB552869140C00FAADE6 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC7CB542869140C00FAADE6 /* KeychainAccess */; };
 		2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFDBE17286411050041DBD3 /* PagoCheverisUI */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 			files = (
 				2FC7CB3B2868F41A00FAADE6 /* PanModal in Frameworks */,
 				2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */,
+				2FC7CB552869140C00FAADE6 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +196,7 @@
 			packageProductDependencies = (
 				2FFDBE17286411050041DBD3 /* PagoCheverisUI */,
 				2FC7CB3A2868F41A00FAADE6 /* PanModal */,
+				2FC7CB542869140C00FAADE6 /* KeychainAccess */,
 			);
 			productName = PagoCheveris;
 			productReference = 2F7E08AD285BE6F0009F4416 /* PagoCheveris.app */;
@@ -269,6 +272,7 @@
 			mainGroup = 2F7E08A4285BE6EF009F4416;
 			packageReferences = (
 				2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */,
+				2FC7CB532869140C00FAADE6 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 2F7E08AE285BE6F0009F4416 /* Products */;
 			projectDirPath = "";
@@ -667,6 +671,14 @@
 				version = 1.2.7;
 			};
 		};
+		2FC7CB532869140C00FAADE6 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = exactVersion;
+				version = 4.2.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -674,6 +686,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */;
 			productName = PanModal;
+		};
+		2FC7CB542869140C00FAADE6 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FC7CB532869140C00FAADE6 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 		2FFDBE17286411050041DBD3 /* PagoCheverisUI */ = {
 			isa = XCSwiftPackageProductDependency;
