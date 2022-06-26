@@ -16,6 +16,7 @@
 		2F7E08C8285BE6F0009F4416 /* PagoCheverisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08C7285BE6F0009F4416 /* PagoCheverisTests.swift */; };
 		2F7E08D2285BE6F0009F4416 /* PagoCheverisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08D1285BE6F0009F4416 /* PagoCheverisUITests.swift */; };
 		2F7E08D4285BE6F0009F4416 /* PagoCheverisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08D3285BE6F0009F4416 /* PagoCheverisUITestsLaunchTests.swift */; };
+		2FC7CB3B2868F41A00FAADE6 /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC7CB3A2868F41A00FAADE6 /* PanModal */; };
 		2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFDBE17286411050041DBD3 /* PagoCheverisUI */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC7CB3B2868F41A00FAADE6 /* PanModal in Frameworks */,
 				2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +157,7 @@
 			name = PagoCheveris;
 			packageProductDependencies = (
 				2FFDBE17286411050041DBD3 /* PagoCheverisUI */,
+				2FC7CB3A2868F41A00FAADE6 /* PanModal */,
 			);
 			productName = PagoCheveris;
 			productReference = 2F7E08AD285BE6F0009F4416 /* PagoCheveris.app */;
@@ -228,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 2F7E08A4285BE6EF009F4416;
+			packageReferences = (
+				2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */,
+			);
 			productRefGroup = 2F7E08AE285BE6F0009F4416 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -612,7 +618,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/slackhq/PanModal.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		2FC7CB3A2868F41A00FAADE6 /* PanModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */;
+			productName = PanModal;
+		};
 		2FFDBE17286411050041DBD3 /* PagoCheverisUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PagoCheverisUI;
