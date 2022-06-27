@@ -13,9 +13,11 @@ public struct PCImages {
         static let pcActionCheckmark = "pcActionCheckmark"
         static let pcActionEye = "pcActionEye"
         static let pcActionEyeStrikethrough = "pcActionEyeStrikethrough"
+        static let pcFaceLogo = "pcFaceLogo"
     }
     
     public static let pcActionCheckmark = UIImage.loadImage(named: Name.pcActionCheckmark)
     public static let pcActionEye = UIImage.loadImage(named: Name.pcActionEye)
     public static let pcActionEyeStrikethrough = UIImage.loadImage(named: Name.pcActionEyeStrikethrough)
+    public static let pcFaceLogo = UIImage.loadImage(named: Name.pcFaceLogo)
 }

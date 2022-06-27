@@ -53,7 +53,7 @@
                                                 <color key="textColor" name="labelSecondary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wlP-eY-Z5j" customClass="BiBTextField" customModule="BiBankingUI">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wlP-eY-Z5j" customClass="PCTextField" customModule="PagoCheverisUI">
                                                 <rect key="frame" x="16" y="62" width="382" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="ftS-yZ-dQ0"/>
@@ -61,7 +61,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ryw-sg-ybq" customClass="BiBTextField" customModule="BiBankingUI">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ryw-sg-ybq" customClass="PCTextField" customModule="PagoCheverisUI">
                                                 <rect key="frame" x="16" y="142" width="382" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="ucc-on-EhM"/>
@@ -69,7 +69,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lvl-5t-OOy" customClass="BiBTextFieldPassword" customModule="BiBankingUI">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lvl-5t-OOy" customClass="PCTextFieldPassword" customModule="PagoCheverisUI">
                                                 <rect key="frame" x="16" y="222" width="382" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Lz8-ws-Hkb"/>
@@ -88,7 +88,7 @@
                                                     <action selector="rememberMeToggle" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YTg-NT-Lgd"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89k-sO-Wyr" customClass="BiBButtonPrimary" customModule="BiBankingUI">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89k-sO-Wyr" customClass="PCButtonPrimary" customModule="PagoCheverisUI">
                                                 <rect key="frame" x="44" y="362" width="326" height="56"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="d5M-jh-Bo8"/>
