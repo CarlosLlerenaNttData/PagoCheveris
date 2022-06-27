@@ -22,6 +22,7 @@
 		2FC7CB52286911B900FAADE6 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB51286911B900FAADE6 /* Routable.swift */; };
 		2FC7CB552869140C00FAADE6 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC7CB542869140C00FAADE6 /* KeychainAccess */; };
 		2FC7CB582869145E00FAADE6 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB572869145E00FAADE6 /* KeychainService.swift */; };
+		2FC7CB5B28695BD200FAADE6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC7CB5A28695BD100FAADE6 /* Login.storyboard */; };
 		2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFDBE17286411050041DBD3 /* PagoCheverisUI */; };
 		3032C22F064D924CE0800C9D /* LoginViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EC8183199AEF1A7B045989 /* LoginViewTest.swift */; };
 		53C41F254DF61EA82384BC21 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114BE982B9DB5A2CF906475B /* LoginRouter.swift */; };
@@ -79,6 +80,7 @@
 		2FC7CB4528690FC900FAADE6 /* UIStoryboard+Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Storyboards.swift"; sourceTree = "<group>"; };
 		2FC7CB51286911B900FAADE6 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		2FC7CB572869145E00FAADE6 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		2FC7CB5A28695BD100FAADE6 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		316887CB1BEC1646255E1944 /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
 		4EFEEB10C136FD689A141C61 /* LoginConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfiguratorTest.swift; sourceTree = "<group>"; };
 		5A36D958231BEECC58CB909F /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				2FC7CB562869144E00FAADE6 /* Services */,
 				2FC7CB50286911AD00FAADE6 /* Navigation */,
 				2FC7CB4028690F0C00FAADE6 /* Extensions */,
+				2FC7CB5928695BC700FAADE6 /* Storyboard */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -252,6 +255,14 @@
 				2FC7CB572869145E00FAADE6 /* KeychainService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		2FC7CB5928695BC700FAADE6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2FC7CB5A28695BD100FAADE6 /* Login.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		2FFDBE142864107E0041DBD3 /* Frameworks */ = {
@@ -524,6 +535,7 @@
 			files = (
 				2F7E08BD285BE6F0009F4416 /* LaunchScreen.storyboard in Resources */,
 				2F7E08BA285BE6F0009F4416 /* Assets.xcassets in Resources */,
+				2FC7CB5B28695BD200FAADE6 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
