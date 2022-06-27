@@ -25,6 +25,13 @@
 		2FC7CB5B28695BD200FAADE6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC7CB5A28695BD100FAADE6 /* Login.storyboard */; };
 		2FC7CB5F2869601E00FAADE6 /* LoginRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB5E2869601E00FAADE6 /* LoginRegex.swift */; };
 		2FC7CB64286960B000FAADE6 /* LoginStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB63286960B000FAADE6 /* LoginStrings.swift */; };
+		2FEF9112286A5B05007A3B1F /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF9111286A5B04007A3B1F /* LoginRequest.swift */; };
+		2FEF9114286A5E80007A3B1F /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF9113286A5E80007A3B1F /* LoginResponse.swift */; };
+		2FEF9116286A5EFE007A3B1F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF9115286A5EFE007A3B1F /* User.swift */; };
+		2FEF9118286A6085007A3B1F /* LoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF9117286A6085007A3B1F /* LoginClient.swift */; };
+		2FEF911C286A613D007A3B1F /* LoginResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF911B286A613D007A3B1F /* LoginResource.swift */; };
+		2FEF911E286A6163007A3B1F /* PagoCheverisNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 2FEF911D286A6163007A3B1F /* PagoCheverisNetworking */; };
+		2FEF9120286A61AC007A3B1F /* JSONUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF911F286A61AC007A3B1F /* JSONUtility.swift */; };
 		2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFDBE17286411050041DBD3 /* PagoCheverisUI */; };
 		3032C22F064D924CE0800C9D /* LoginViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EC8183199AEF1A7B045989 /* LoginViewTest.swift */; };
 		53C41F254DF61EA82384BC21 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114BE982B9DB5A2CF906475B /* LoginRouter.swift */; };
@@ -85,6 +92,12 @@
 		2FC7CB5A28695BD100FAADE6 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		2FC7CB5E2869601E00FAADE6 /* LoginRegex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegex.swift; sourceTree = "<group>"; };
 		2FC7CB63286960B000FAADE6 /* LoginStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStrings.swift; sourceTree = "<group>"; };
+		2FEF9111286A5B04007A3B1F /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		2FEF9113286A5E80007A3B1F /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		2FEF9115286A5EFE007A3B1F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2FEF9117286A6085007A3B1F /* LoginClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginClient.swift; sourceTree = "<group>"; };
+		2FEF911B286A613D007A3B1F /* LoginResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResource.swift; sourceTree = "<group>"; };
+		2FEF911F286A61AC007A3B1F /* JSONUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtility.swift; sourceTree = "<group>"; };
 		316887CB1BEC1646255E1944 /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
 		4EFEEB10C136FD689A141C61 /* LoginConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfiguratorTest.swift; sourceTree = "<group>"; };
 		5A36D958231BEECC58CB909F /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -107,6 +120,7 @@
 			files = (
 				2FC7CB3B2868F41A00FAADE6 /* PanModal in Frameworks */,
 				2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */,
+				2FEF911E286A6163007A3B1F /* PagoCheverisNetworking in Frameworks */,
 				2FC7CB552869140C00FAADE6 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +180,7 @@
 		1E4E07E55F79AC524481E7B2 /* Application Logic */ = {
 			isa = PBXGroup;
 			children = (
+				2FEF910F286A5ADB007A3B1F /* Entity */,
 				840B1267E282AA5FE9234335 /* Configurator */,
 				F76B2219663428C0AF2B32A0 /* Interactor */,
 			);
@@ -242,6 +257,7 @@
 				2FC7CB4128690F3700FAADE6 /* StoryboardIdentifiable.swift */,
 				2FC7CB4328690FA100FAADE6 /* UIStoryboard+StoryboardIdentifiable.swift */,
 				2FC7CB4528690FC900FAADE6 /* UIStoryboard+Storyboards.swift */,
+				2FEF911F286A61AC007A3B1F /* JSONUtility.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -283,6 +299,8 @@
 			isa = PBXGroup;
 			children = (
 				2FC7CB5E2869601E00FAADE6 /* LoginRegex.swift */,
+				2FEF9117286A6085007A3B1F /* LoginClient.swift */,
+				2FEF911B286A613D007A3B1F /* LoginResource.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -293,6 +311,24 @@
 				2FC7CB63286960B000FAADE6 /* LoginStrings.swift */,
 			);
 			path = Strings;
+			sourceTree = "<group>";
+		};
+		2FEF910F286A5ADB007A3B1F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2FEF9110286A5AE2007A3B1F /* Models */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2FEF9110286A5AE2007A3B1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2FEF9111286A5B04007A3B1F /* LoginRequest.swift */,
+				2FEF9113286A5E80007A3B1F /* LoginResponse.swift */,
+				2FEF9115286A5EFE007A3B1F /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		2FFDBE142864107E0041DBD3 /* Frameworks */ = {
@@ -470,6 +506,7 @@
 				2FFDBE17286411050041DBD3 /* PagoCheverisUI */,
 				2FC7CB3A2868F41A00FAADE6 /* PanModal */,
 				2FC7CB542869140C00FAADE6 /* KeychainAccess */,
+				2FEF911D286A6163007A3B1F /* PagoCheverisNetworking */,
 			);
 			productName = PagoCheveris;
 			productReference = 2F7E08AD285BE6F0009F4416 /* PagoCheveris.app */;
@@ -592,6 +629,7 @@
 			files = (
 				2FC7CB4228690F3700FAADE6 /* StoryboardIdentifiable.swift in Sources */,
 				2FC7CB52286911B900FAADE6 /* Routable.swift in Sources */,
+				2FEF9114286A5E80007A3B1F /* LoginResponse.swift in Sources */,
 				2F7E08B1285BE6F0009F4416 /* AppDelegate.swift in Sources */,
 				2F7E08B3285BE6F0009F4416 /* SceneDelegate.swift in Sources */,
 				2FC7CB582869145E00FAADE6 /* KeychainService.swift in Sources */,
@@ -602,15 +640,20 @@
 				EEC52EA25BCA88B2B24EC75F /* LoginInteractor.swift in Sources */,
 				5554C821C720D745EE50534C /* LoginInteractorInput.swift in Sources */,
 				A83B29EE2FD7FB661E205679 /* LoginInteractorOutput.swift in Sources */,
+				2FEF911C286A613D007A3B1F /* LoginResource.swift in Sources */,
 				7455F4C9FCEE6E726C976F08 /* LoginModuleInput.swift in Sources */,
 				2FC7CB64286960B000FAADE6 /* LoginStrings.swift in Sources */,
 				6F181D00379504B66FBBC9CA /* LoginPresenter.swift in Sources */,
+				2FEF9118286A6085007A3B1F /* LoginClient.swift in Sources */,
 				53C41F254DF61EA82384BC21 /* LoginRouter.swift in Sources */,
 				2FC7CB5F2869601E00FAADE6 /* LoginRegex.swift in Sources */,
 				F408E9C844478A60058E3ECB /* LoginRouterInput.swift in Sources */,
 				EA264CDD09D75A175985EA60 /* LoginViewController.swift in Sources */,
+				2FEF9116286A5EFE007A3B1F /* User.swift in Sources */,
 				5C27C8AE88F897C88D3B0107 /* LoginViewInput.swift in Sources */,
 				85B88AF8681E917CF3D93D7D /* LoginViewOutput.swift in Sources */,
+				2FEF9120286A61AC007A3B1F /* JSONUtility.swift in Sources */,
+				2FEF9112286A5B05007A3B1F /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -973,6 +1016,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2FC7CB532869140C00FAADE6 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
+		};
+		2FEF911D286A6163007A3B1F /* PagoCheverisNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PagoCheverisNetworking;
 		};
 		2FFDBE17286411050041DBD3 /* PagoCheverisUI */ = {
 			isa = XCSwiftPackageProductDependency;
