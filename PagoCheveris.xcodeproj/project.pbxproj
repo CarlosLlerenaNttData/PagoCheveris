@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1487B5C1B7AAD647AED36016 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646E37092A8CAEE093C50BBD /* LoginConfigurator.swift */; };
 		2F7E08B1285BE6F0009F4416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08B0285BE6F0009F4416 /* AppDelegate.swift */; };
 		2F7E08B3285BE6F0009F4416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08B2285BE6F0009F4416 /* SceneDelegate.swift */; };
 		2F7E08B5285BE6F0009F4416 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08B4285BE6F0009F4416 /* ViewController.swift */; };
@@ -24,6 +25,22 @@
 		2FC7CB552869140C00FAADE6 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC7CB542869140C00FAADE6 /* KeychainAccess */; };
 		2FC7CB582869145E00FAADE6 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB572869145E00FAADE6 /* KeychainService.swift */; };
 		2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFDBE17286411050041DBD3 /* PagoCheverisUI */; };
+		3032C22F064D924CE0800C9D /* LoginViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EC8183199AEF1A7B045989 /* LoginViewTest.swift */; };
+		53C41F254DF61EA82384BC21 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114BE982B9DB5A2CF906475B /* LoginRouter.swift */; };
+		5554C821C720D745EE50534C /* LoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF24E0EE56A4FCBE62F60266 /* LoginInteractorInput.swift */; };
+		5C27C8AE88F897C88D3B0107 /* LoginViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316887CB1BEC1646255E1944 /* LoginViewInput.swift */; };
+		6434CE4D3FA8C5480DCCF063 /* LoginInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05110747F4F8728DFD2EA35 /* LoginInteractorTest.swift */; };
+		6F181D00379504B66FBBC9CA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36D958231BEECC58CB909F /* LoginPresenter.swift */; };
+		7455F4C9FCEE6E726C976F08 /* LoginModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A837005ECD073FBD21C6F1C /* LoginModuleInput.swift */; };
+		774582D9BCE1D15CD9311B66 /* LoginInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5495F179F93D33FD01C63 /* LoginInitializer.swift */; };
+		85B88AF8681E917CF3D93D7D /* LoginViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C6F9C8ACAADB1B668753 /* LoginViewOutput.swift */; };
+		92C1FE9E9CFD2EB84A28387B /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2E2BA79F154FB7A20F3D62 /* LoginPresenterTest.swift */; };
+		A83B29EE2FD7FB661E205679 /* LoginInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB609514F8E5F2E28737762 /* LoginInteractorOutput.swift */; };
+		C4E56F2455125F5E42778667 /* LoginRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D3210B6F3D7A9C79A49CA /* LoginRouterTest.swift */; };
+		EA264CDD09D75A175985EA60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375E63DDC5F0D38E0DEC64E /* LoginViewController.swift */; };
+		EEC52EA25BCA88B2B24EC75F /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD6B762E80B820A000E9B3 /* LoginInteractor.swift */; };
+		F408E9C844478A60058E3ECB /* LoginRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6930183B5D72EF2944044FFC /* LoginRouterInput.swift */; };
+		FBBD7E5E7BFDE86D674883CB /* LoginConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEEB10C136FD689A141C61 /* LoginConfiguratorTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09E5495F179F93D33FD01C63 /* LoginInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInitializer.swift; sourceTree = "<group>"; };
+		114BE982B9DB5A2CF906475B /* LoginRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		1375E63DDC5F0D38E0DEC64E /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		29EC8183199AEF1A7B045989 /* LoginViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewTest.swift; sourceTree = "<group>"; };
 		2F7E08AD285BE6F0009F4416 /* PagoCheveris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagoCheveris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7E08B0285BE6F0009F4416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F7E08B2285BE6F0009F4416 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +83,19 @@
 		2FC7CB4528690FC900FAADE6 /* UIStoryboard+Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Storyboards.swift"; sourceTree = "<group>"; };
 		2FC7CB51286911B900FAADE6 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		2FC7CB572869145E00FAADE6 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		316887CB1BEC1646255E1944 /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
+		4EFEEB10C136FD689A141C61 /* LoginConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfiguratorTest.swift; sourceTree = "<group>"; };
+		5A36D958231BEECC58CB909F /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		5A837005ECD073FBD21C6F1C /* LoginModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginModuleInput.swift; sourceTree = "<group>"; };
+		5EBD6B762E80B820A000E9B3 /* LoginInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		646E37092A8CAEE093C50BBD /* LoginConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		6930183B5D72EF2944044FFC /* LoginRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterInput.swift; sourceTree = "<group>"; };
+		703D3210B6F3D7A9C79A49CA /* LoginRouterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterTest.swift; sourceTree = "<group>"; };
+		8B2E2BA79F154FB7A20F3D62 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
+		AF24E0EE56A4FCBE62F60266 /* LoginInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorInput.swift; sourceTree = "<group>"; };
+		B05110747F4F8728DFD2EA35 /* LoginInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorTest.swift; sourceTree = "<group>"; };
+		BFB609514F8E5F2E28737762 /* LoginInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorOutput.swift; sourceTree = "<group>"; };
+		E0F5C6F9C8ACAADB1B668753 /* LoginViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +126,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		014B5543349CA7ECC0F00676 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				57C937588ECD789729C9FDBB /* Modules */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		069BBC93F582769C8999DDC1 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				B3928277B20E19504DBFD191 /* Router */,
+				FD85B6FB14142D6F7B2437FE /* Presenter */,
+				A29B452DFD6A6504064EFED1 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		192D204BF9742F5CEA65FE7C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				014B5543349CA7ECC0F00676 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1BD5C31E1F0C78C9AC79C907 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				DB1657BCF3A458B4C030E113 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1E4E07E55F79AC524481E7B2 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				840B1267E282AA5FE9234335 /* Configurator */,
+				F76B2219663428C0AF2B32A0 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
 		2F7E08A4285BE6EF009F4416 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +201,7 @@
 				2F7E08B9285BE6F0009F4416 /* Assets.xcassets */,
 				2F7E08BB285BE6F0009F4416 /* LaunchScreen.storyboard */,
 				2F7E08BE285BE6F0009F4416 /* Info.plist */,
+				192D204BF9742F5CEA65FE7C /* Features */,
 			);
 			path = PagoCheveris;
 			sourceTree = "<group>";
@@ -132,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				2F7E08C7285BE6F0009F4416 /* PagoCheverisTests.swift */,
+				1BD5C31E1F0C78C9AC79C907 /* Features */,
 			);
 			path = PagoCheverisTests;
 			sourceTree = "<group>";
@@ -186,6 +265,154 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57C937588ECD789729C9FDBB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9769C87E3B00E2308502D89C /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5A7639B93CE4A232EDE59F46 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				613A6D3831D797BDD294B600 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		613A6D3831D797BDD294B600 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E205ACA60C8280102A480847 /* Application Logic */,
+				069BBC93F582769C8999DDC1 /* User Interface */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		840B1267E282AA5FE9234335 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				646E37092A8CAEE093C50BBD /* LoginConfigurator.swift */,
+				09E5495F179F93D33FD01C63 /* LoginInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		845182147C0BAC674FD4C094 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A66EE294FF357DD562FA44DE /* Presenter */,
+				AE3D729330D9458F87E514E0 /* Router */,
+				8B21D871773ED905025D2362 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		8B21D871773ED905025D2362 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1375E63DDC5F0D38E0DEC64E /* LoginViewController.swift */,
+				316887CB1BEC1646255E1944 /* LoginViewInput.swift */,
+				E0F5C6F9C8ACAADB1B668753 /* LoginViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9769C87E3B00E2308502D89C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1E4E07E55F79AC524481E7B2 /* Application Logic */,
+				845182147C0BAC674FD4C094 /* User Interface */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A29B452DFD6A6504064EFED1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29EC8183199AEF1A7B045989 /* LoginViewTest.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A66EE294FF357DD562FA44DE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5A837005ECD073FBD21C6F1C /* LoginModuleInput.swift */,
+				5A36D958231BEECC58CB909F /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AE3D729330D9458F87E514E0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				114BE982B9DB5A2CF906475B /* LoginRouter.swift */,
+				6930183B5D72EF2944044FFC /* LoginRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B3928277B20E19504DBFD191 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				703D3210B6F3D7A9C79A49CA /* LoginRouterTest.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B3E606F0300CB25DC5C5A500 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				4EFEEB10C136FD689A141C61 /* LoginConfiguratorTest.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		C69774DED31B0306946E5CAF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B05110747F4F8728DFD2EA35 /* LoginInteractorTest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DB1657BCF3A458B4C030E113 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5A7639B93CE4A232EDE59F46 /* Modules */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E205ACA60C8280102A480847 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				B3E606F0300CB25DC5C5A500 /* Configurator */,
+				C69774DED31B0306946E5CAF /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		F76B2219663428C0AF2B32A0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD6B762E80B820A000E9B3 /* LoginInteractor.swift */,
+				AF24E0EE56A4FCBE62F60266 /* LoginInteractorInput.swift */,
+				BFB609514F8E5F2E28737762 /* LoginInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FD85B6FB14142D6F7B2437FE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8B2E2BA79F154FB7A20F3D62 /* LoginPresenterTest.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +563,18 @@
 				2FC7CB582869145E00FAADE6 /* KeychainService.swift in Sources */,
 				2FC7CB4428690FA100FAADE6 /* UIStoryboard+StoryboardIdentifiable.swift in Sources */,
 				2FC7CB4628690FC900FAADE6 /* UIStoryboard+Storyboards.swift in Sources */,
+				1487B5C1B7AAD647AED36016 /* LoginConfigurator.swift in Sources */,
+				774582D9BCE1D15CD9311B66 /* LoginInitializer.swift in Sources */,
+				EEC52EA25BCA88B2B24EC75F /* LoginInteractor.swift in Sources */,
+				5554C821C720D745EE50534C /* LoginInteractorInput.swift in Sources */,
+				A83B29EE2FD7FB661E205679 /* LoginInteractorOutput.swift in Sources */,
+				7455F4C9FCEE6E726C976F08 /* LoginModuleInput.swift in Sources */,
+				6F181D00379504B66FBBC9CA /* LoginPresenter.swift in Sources */,
+				53C41F254DF61EA82384BC21 /* LoginRouter.swift in Sources */,
+				F408E9C844478A60058E3ECB /* LoginRouterInput.swift in Sources */,
+				EA264CDD09D75A175985EA60 /* LoginViewController.swift in Sources */,
+				5C27C8AE88F897C88D3B0107 /* LoginViewInput.swift in Sources */,
+				85B88AF8681E917CF3D93D7D /* LoginViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +592,11 @@
 			files = (
 				2F7E08D4285BE6F0009F4416 /* PagoCheverisUITestsLaunchTests.swift in Sources */,
 				2F7E08D2285BE6F0009F4416 /* PagoCheverisUITests.swift in Sources */,
+				FBBD7E5E7BFDE86D674883CB /* LoginConfiguratorTest.swift in Sources */,
+				6434CE4D3FA8C5480DCCF063 /* LoginInteractorTest.swift in Sources */,
+				C4E56F2455125F5E42778667 /* LoginRouterTest.swift in Sources */,
+				92C1FE9E9CFD2EB84A28387B /* LoginPresenterTest.swift in Sources */,
+				3032C22F064D924CE0800C9D /* LoginViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
