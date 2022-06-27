@@ -6,8 +6,11 @@
 //  Copyright © 2022 NTT DATA Europe & Latam. All rights reserved.
 //
 
+import PagoCheverisUI
+
 protocol LoginViewInput: AnyObject {
 
     func setUpInitialState()
     func moduleInput() -> LoginModuleInput
+    func showAlert(title: String, message: String, primaryAction: PCPanModalAction, secondaryAction: PCPanModalAction?)
 }

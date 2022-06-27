@@ -9,7 +9,7 @@ struct LoginStrings {
     
     struct Login {
         
-        static let facialRecognition = "Rec. Facial"
+        static let facialRecognition = "Face ID"
         static let forgotPassword = "¿Olvidaste tu contraseña?"
         static let password = "Contraseña"
         static let rememberMe = "Recordar mis datos"

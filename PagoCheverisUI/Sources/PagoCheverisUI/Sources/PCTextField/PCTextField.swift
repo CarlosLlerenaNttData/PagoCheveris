@@ -15,7 +15,7 @@ public class PCTextField: UITextField {
     // MARK: Properties
     
     /// The insets for the `textRect` and the `editingRect`
-    public weak var PCTextFieldDelegate: PCTextFieldDelegate!
+    public weak var pcTextFieldDelegate: PCTextFieldDelegate!
     
     /// The insets for the `textRect` and the `editingRect`
     var textfieldInsets = CGPoint(x: 16, y: 0)
@@ -49,7 +49,7 @@ public class PCTextField: UITextField {
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {
-        PCTextFieldDelegate?.textFieldDidChange(self)
+        pcTextFieldDelegate?.textFieldDidChange(self)
     }
     
     // Set a new rect responding to the textField insets.
@@ -138,7 +138,7 @@ extension PCTextField: UITextFieldDelegate {
         setBorderColor(for: .focused)
         
         // PCTextField Delegate
-        PCTextFieldDelegate?.textFieldDidBeginEditing(self)
+        pcTextFieldDelegate?.textFieldDidBeginEditing(self)
     }
     
     public func textFieldDidEndEditing(_ textField: UITextField) {
@@ -151,7 +151,7 @@ extension PCTextField: UITextFieldDelegate {
         setBorderColor(for: state)
         
         // PCTextField Delegate
-        PCTextFieldDelegate?.textFieldDidEndEditing(self)
+        pcTextFieldDelegate?.textFieldDidEndEditing(self)
     }
     
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
