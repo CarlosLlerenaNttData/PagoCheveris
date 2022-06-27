@@ -23,6 +23,8 @@
 		2FC7CB552869140C00FAADE6 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC7CB542869140C00FAADE6 /* KeychainAccess */; };
 		2FC7CB582869145E00FAADE6 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB572869145E00FAADE6 /* KeychainService.swift */; };
 		2FC7CB5B28695BD200FAADE6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC7CB5A28695BD100FAADE6 /* Login.storyboard */; };
+		2FC7CB5F2869601E00FAADE6 /* LoginRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB5E2869601E00FAADE6 /* LoginRegex.swift */; };
+		2FC7CB64286960B000FAADE6 /* LoginStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB63286960B000FAADE6 /* LoginStrings.swift */; };
 		2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFDBE17286411050041DBD3 /* PagoCheverisUI */; };
 		3032C22F064D924CE0800C9D /* LoginViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EC8183199AEF1A7B045989 /* LoginViewTest.swift */; };
 		53C41F254DF61EA82384BC21 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114BE982B9DB5A2CF906475B /* LoginRouter.swift */; };
@@ -81,6 +83,8 @@
 		2FC7CB51286911B900FAADE6 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		2FC7CB572869145E00FAADE6 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		2FC7CB5A28695BD100FAADE6 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		2FC7CB5E2869601E00FAADE6 /* LoginRegex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegex.swift; sourceTree = "<group>"; };
+		2FC7CB63286960B000FAADE6 /* LoginStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStrings.swift; sourceTree = "<group>"; };
 		316887CB1BEC1646255E1944 /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
 		4EFEEB10C136FD689A141C61 /* LoginConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfiguratorTest.swift; sourceTree = "<group>"; };
 		5A36D958231BEECC58CB909F /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 		014B5543349CA7ECC0F00676 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				2FC7CB5C2869600000FAADE6 /* Common */,
 				57C937588ECD789729C9FDBB /* Modules */,
 			);
 			path = Login;
@@ -263,6 +268,31 @@
 				2FC7CB5A28695BD100FAADE6 /* Login.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		2FC7CB5C2869600000FAADE6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2FC7CB62286960A300FAADE6 /* Strings */,
+				2FC7CB5D2869600B00FAADE6 /* Entity */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2FC7CB5D2869600B00FAADE6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2FC7CB5E2869601E00FAADE6 /* LoginRegex.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2FC7CB62286960A300FAADE6 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				2FC7CB63286960B000FAADE6 /* LoginStrings.swift */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 		2FFDBE142864107E0041DBD3 /* Frameworks */ = {
@@ -573,8 +603,10 @@
 				5554C821C720D745EE50534C /* LoginInteractorInput.swift in Sources */,
 				A83B29EE2FD7FB661E205679 /* LoginInteractorOutput.swift in Sources */,
 				7455F4C9FCEE6E726C976F08 /* LoginModuleInput.swift in Sources */,
+				2FC7CB64286960B000FAADE6 /* LoginStrings.swift in Sources */,
 				6F181D00379504B66FBBC9CA /* LoginPresenter.swift in Sources */,
 				53C41F254DF61EA82384BC21 /* LoginRouter.swift in Sources */,
+				2FC7CB5F2869601E00FAADE6 /* LoginRegex.swift in Sources */,
 				F408E9C844478A60058E3ECB /* LoginRouterInput.swift in Sources */,
 				EA264CDD09D75A175985EA60 /* LoginViewController.swift in Sources */,
 				5C27C8AE88F897C88D3B0107 /* LoginViewInput.swift in Sources */,
