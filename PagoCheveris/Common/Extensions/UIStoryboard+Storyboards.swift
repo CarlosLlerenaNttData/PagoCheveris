@@ -11,7 +11,7 @@ extension UIStoryboard {
     
     enum Storyboard: String {
     
-        case main
+        case login
         
         var filename: String {
             let firstLetter = rawValue.prefix(1)
