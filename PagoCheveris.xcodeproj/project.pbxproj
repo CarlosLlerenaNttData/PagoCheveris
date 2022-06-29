@@ -32,6 +32,8 @@
 		2FEF911C286A613D007A3B1F /* LoginResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF911B286A613D007A3B1F /* LoginResource.swift */; };
 		2FEF911E286A6163007A3B1F /* PagoCheverisNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 2FEF911D286A6163007A3B1F /* PagoCheverisNetworking */; };
 		2FEF9120286A61AC007A3B1F /* JSONUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF911F286A61AC007A3B1F /* JSONUtility.swift */; };
+		2FEF9123286A6AB0007A3B1F /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FEF9122286A6AB0007A3B1F /* IQKeyboardManagerSwift */; };
+		2FEF9126286A6B7C007A3B1F /* CommonStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF9125286A6B7C007A3B1F /* CommonStrings.swift */; };
 		2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFDBE17286411050041DBD3 /* PagoCheverisUI */; };
 		3032C22F064D924CE0800C9D /* LoginViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EC8183199AEF1A7B045989 /* LoginViewTest.swift */; };
 		53C41F254DF61EA82384BC21 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114BE982B9DB5A2CF906475B /* LoginRouter.swift */; };
@@ -98,6 +100,7 @@
 		2FEF9117286A6085007A3B1F /* LoginClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginClient.swift; sourceTree = "<group>"; };
 		2FEF911B286A613D007A3B1F /* LoginResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResource.swift; sourceTree = "<group>"; };
 		2FEF911F286A61AC007A3B1F /* JSONUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtility.swift; sourceTree = "<group>"; };
+		2FEF9125286A6B7C007A3B1F /* CommonStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStrings.swift; sourceTree = "<group>"; };
 		316887CB1BEC1646255E1944 /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
 		4EFEEB10C136FD689A141C61 /* LoginConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfiguratorTest.swift; sourceTree = "<group>"; };
 		5A36D958231BEECC58CB909F /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FEF9123286A6AB0007A3B1F /* IQKeyboardManagerSwift in Frameworks */,
 				2FC7CB3B2868F41A00FAADE6 /* PanModal in Frameworks */,
 				2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */,
 				2FEF911E286A6163007A3B1F /* PagoCheverisNetworking in Frameworks */,
@@ -243,6 +247,7 @@
 		2FC7CB3F28690F0500FAADE6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2FEF9124286A6B6B007A3B1F /* Strings */,
 				2FC7CB562869144E00FAADE6 /* Services */,
 				2FC7CB50286911AD00FAADE6 /* Navigation */,
 				2FC7CB4028690F0C00FAADE6 /* Extensions */,
@@ -329,6 +334,14 @@
 				2FEF9115286A5EFE007A3B1F /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2FEF9124286A6B6B007A3B1F /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				2FEF9125286A6B7C007A3B1F /* CommonStrings.swift */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 		2FFDBE142864107E0041DBD3 /* Frameworks */ = {
@@ -507,6 +520,7 @@
 				2FC7CB3A2868F41A00FAADE6 /* PanModal */,
 				2FC7CB542869140C00FAADE6 /* KeychainAccess */,
 				2FEF911D286A6163007A3B1F /* PagoCheverisNetworking */,
+				2FEF9122286A6AB0007A3B1F /* IQKeyboardManagerSwift */,
 			);
 			productName = PagoCheveris;
 			productReference = 2F7E08AD285BE6F0009F4416 /* PagoCheveris.app */;
@@ -583,6 +597,7 @@
 			packageReferences = (
 				2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */,
 				2FC7CB532869140C00FAADE6 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				2FEF9121286A6AB0007A3B1F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 2F7E08AE285BE6F0009F4416 /* Products */;
 			projectDirPath = "";
@@ -648,6 +663,7 @@
 				53C41F254DF61EA82384BC21 /* LoginRouter.swift in Sources */,
 				2FC7CB5F2869601E00FAADE6 /* LoginRegex.swift in Sources */,
 				F408E9C844478A60058E3ECB /* LoginRouterInput.swift in Sources */,
+				2FEF9126286A6B7C007A3B1F /* CommonStrings.swift in Sources */,
 				EA264CDD09D75A175985EA60 /* LoginViewController.swift in Sources */,
 				2FEF9116286A5EFE007A3B1F /* User.swift in Sources */,
 				5C27C8AE88F897C88D3B0107 /* LoginViewInput.swift in Sources */,
@@ -1004,6 +1020,14 @@
 				version = 4.2.2;
 			};
 		};
+		2FEF9121286A6AB0007A3B1F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.9;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1020,6 +1044,11 @@
 		2FEF911D286A6163007A3B1F /* PagoCheverisNetworking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PagoCheverisNetworking;
+		};
+		2FEF9122286A6AB0007A3B1F /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FEF9121286A6AB0007A3B1F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 		2FFDBE17286411050041DBD3 /* PagoCheverisUI */ = {
 			isa = XCSwiftPackageProductDependency;

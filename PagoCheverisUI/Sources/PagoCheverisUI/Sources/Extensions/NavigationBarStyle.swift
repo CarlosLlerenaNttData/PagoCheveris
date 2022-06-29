@@ -24,4 +24,6 @@ public extension NavigationBarStyle where Self: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.white
         navigationItem.backButtonTitle = ""
     }
+    
+    
 }
