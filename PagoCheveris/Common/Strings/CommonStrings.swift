@@ -5,7 +5,7 @@
 //  Created by Carlos Alfredo Llerena Huayta on 27/06/22.
 //
 
-struct CommonStrings {
+enum CommonStrings {
     
     static let accept = "Aceptar"
     static let cancel = "Cancelar"
