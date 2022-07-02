@@ -129,7 +129,15 @@ class LoginViewController: UIViewController, NavigationBarStyle {
 
 
 // MARK: LoginViewInput Methods
-extension LoginViewController: LoginViewInput, PCAlertPanModalPresentable {
+extension LoginViewController: LoginViewInput, PCAlertPanModalPresentable, PCActivityIndicatorPresentable {
+    
+    func showActivityIndicatorView() {
+        showPCActivityIndicatorView()
+    }
+    
+    func hideActivityIndicatorView() {
+        hidePCActivityIndicatorView()
+    }
 
     func setUpInitialState() {
     }
@@ -139,7 +147,7 @@ extension LoginViewController: LoginViewInput, PCAlertPanModalPresentable {
     }
     
     func showAlert(title: String, message: String, primaryAction: PCPanModalAction, secondaryAction: PCPanModalAction?) {
-        showPCAlert(title: title, message: message, primaryAction: primaryAction, secondaryAction: secondaryAction)
+       showPCAlert(title: title, message: message, primaryAction: primaryAction, secondaryAction: secondaryAction)
     }
 
 }

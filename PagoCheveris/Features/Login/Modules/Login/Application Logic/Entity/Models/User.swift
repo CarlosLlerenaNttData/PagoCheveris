@@ -6,16 +6,18 @@
 //
 
 struct User: Codable {
-    
-    let userName: String
-    let email: String
-    let sessionId: String
-    let state: Int
 
-    init(userName: String, email: String, sessionId: String, state: Int) {
-        self.userName = userName
+    let username: String
+    let name: String
+    let surname: String
+    let email: String
+    let requiredToken: Bool
+
+    init(username: String, name: String, surname: String, email: String, requiredToken: Bool) {
+        self.username = username
+        self.name = name
+        self.surname = surname
         self.email = email
-        self.sessionId = sessionId
-        self.state = state
+        self.requiredToken = requiredToken
     }
 }

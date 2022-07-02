@@ -15,6 +15,7 @@
 		2F7E08C8285BE6F0009F4416 /* PagoCheverisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08C7285BE6F0009F4416 /* PagoCheverisTests.swift */; };
 		2F7E08D2285BE6F0009F4416 /* PagoCheverisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08D1285BE6F0009F4416 /* PagoCheverisUITests.swift */; };
 		2F7E08D4285BE6F0009F4416 /* PagoCheverisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08D3285BE6F0009F4416 /* PagoCheverisUITestsLaunchTests.swift */; };
+		2FB2BE46286E4D7B00531BD8 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2FB2BE45286E4D7B00531BD8 /* Lottie */; };
 		2FC7CB3B2868F41A00FAADE6 /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC7CB3A2868F41A00FAADE6 /* PanModal */; };
 		2FC7CB4228690F3700FAADE6 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB4128690F3700FAADE6 /* StoryboardIdentifiable.swift */; };
 		2FC7CB4428690FA100FAADE6 /* UIStoryboard+StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB4328690FA100FAADE6 /* UIStoryboard+StoryboardIdentifiable.swift */; };
@@ -130,6 +131,7 @@
 				2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */,
 				2FEF911E286A6163007A3B1F /* PagoCheverisNetworking in Frameworks */,
 				2FC7CB552869140C00FAADE6 /* KeychainAccess in Frameworks */,
+				2FB2BE46286E4D7B00531BD8 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +537,7 @@
 				2FC7CB542869140C00FAADE6 /* KeychainAccess */,
 				2FEF911D286A6163007A3B1F /* PagoCheverisNetworking */,
 				2FEF9122286A6AB0007A3B1F /* IQKeyboardManagerSwift */,
+				2FB2BE45286E4D7B00531BD8 /* Lottie */,
 			);
 			productName = PagoCheveris;
 			productReference = 2F7E08AD285BE6F0009F4416 /* PagoCheveris.app */;
@@ -612,6 +615,7 @@
 				2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */,
 				2FC7CB532869140C00FAADE6 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				2FEF9121286A6AB0007A3B1F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 2F7E08AE285BE6F0009F4416 /* Products */;
 			projectDirPath = "";
@@ -861,6 +865,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NR5747Y6M3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PagoCheveris/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -887,6 +892,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NR5747Y6M3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PagoCheveris/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1020,6 +1026,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.3.0;
+			};
+		};
 		2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/slackhq/PanModal.git";
@@ -1047,6 +1061,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2FB2BE45286E4D7B00531BD8 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		2FC7CB3A2868F41A00FAADE6 /* PanModal */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */;

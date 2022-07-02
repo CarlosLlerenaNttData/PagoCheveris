@@ -8,8 +8,10 @@
 struct LoginResponse: Codable {
     
     let user: User
-
-    public init(user: User) {
+    let sessionId: String
+    
+    public init(user: User, sessionId: String) {
         self.user = user
+        self.sessionId = sessionId
     }
 }

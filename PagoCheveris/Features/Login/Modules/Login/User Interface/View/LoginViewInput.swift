@@ -13,4 +13,6 @@ protocol LoginViewInput: AnyObject {
     func setUpInitialState()
     func moduleInput() -> LoginModuleInput
     func showAlert(title: String, message: String, primaryAction: PCPanModalAction, secondaryAction: PCPanModalAction?)
+    func showActivityIndicatorView()
+    func hideActivityIndicatorView()
 }
