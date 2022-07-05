@@ -17,6 +17,12 @@ protocol KeychainServiceProvider {
 
 final class KeychainService: KeychainServiceProvider {
     
+    enum Keys {
+        
+        static let username = "username"
+        static let password = "password"
+    }
+    
     static let shared = KeychainService()
     
     private let keychain: Keychain
@@ -24,13 +30,13 @@ final class KeychainService: KeychainServiceProvider {
     private init() {
         keychain = Keychain()
     }
-
+    
     // MARK: Public methods
     
     func save(value: String, key: String) {
         keychain[key] = value
     }
-      
+    
     func delete(key: String) {
         keychain[key] = nil
     }

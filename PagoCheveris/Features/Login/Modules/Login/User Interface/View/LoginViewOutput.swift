@@ -9,4 +9,6 @@
 protocol LoginViewOutput {
 
     func viewIsReady()
+    func didTapLoginButton(username: String, password: String, rememberCredentials: Bool)
+    func didTapRememberToggle(rememberCredentials: Bool)
 }

@@ -25,7 +25,7 @@ class LoginViewController: UIViewController, NavigationBarStyle {
     
     @IBOutlet weak var imageLogo: UIImageView! {
         didSet{
-          imageLogo.image = PCImages.pcImageLogo
+            imageLogo.image = PCImages.pcImageLogo
         }
     }
     
@@ -106,10 +106,10 @@ class LoginViewController: UIViewController, NavigationBarStyle {
         clearStyle()
         output.viewIsReady()
     }
-
+    
     @IBAction func rememberMeToggle() {
         rememberMeButton.isSelected = !rememberMeButton.isSelected
-       // output.didTapRememberToggle(rememberCredentials: rememberMeButton.isSelected)
+        output.didTapRememberToggle(rememberCredentials: rememberMeButton.isSelected)
     }
     
     @IBAction func didTapForgotPasswordButton(_ sender: UIButton) {
@@ -123,7 +123,7 @@ class LoginViewController: UIViewController, NavigationBarStyle {
     @IBAction func didTapLoginButton(_ sender: UIButton) {
         guard let username = usernameTextField.text, !username.isEmpty,
               let password = passwordTextField.text, !password.isEmpty else { return }
-//        output.didTapLoginButton(code: code, username: username, password: password,rememberCredentials: rememberMeButton.isSelected)
+        output.didTapLoginButton(username: username, password: password,rememberCredentials: rememberMeButton.isSelected)
     }
 }
 
@@ -138,7 +138,7 @@ extension LoginViewController: LoginViewInput, PCAlertPanModalPresentable, PCAct
     func hideActivityIndicatorView() {
         hidePCActivityIndicatorView()
     }
-
+    
     func setUpInitialState() {
     }
     
@@ -147,9 +147,17 @@ extension LoginViewController: LoginViewInput, PCAlertPanModalPresentable, PCAct
     }
     
     func showAlert(title: String, message: String, primaryAction: PCPanModalAction, secondaryAction: PCPanModalAction?) {
-       showPCAlert(title: title, message: message, primaryAction: primaryAction, secondaryAction: secondaryAction)
+        showPCAlert(title: title, message: message, primaryAction: primaryAction, secondaryAction: secondaryAction)
     }
-
+    
+    func loadCredentials(username: String, password: String) {
+        usernameTextField.text = username
+        passwordTextField.text = password
+    }
+    
+    func updateRememberButton(isSelectedRememberButton: Bool) {
+        rememberMeButton.isSelected = isSelectedRememberButton
+    }
 }
 
 extension LoginViewController : PCTextFieldDelegate {

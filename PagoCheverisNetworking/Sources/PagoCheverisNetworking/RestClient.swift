@@ -10,7 +10,7 @@ import Foundation
 
 public typealias JSON = [String: Any]
 
-open class RestClient {
+open class RestClient: NSObject{
     
     private let baseURL: String
     private let headers: HTTPHeaders
@@ -24,7 +24,7 @@ open class RestClient {
                                                     parameters: JSON? = nil,
                                                     headers: HTTPHeaders,
                                                     type: T.Type,
-                                                    errorType: U.Type) -> AnyPublisher<T, Error> {
+                                                    errorType: U.Type) -> AnyPublisher<T, NetworkingError> {
         let fullURLString = baseURL + resource.resource.route
         
         guard let url = URL(string: fullURLString) else {
@@ -40,13 +40,20 @@ open class RestClient {
         }
         
         if resource.resource.method != .get,
-         let parameters = parameters {
+           let parameters = parameters {
             urlRequest.httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
         }
         
-        return URLSession.shared.dataTaskPublisher(for: urlRequest)
+        let session = URLSession(configuration: URLSessionConfiguration.default,
+                                 delegate: self,
+                                 delegateQueue: nil)
+        
+        return session.dataTaskPublisher(for: urlRequest)
             .mapError({ error -> NetworkingError in
-                .unexpectedError(error)
+                if error.code  == URLError.Code.notConnectedToInternet {
+                    return .notConnectionInternet(error)
+                }
+                return .unexpectedError(error)
             })
             .tryMap({ (data, response) -> (data: Data, response: URLResponse) in
                 guard let urlResponse = response as? HTTPURLResponse else {
@@ -60,7 +67,7 @@ open class RestClient {
                     let decoder = JSONDecoder()
                     let apiError = try decoder.decode(errorType, from: data)
                     
-                    throw NetworkingError.apiError(urlResponse.statusCode, error: apiError)
+                    throw NetworkingError.apiError(error: apiError)
                 default:
                     break
                 }
@@ -79,6 +86,24 @@ open class RestClient {
                     throw NetworkingError.parsingError(error, message)
                 }
             })
+            .mapError({ error in
+                guard let networkingError = error as? NetworkingError else { return .unexpectedError(error) }
+                return networkingError
+            })
             .eraseToAnyPublisher()
+    }
+    
+}
+
+
+extension RestClient: URLSessionDelegate
+{
+    
+    public func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+        guard let serverTrust = challenge.protectionSpace.serverTrust else {
+            return completionHandler(URLSession.AuthChallengeDisposition.useCredential, nil)
+        }
+        return completionHandler(URLSession.AuthChallengeDisposition.useCredential, URLCredential(trust: serverTrust))
+        
     }
 }

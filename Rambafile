@@ -17,10 +17,10 @@ project_target: PagoCheveris
 test_target: PagoCheverisUITests
 
 # The file path for new modules
-project_file_path: /PagoCheveris/Features/FEATURE_NAME/Modules
+project_file_path: /PagoCheveris/Common/Modules
 
 # The file path for new tests
-test_file_path: /PagoCheverisTests/Features/FEATURE_NAME/Modules
+test_file_path: /PagoCheverisTests/Common/Modules
 
 ### Templates
 templates:

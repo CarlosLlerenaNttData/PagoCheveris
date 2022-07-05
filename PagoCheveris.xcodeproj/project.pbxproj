@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04AF3E5F6821188628D8054A /* MainTabBarRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5A31846FBA06409C01930 /* MainTabBarRouterTest.swift */; };
 		1487B5C1B7AAD647AED36016 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646E37092A8CAEE093C50BBD /* LoginConfigurator.swift */; };
+		1AD0D92D3525658E739A94F4 /* MainTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DBD666B7B59C730511F9F /* MainTabBarInteractor.swift */; };
+		2C3CFC31BED8FC718ABF15EB /* MainTabBarModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721B8D04C5116C6CC35BEE42 /* MainTabBarModuleInput.swift */; };
+		2F4A0F442872512F00991007 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A0F432872512F00991007 /* ErrorResponse.swift */; };
 		2F7E08B1285BE6F0009F4416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08B0285BE6F0009F4416 /* AppDelegate.swift */; };
 		2F7E08B3285BE6F0009F4416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08B2285BE6F0009F4416 /* SceneDelegate.swift */; };
 		2F7E08BA285BE6F0009F4416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E08B9285BE6F0009F4416 /* Assets.xcassets */; };
@@ -39,21 +43,35 @@
 		2FEF912F286C01DC007A3B1F /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF912E286C01DC007A3B1F /* Host.swift */; };
 		2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFDBE17286411050041DBD3 /* PagoCheverisUI */; };
 		3032C22F064D924CE0800C9D /* LoginViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EC8183199AEF1A7B045989 /* LoginViewTest.swift */; };
+		3CE99A6FBC310E240265BF96 /* MainTabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA274215537C0823D410FD /* MainTabBarConfigurator.swift */; };
+		49477853E689996FA0F85AC5 /* MainTabBarInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473AEF3A91BA4F6435BEC279 /* MainTabBarInteractorInput.swift */; };
 		53C41F254DF61EA82384BC21 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114BE982B9DB5A2CF906475B /* LoginRouter.swift */; };
 		5554C821C720D745EE50534C /* LoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF24E0EE56A4FCBE62F60266 /* LoginInteractorInput.swift */; };
 		5C27C8AE88F897C88D3B0107 /* LoginViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316887CB1BEC1646255E1944 /* LoginViewInput.swift */; };
 		6434CE4D3FA8C5480DCCF063 /* LoginInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05110747F4F8728DFD2EA35 /* LoginInteractorTest.swift */; };
+		6E09CF0893A6CC13CF334832 /* MainTabBarPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E0143C03698EA25BE58F94 /* MainTabBarPresenterTest.swift */; };
 		6F181D00379504B66FBBC9CA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36D958231BEECC58CB909F /* LoginPresenter.swift */; };
+		704EE7FBC97930F3101B3943 /* MainTabBarInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6EB6984E9C80DF29C25995 /* MainTabBarInteractorTest.swift */; };
+		712B102F8287F9C5E7958D2A /* MainTabBarInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131E863AD68AC59B021DAD27 /* MainTabBarInitializer.swift */; };
 		7455F4C9FCEE6E726C976F08 /* LoginModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A837005ECD073FBD21C6F1C /* LoginModuleInput.swift */; };
 		774582D9BCE1D15CD9311B66 /* LoginInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E5495F179F93D33FD01C63 /* LoginInitializer.swift */; };
+		7C039616D88C00898C5A0FD7 /* MainTabBarConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06E92C303A0F4D77BC2292E /* MainTabBarConfiguratorTest.swift */; };
+		817F5E69FFF9BBD251FADF77 /* MainTabBarViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2F4217F5D44682E9A7F0B /* MainTabBarViewTest.swift */; };
 		85B88AF8681E917CF3D93D7D /* LoginViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5C6F9C8ACAADB1B668753 /* LoginViewOutput.swift */; };
 		92C1FE9E9CFD2EB84A28387B /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2E2BA79F154FB7A20F3D62 /* LoginPresenterTest.swift */; };
+		99D133C7C97138003626A487 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3429A25405CEED503A77AE5 /* MainTabBarViewController.swift */; };
+		A0DA868E000DAEC755E1E225 /* MainTabBarInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716859836BC2E14B35418D32 /* MainTabBarInteractorOutput.swift */; };
+		A4BD685B81C4B6A149443C98 /* MainTabBarViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363473EAC9D1D0B303CD39FB /* MainTabBarViewOutput.swift */; };
 		A83B29EE2FD7FB661E205679 /* LoginInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB609514F8E5F2E28737762 /* LoginInteractorOutput.swift */; };
+		BC59ED1B2B73A90D8F9E7DAD /* MainTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0588C547A84D6AE809A504C6 /* MainTabBarPresenter.swift */; };
 		C4E56F2455125F5E42778667 /* LoginRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D3210B6F3D7A9C79A49CA /* LoginRouterTest.swift */; };
+		E15BAB33198EC07C43278FB2 /* MainTabBarRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD888F68D933326E64E77CE3 /* MainTabBarRouterInput.swift */; };
 		EA264CDD09D75A175985EA60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375E63DDC5F0D38E0DEC64E /* LoginViewController.swift */; };
 		EEC52EA25BCA88B2B24EC75F /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD6B762E80B820A000E9B3 /* LoginInteractor.swift */; };
 		F408E9C844478A60058E3ECB /* LoginRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6930183B5D72EF2944044FFC /* LoginRouterInput.swift */; };
 		FBBD7E5E7BFDE86D674883CB /* LoginConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEEB10C136FD689A141C61 /* LoginConfiguratorTest.swift */; };
+		FBC01F477B3BF0DB6DCF399B /* MainTabBarViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924CA7BA896A50F74F99AF4D /* MainTabBarViewInput.swift */; };
+		FE6B469AC7309BDE877158DA /* MainTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F06CE03EC80D4D9D46E0F1 /* MainTabBarRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,10 +92,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0588C547A84D6AE809A504C6 /* MainTabBarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarPresenter.swift; sourceTree = "<group>"; };
+		09B5A31846FBA06409C01930 /* MainTabBarRouterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarRouterTest.swift; sourceTree = "<group>"; };
 		09E5495F179F93D33FD01C63 /* LoginInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInitializer.swift; sourceTree = "<group>"; };
 		114BE982B9DB5A2CF906475B /* LoginRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		131E863AD68AC59B021DAD27 /* MainTabBarInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarInitializer.swift; sourceTree = "<group>"; };
 		1375E63DDC5F0D38E0DEC64E /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		13E0143C03698EA25BE58F94 /* MainTabBarPresenterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarPresenterTest.swift; sourceTree = "<group>"; };
 		29EC8183199AEF1A7B045989 /* LoginViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewTest.swift; sourceTree = "<group>"; };
+		2F4A0F432872512F00991007 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		2F7E08AD285BE6F0009F4416 /* PagoCheveris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagoCheveris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7E08B0285BE6F0009F4416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F7E08B2285BE6F0009F4416 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +130,9 @@
 		2FEF9129286C0151007A3B1F /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		2FEF912E286C01DC007A3B1F /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
 		316887CB1BEC1646255E1944 /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
+		34E2F4217F5D44682E9A7F0B /* MainTabBarViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarViewTest.swift; sourceTree = "<group>"; };
+		363473EAC9D1D0B303CD39FB /* MainTabBarViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarViewOutput.swift; sourceTree = "<group>"; };
+		473AEF3A91BA4F6435BEC279 /* MainTabBarInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarInteractorInput.swift; sourceTree = "<group>"; };
 		4EFEEB10C136FD689A141C61 /* LoginConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfiguratorTest.swift; sourceTree = "<group>"; };
 		5A36D958231BEECC58CB909F /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		5A837005ECD073FBD21C6F1C /* LoginModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginModuleInput.swift; sourceTree = "<group>"; };
@@ -114,11 +140,21 @@
 		646E37092A8CAEE093C50BBD /* LoginConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
 		6930183B5D72EF2944044FFC /* LoginRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterInput.swift; sourceTree = "<group>"; };
 		703D3210B6F3D7A9C79A49CA /* LoginRouterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterTest.swift; sourceTree = "<group>"; };
+		716859836BC2E14B35418D32 /* MainTabBarInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarInteractorOutput.swift; sourceTree = "<group>"; };
+		721B8D04C5116C6CC35BEE42 /* MainTabBarModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarModuleInput.swift; sourceTree = "<group>"; };
+		72F06CE03EC80D4D9D46E0F1 /* MainTabBarRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarRouter.swift; sourceTree = "<group>"; };
 		8B2E2BA79F154FB7A20F3D62 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
+		924CA7BA896A50F74F99AF4D /* MainTabBarViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarViewInput.swift; sourceTree = "<group>"; };
+		A06E92C303A0F4D77BC2292E /* MainTabBarConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarConfiguratorTest.swift; sourceTree = "<group>"; };
+		A1AA274215537C0823D410FD /* MainTabBarConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarConfigurator.swift; sourceTree = "<group>"; };
 		AF24E0EE56A4FCBE62F60266 /* LoginInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorInput.swift; sourceTree = "<group>"; };
 		B05110747F4F8728DFD2EA35 /* LoginInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorTest.swift; sourceTree = "<group>"; };
 		BFB609514F8E5F2E28737762 /* LoginInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorOutput.swift; sourceTree = "<group>"; };
+		CD6EB6984E9C80DF29C25995 /* MainTabBarInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarInteractorTest.swift; sourceTree = "<group>"; };
+		CD888F68D933326E64E77CE3 /* MainTabBarRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarRouterInput.swift; sourceTree = "<group>"; };
+		DB5DBD666B7B59C730511F9F /* MainTabBarInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarInteractor.swift; sourceTree = "<group>"; };
 		E0F5C6F9C8ACAADB1B668753 /* LoginViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewOutput.swift; sourceTree = "<group>"; };
+		F3429A25405CEED503A77AE5 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +207,26 @@
 			path = "User Interface";
 			sourceTree = "<group>";
 		};
+		0852196514B06F3ACB3770D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3429A25405CEED503A77AE5 /* MainTabBarViewController.swift */,
+				924CA7BA896A50F74F99AF4D /* MainTabBarViewInput.swift */,
+				363473EAC9D1D0B303CD39FB /* MainTabBarViewOutput.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		0ACD804EB7233ED0A312FD9D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A06E92C303A0F4D77BC2292E /* MainTabBarConfiguratorTest.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		192D204BF9742F5CEA65FE7C /* Features */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +251,33 @@
 				F76B2219663428C0AF2B32A0 /* Interactor */,
 			);
 			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		27E70440C1414A8F0D53A8F5 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				47EA6F05FF8D2651C72D14B8 /* Router */,
+				DCBDBE5D5F71FA136D6EB594 /* Presenter */,
+				8EC9491375204CB9E1C756BE /* View */,
+			);
+			name = "User Interface";
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		2F4A0F42287250C700991007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F4A0F432872512F00991007 /* ErrorResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F4A0F472874B0E000991007 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				34AD1314A1ECCB04DA7344C6 /* MainTabBar */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		2F7E08A4285BE6EF009F4416 = {
@@ -237,6 +320,7 @@
 			children = (
 				2F7E08C7285BE6F0009F4416 /* PagoCheverisTests.swift */,
 				1BD5C31E1F0C78C9AC79C907 /* Features */,
+				7C106DFBFF0A8564AC0C2A14 /* Common */,
 			);
 			path = PagoCheverisTests;
 			sourceTree = "<group>";
@@ -253,6 +337,7 @@
 		2FC7CB3F28690F0500FAADE6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2F4A0F472874B0E000991007 /* Modules */,
 				2FEF912D286C01CE007A3B1F /* Entity */,
 				2FEF9124286A6B6B007A3B1F /* Strings */,
 				2FC7CB562869144E00FAADE6 /* Services */,
@@ -355,6 +440,7 @@
 		2FEF912D286C01CE007A3B1F /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				2F4A0F42287250C700991007 /* Models */,
 				2FEF912E286C01DC007A3B1F /* Host.swift */,
 			);
 			path = Entity;
@@ -365,6 +451,44 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34AD1314A1ECCB04DA7344C6 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3B76D5DF254BAE82D84E8FCF /* Application Logic */,
+				BE49D6B9AA1FD347A7BD44D9 /* User Interface */,
+			);
+			name = MainTabBar;
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		3B76D5DF254BAE82D84E8FCF /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				7D3DFE6E73A244FD6168493D /* Configurator */,
+				E0D2D96A483AEE8795C685C5 /* Interactor */,
+			);
+			name = "Application Logic";
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		42C343DFEBB3C82837ECB3AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CD6EB6984E9C80DF29C25995 /* MainTabBarInteractorTest.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		47EA6F05FF8D2651C72D14B8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				09B5A31846FBA06409C01930 /* MainTabBarRouterTest.swift */,
+			);
+			name = Router;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		57C937588ECD789729C9FDBB /* Modules */ = {
@@ -392,6 +516,45 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		7879D33A25E4BC0432A7955F /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0ACD804EB7233ED0A312FD9D /* Configurator */,
+				42C343DFEBB3C82837ECB3AF /* Interactor */,
+			);
+			name = "Application Logic";
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		7C106DFBFF0A8564AC0C2A14 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C893A7F5DAB94F7C5A6B60F2 /* Modules */,
+			);
+			name = Common;
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7D3DFE6E73A244FD6168493D /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A1AA274215537C0823D410FD /* MainTabBarConfigurator.swift */,
+				131E863AD68AC59B021DAD27 /* MainTabBarInitializer.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		7DEE63BF2DFF86BBE8B68B02 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				721B8D04C5116C6CC35BEE42 /* MainTabBarModuleInput.swift */,
+				0588C547A84D6AE809A504C6 /* MainTabBarPresenter.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		840B1267E282AA5FE9234335 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +562,16 @@
 				09E5495F179F93D33FD01C63 /* LoginInitializer.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		841B1EC1BC9D0A006601FA41 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7879D33A25E4BC0432A7955F /* Application Logic */,
+				27E70440C1414A8F0D53A8F5 /* User Interface */,
+			);
+			name = MainTabBar;
+			path = MainTabBar;
 			sourceTree = "<group>";
 		};
 		845182147C0BAC674FD4C094 /* User Interface */ = {
@@ -418,6 +591,15 @@
 				316887CB1BEC1646255E1944 /* LoginViewInput.swift */,
 				E0F5C6F9C8ACAADB1B668753 /* LoginViewOutput.swift */,
 			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EC9491375204CB9E1C756BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34E2F4217F5D44682E9A7F0B /* MainTabBarViewTest.swift */,
+			);
+			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -447,6 +629,16 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		A6B7A879FBB346DE0BA8CE52 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				72F06CE03EC80D4D9D46E0F1 /* MainTabBarRouter.swift */,
+				CD888F68D933326E64E77CE3 /* MainTabBarRouterInput.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
 		AE3D729330D9458F87E514E0 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,6 +664,17 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		BE49D6B9AA1FD347A7BD44D9 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				7DEE63BF2DFF86BBE8B68B02 /* Presenter */,
+				A6B7A879FBB346DE0BA8CE52 /* Router */,
+				0852196514B06F3ACB3770D4 /* View */,
+			);
+			name = "User Interface";
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
 		C69774DED31B0306946E5CAF /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -480,12 +683,41 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		C893A7F5DAB94F7C5A6B60F2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				841B1EC1BC9D0A006601FA41 /* MainTabBar */,
+			);
+			name = Modules;
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		DB1657BCF3A458B4C030E113 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				5A7639B93CE4A232EDE59F46 /* Modules */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		DCBDBE5D5F71FA136D6EB594 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				13E0143C03698EA25BE58F94 /* MainTabBarPresenterTest.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E0D2D96A483AEE8795C685C5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DB5DBD666B7B59C730511F9F /* MainTabBarInteractor.swift */,
+				473AEF3A91BA4F6435BEC279 /* MainTabBarInteractorInput.swift */,
+				716859836BC2E14B35418D32 /* MainTabBarInteractorOutput.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		E205ACA60C8280102A480847 /* Application Logic */ = {
@@ -612,10 +844,10 @@
 			);
 			mainGroup = 2F7E08A4285BE6EF009F4416;
 			packageReferences = (
-				2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */,
+				2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal.git" */,
 				2FC7CB532869140C00FAADE6 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				2FEF9121286A6AB0007A3B1F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios.git" */,
 			);
 			productRefGroup = 2F7E08AE285BE6F0009F4416 /* Products */;
 			projectDirPath = "";
@@ -672,6 +904,7 @@
 				1487B5C1B7AAD647AED36016 /* LoginConfigurator.swift in Sources */,
 				774582D9BCE1D15CD9311B66 /* LoginInitializer.swift in Sources */,
 				EEC52EA25BCA88B2B24EC75F /* LoginInteractor.swift in Sources */,
+				2F4A0F442872512F00991007 /* ErrorResponse.swift in Sources */,
 				5554C821C720D745EE50534C /* LoginInteractorInput.swift in Sources */,
 				A83B29EE2FD7FB661E205679 /* LoginInteractorOutput.swift in Sources */,
 				2FEF911C286A613D007A3B1F /* LoginResource.swift in Sources */,
@@ -690,6 +923,18 @@
 				85B88AF8681E917CF3D93D7D /* LoginViewOutput.swift in Sources */,
 				2FEF9120286A61AC007A3B1F /* JSONUtility.swift in Sources */,
 				2FEF9112286A5B05007A3B1F /* LoginRequest.swift in Sources */,
+				3CE99A6FBC310E240265BF96 /* MainTabBarConfigurator.swift in Sources */,
+				712B102F8287F9C5E7958D2A /* MainTabBarInitializer.swift in Sources */,
+				1AD0D92D3525658E739A94F4 /* MainTabBarInteractor.swift in Sources */,
+				49477853E689996FA0F85AC5 /* MainTabBarInteractorInput.swift in Sources */,
+				A0DA868E000DAEC755E1E225 /* MainTabBarInteractorOutput.swift in Sources */,
+				2C3CFC31BED8FC718ABF15EB /* MainTabBarModuleInput.swift in Sources */,
+				BC59ED1B2B73A90D8F9E7DAD /* MainTabBarPresenter.swift in Sources */,
+				FE6B469AC7309BDE877158DA /* MainTabBarRouter.swift in Sources */,
+				E15BAB33198EC07C43278FB2 /* MainTabBarRouterInput.swift in Sources */,
+				99D133C7C97138003626A487 /* MainTabBarViewController.swift in Sources */,
+				FBC01F477B3BF0DB6DCF399B /* MainTabBarViewInput.swift in Sources */,
+				A4BD685B81C4B6A149443C98 /* MainTabBarViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,6 +957,11 @@
 				C4E56F2455125F5E42778667 /* LoginRouterTest.swift in Sources */,
 				92C1FE9E9CFD2EB84A28387B /* LoginPresenterTest.swift in Sources */,
 				3032C22F064D924CE0800C9D /* LoginViewTest.swift in Sources */,
+				7C039616D88C00898C5A0FD7 /* MainTabBarConfiguratorTest.swift in Sources */,
+				704EE7FBC97930F3101B3943 /* MainTabBarInteractorTest.swift in Sources */,
+				04AF3E5F6821188628D8054A /* MainTabBarRouterTest.swift in Sources */,
+				6E09CF0893A6CC13CF334832 /* MainTabBarPresenterTest.swift in Sources */,
+				817F5E69FFF9BBD251FADF77 /* MainTabBarViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1026,7 +1276,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
@@ -1034,7 +1284,7 @@
 				version = 3.3.0;
 			};
 		};
-		2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */ = {
+		2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/slackhq/PanModal.git";
 			requirement = {
@@ -1063,12 +1313,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		2FB2BE45286E4D7B00531BD8 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = 2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios.git" */;
 			productName = Lottie;
 		};
 		2FC7CB3A2868F41A00FAADE6 /* PanModal */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */;
+			package = 2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal.git" */;
 			productName = PanModal;
 		};
 		2FC7CB542869140C00FAADE6 /* KeychainAccess */ = {

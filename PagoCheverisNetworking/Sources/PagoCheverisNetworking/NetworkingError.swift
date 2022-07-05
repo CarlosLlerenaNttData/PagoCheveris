@@ -7,7 +7,8 @@
 
 public enum NetworkingError: Error {
     
-    case apiError(Int, error: Decodable)
+    case apiError(error: Decodable)
+    case notConnectionInternet(Error)
     case invalidRequestError(String)
     case invalidResponse
     case parsingError(Error, String)

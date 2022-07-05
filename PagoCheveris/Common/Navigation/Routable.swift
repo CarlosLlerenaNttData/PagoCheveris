@@ -31,7 +31,6 @@ protocol Routable {
                                                  type: T.Type,
                                                  in storyBoard: UIStoryboard.Storyboard,
                                                  from viewController: UIViewController,
-                                                 previousViewControllers: [UIViewController],
                                                  moduleConfiguration: (T) -> Void)
 }
 

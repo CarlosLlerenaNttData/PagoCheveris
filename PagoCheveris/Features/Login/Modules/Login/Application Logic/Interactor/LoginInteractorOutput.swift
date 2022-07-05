@@ -7,4 +7,7 @@
 //
 
 protocol LoginInteractorOutput: AnyObject {
+    func didLogin(user: User)
+    func didFailLogin(title: String, message: String)
+    func didLoadCredentials(username: String, password: String)
 }

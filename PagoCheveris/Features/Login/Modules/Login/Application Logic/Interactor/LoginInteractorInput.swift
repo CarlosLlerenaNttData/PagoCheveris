@@ -7,4 +7,8 @@
 //
 
 protocol LoginInteractorInput {
+    func login(username: String, password: String)
+    func loadCredentials()
+    func saveCredentials(username: String, password: String)
+    func deleteUserCredentials()
 }

@@ -9,12 +9,12 @@ import Combine
 import PagoCheverisNetworking
 
 protocol LoginClientProvider {
-    func login(parameters: LoginRequest) ->  AnyPublisher<LoginResponse, Error>
+    func login(parameters: LoginRequest) ->  AnyPublisher<LoginResponse, NetworkingError>
 }
 
 final class LoginClient: RestClient, LoginClientProvider {
     
-    func login(parameters: LoginRequest) -> AnyPublisher<LoginResponse, Error> {
-        request(resource: LoginResource.login, parameters: parameters.json, headers: HTTPHeaders(), type: LoginResponse.self, errorType: LoginResponse.self)
+    func login(parameters: LoginRequest) -> AnyPublisher<LoginResponse, NetworkingError> {
+        request(resource: LoginResource.login, parameters: parameters.json, headers: HTTPHeaders(), type: LoginResponse.self, errorType: ErrorResponse.self)
     }
 }

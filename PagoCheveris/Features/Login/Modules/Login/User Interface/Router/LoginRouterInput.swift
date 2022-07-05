@@ -7,4 +7,5 @@
 //
 
 protocol LoginRouterInput {
+    func routeToToMainNavigation()
 }

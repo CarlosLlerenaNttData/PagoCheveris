@@ -13,6 +13,8 @@ protocol LoginViewInput: AnyObject {
     func setUpInitialState()
     func moduleInput() -> LoginModuleInput
     func showAlert(title: String, message: String, primaryAction: PCPanModalAction, secondaryAction: PCPanModalAction?)
+    func loadCredentials(username: String, password: String)
+    func updateRememberButton(isSelectedRememberButton: Bool)
     func showActivityIndicatorView()
     func hideActivityIndicatorView()
 }
