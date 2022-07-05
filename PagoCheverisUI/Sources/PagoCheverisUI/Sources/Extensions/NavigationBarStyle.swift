@@ -9,6 +9,7 @@ import UIKit
 
 public protocol NavigationBarStyle {
     
+    func primaryStyle()
     func clearStyle()
 }
 
@@ -24,6 +25,17 @@ public extension NavigationBarStyle where Self: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor.white
         navigationItem.backButtonTitle = ""
     }
-    
+
+    func primaryStyle() {
+        let appearance = UINavigationBarAppearance()
+        
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = PCColors.tintedNavigationBar
+        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : PCColors.tintedNavigationBarItem]
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        navigationController?.navigationBar.tintColor = PCColors.tintedNavigationBarItem
+        navigationItem.backButtonTitle = ""
+    }
     
 }

@@ -49,8 +49,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func changeRootViewControllerWithIdentifier(_ identifier:String, animated:Bool) {
-        let controller = UIStoryboard.storyboard(.login, bundle: nil).instantiateViewController(withIdentifier: identifier)
-            
+        let controller = UINavigationController(rootViewController: UIStoryboard.storyboard(.login, bundle: nil).instantiateViewController(withIdentifier: identifier))
+
             if animated {
                 let snapshot:UIView = (self.window?.snapshotView(afterScreenUpdates: true))!
                 controller.view.addSubview(snapshot);

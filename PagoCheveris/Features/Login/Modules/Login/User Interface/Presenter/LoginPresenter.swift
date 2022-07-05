@@ -65,6 +65,7 @@ extension LoginPresenter: LoginInteractorOutput {
             interactor.saveCredentials(username: username, password: password)
         }
         
+        router.routeToToMainNavigation()
     }
     
     func didFailLogin(title: String, message: String) {

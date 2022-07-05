@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import PagoCheverisUI
 
-class MainTabBarViewController: UIViewController {
+class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate, NavigationBarStyle {
+    
+    // MARK: Properties
+
+    @IBOutlet weak var tabBarMenu: UITabBar!
 
     var output: MainTabBarViewOutput!
 
@@ -17,9 +22,11 @@ class MainTabBarViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-	    // TODO: View set up code goes here. Please remove this comment.
-
+        delegate = self
+        selectedIndex = 0
+        tabBarMenu.tintColor = PCColors.tabBarTint
+        view.backgroundColor = PCColors.viewBackground2
+        primaryStyle()
         output.viewIsReady()
     }
 }

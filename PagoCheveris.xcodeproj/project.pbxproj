@@ -12,6 +12,7 @@
 		1AD0D92D3525658E739A94F4 /* MainTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DBD666B7B59C730511F9F /* MainTabBarInteractor.swift */; };
 		2C3CFC31BED8FC718ABF15EB /* MainTabBarModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721B8D04C5116C6CC35BEE42 /* MainTabBarModuleInput.swift */; };
 		2F4A0F442872512F00991007 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A0F432872512F00991007 /* ErrorResponse.swift */; };
+		2F4A0F492874B50E00991007 /* MainNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A0F482874B50E00991007 /* MainNavigation.storyboard */; };
 		2F7E08B1285BE6F0009F4416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08B0285BE6F0009F4416 /* AppDelegate.swift */; };
 		2F7E08B3285BE6F0009F4416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08B2285BE6F0009F4416 /* SceneDelegate.swift */; };
 		2F7E08BA285BE6F0009F4416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E08B9285BE6F0009F4416 /* Assets.xcassets */; };
@@ -101,6 +102,7 @@
 		13E0143C03698EA25BE58F94 /* MainTabBarPresenterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarPresenterTest.swift; sourceTree = "<group>"; };
 		29EC8183199AEF1A7B045989 /* LoginViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewTest.swift; sourceTree = "<group>"; };
 		2F4A0F432872512F00991007 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		2F4A0F482874B50E00991007 /* MainNavigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainNavigation.storyboard; sourceTree = "<group>"; };
 		2F7E08AD285BE6F0009F4416 /* PagoCheveris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagoCheveris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7E08B0285BE6F0009F4416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F7E08B2285BE6F0009F4416 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -214,7 +216,6 @@
 				924CA7BA896A50F74F99AF4D /* MainTabBarViewInput.swift */,
 				363473EAC9D1D0B303CD39FB /* MainTabBarViewOutput.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -223,7 +224,6 @@
 			children = (
 				A06E92C303A0F4D77BC2292E /* MainTabBarConfiguratorTest.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -260,7 +260,6 @@
 				DCBDBE5D5F71FA136D6EB594 /* Presenter */,
 				8EC9491375204CB9E1C756BE /* View */,
 			);
-			name = "User Interface";
 			path = "User Interface";
 			sourceTree = "<group>";
 		};
@@ -380,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				2FC7CB5A28695BD100FAADE6 /* Login.storyboard */,
+				2F4A0F482874B50E00991007 /* MainNavigation.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -459,7 +459,6 @@
 				3B76D5DF254BAE82D84E8FCF /* Application Logic */,
 				BE49D6B9AA1FD347A7BD44D9 /* User Interface */,
 			);
-			name = MainTabBar;
 			path = MainTabBar;
 			sourceTree = "<group>";
 		};
@@ -469,7 +468,6 @@
 				7D3DFE6E73A244FD6168493D /* Configurator */,
 				E0D2D96A483AEE8795C685C5 /* Interactor */,
 			);
-			name = "Application Logic";
 			path = "Application Logic";
 			sourceTree = "<group>";
 		};
@@ -478,7 +476,6 @@
 			children = (
 				CD6EB6984E9C80DF29C25995 /* MainTabBarInteractorTest.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -487,7 +484,6 @@
 			children = (
 				09B5A31846FBA06409C01930 /* MainTabBarRouterTest.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -522,7 +518,6 @@
 				0ACD804EB7233ED0A312FD9D /* Configurator */,
 				42C343DFEBB3C82837ECB3AF /* Interactor */,
 			);
-			name = "Application Logic";
 			path = "Application Logic";
 			sourceTree = "<group>";
 		};
@@ -531,7 +526,6 @@
 			children = (
 				C893A7F5DAB94F7C5A6B60F2 /* Modules */,
 			);
-			name = Common;
 			path = Common;
 			sourceTree = "<group>";
 		};
@@ -541,7 +535,6 @@
 				A1AA274215537C0823D410FD /* MainTabBarConfigurator.swift */,
 				131E863AD68AC59B021DAD27 /* MainTabBarInitializer.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -551,7 +544,6 @@
 				721B8D04C5116C6CC35BEE42 /* MainTabBarModuleInput.swift */,
 				0588C547A84D6AE809A504C6 /* MainTabBarPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -570,7 +562,6 @@
 				7879D33A25E4BC0432A7955F /* Application Logic */,
 				27E70440C1414A8F0D53A8F5 /* User Interface */,
 			);
-			name = MainTabBar;
 			path = MainTabBar;
 			sourceTree = "<group>";
 		};
@@ -599,7 +590,6 @@
 			children = (
 				34E2F4217F5D44682E9A7F0B /* MainTabBarViewTest.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -635,7 +625,6 @@
 				72F06CE03EC80D4D9D46E0F1 /* MainTabBarRouter.swift */,
 				CD888F68D933326E64E77CE3 /* MainTabBarRouterInput.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -671,7 +660,6 @@
 				A6B7A879FBB346DE0BA8CE52 /* Router */,
 				0852196514B06F3ACB3770D4 /* View */,
 			);
-			name = "User Interface";
 			path = "User Interface";
 			sourceTree = "<group>";
 		};
@@ -688,7 +676,6 @@
 			children = (
 				841B1EC1BC9D0A006601FA41 /* MainTabBar */,
 			);
-			name = Modules;
 			path = Modules;
 			sourceTree = "<group>";
 		};
@@ -705,7 +692,6 @@
 			children = (
 				13E0143C03698EA25BE58F94 /* MainTabBarPresenterTest.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
@@ -716,7 +702,6 @@
 				473AEF3A91BA4F6435BEC279 /* MainTabBarInteractorInput.swift */,
 				716859836BC2E14B35418D32 /* MainTabBarInteractorOutput.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -844,10 +829,10 @@
 			);
 			mainGroup = 2F7E08A4285BE6EF009F4416;
 			packageReferences = (
-				2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal.git" */,
+				2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */,
 				2FC7CB532869140C00FAADE6 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				2FEF9121286A6AB0007A3B1F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios.git" */,
+				2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 2F7E08AE285BE6F0009F4416 /* Products */;
 			projectDirPath = "";
@@ -866,6 +851,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F7E08BD285BE6F0009F4416 /* LaunchScreen.storyboard in Resources */,
+				2F4A0F492874B50E00991007 /* MainNavigation.storyboard in Resources */,
 				2F7E08BA285BE6F0009F4416 /* Assets.xcassets in Resources */,
 				2FC7CB5B28695BD200FAADE6 /* Login.storyboard in Resources */,
 			);
@@ -1276,7 +1262,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios.git" */ = {
+		2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
@@ -1284,7 +1270,7 @@
 				version = 3.3.0;
 			};
 		};
-		2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal.git" */ = {
+		2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/slackhq/PanModal.git";
 			requirement = {
@@ -1313,12 +1299,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		2FB2BE45286E4D7B00531BD8 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios.git" */;
+			package = 2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
 		2FC7CB3A2868F41A00FAADE6 /* PanModal */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal.git" */;
+			package = 2FC7CB392868F41A00FAADE6 /* XCRemoteSwiftPackageReference "PanModal" */;
 			productName = PanModal;
 		};
 		2FC7CB542869140C00FAADE6 /* KeychainAccess */ = {

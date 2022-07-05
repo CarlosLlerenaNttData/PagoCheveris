@@ -70,7 +70,6 @@ class LoginViewController: UIViewController, NavigationBarStyle {
     
     @IBOutlet weak var loginButton: PCButtonPrimary! {
         didSet{
-            loginButton.isEnabled = false
             loginButton.setTitle(LoginStrings.Login.submit, for: .normal)
         }
     }
@@ -153,6 +152,7 @@ extension LoginViewController: LoginViewInput, PCAlertPanModalPresentable, PCAct
     func loadCredentials(username: String, password: String) {
         usernameTextField.text = username
         passwordTextField.text = password
+        loginButton.isEnabled = shouldEnableLogInButton
     }
     
     func updateRememberButton(isSelectedRememberButton: Bool) {
