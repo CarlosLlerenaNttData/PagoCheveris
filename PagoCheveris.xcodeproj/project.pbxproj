@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004FAD707456F082EC174F9D /* PaymentsViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A7F004E9E0EAFF2928A272 /* PaymentsViewTest.swift */; };
 		04AF3E5F6821188628D8054A /* MainTabBarRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5A31846FBA06409C01930 /* MainTabBarRouterTest.swift */; };
+		04E34A07B28171AB834A2AEF /* PaymentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28022567B0330260A252AB4 /* PaymentsRouter.swift */; };
+		0627F2D6E64704F837DD55B6 /* PaymentsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BB30A9A49FF58E0BDC0152 /* PaymentsInteractorInput.swift */; };
+		0E64CD4E2FBADBFDFF4CB1F8 /* PaymentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A418CE716114D72DEB322D0 /* PaymentsInteractor.swift */; };
 		1487B5C1B7AAD647AED36016 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646E37092A8CAEE093C50BBD /* LoginConfigurator.swift */; };
 		1AD0D92D3525658E739A94F4 /* MainTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5DBD666B7B59C730511F9F /* MainTabBarInteractor.swift */; };
+		2096B35886795C6604DE34E3 /* PaymentsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BEA635422AFC47E4136BB /* PaymentsViewOutput.swift */; };
 		2C3CFC31BED8FC718ABF15EB /* MainTabBarModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721B8D04C5116C6CC35BEE42 /* MainTabBarModuleInput.swift */; };
 		2F4A0F442872512F00991007 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A0F432872512F00991007 /* ErrorResponse.swift */; };
 		2F4A0F492874B50E00991007 /* MainNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A0F482874B50E00991007 /* MainNavigation.storyboard */; };
+		2F4A0F4B2874FE8700991007 /* Payments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A0F4A2874FE8600991007 /* Payments.storyboard */; };
 		2F7E08B1285BE6F0009F4416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08B0285BE6F0009F4416 /* AppDelegate.swift */; };
 		2F7E08B3285BE6F0009F4416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08B2285BE6F0009F4416 /* SceneDelegate.swift */; };
 		2F7E08BA285BE6F0009F4416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E08B9285BE6F0009F4416 /* Assets.xcassets */; };
@@ -44,12 +50,16 @@
 		2FEF912F286C01DC007A3B1F /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF912E286C01DC007A3B1F /* Host.swift */; };
 		2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2FFDBE17286411050041DBD3 /* PagoCheverisUI */; };
 		3032C22F064D924CE0800C9D /* LoginViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EC8183199AEF1A7B045989 /* LoginViewTest.swift */; };
+		31C4D7E4778928130C550CE2 /* PaymentsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E105B6A36DC7A6E502B57A /* PaymentsPresenterTest.swift */; };
+		3772DF2F1E5529CD32F5F36B /* PaymentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487524E675EE5D500F818455 /* PaymentsPresenter.swift */; };
 		3CE99A6FBC310E240265BF96 /* MainTabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AA274215537C0823D410FD /* MainTabBarConfigurator.swift */; };
 		49477853E689996FA0F85AC5 /* MainTabBarInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473AEF3A91BA4F6435BEC279 /* MainTabBarInteractorInput.swift */; };
+		5391439987B2FB09FB679762 /* PaymentsInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00021A137CEFC8E5874A38B7 /* PaymentsInitializer.swift */; };
 		53C41F254DF61EA82384BC21 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114BE982B9DB5A2CF906475B /* LoginRouter.swift */; };
 		5554C821C720D745EE50534C /* LoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF24E0EE56A4FCBE62F60266 /* LoginInteractorInput.swift */; };
 		5C27C8AE88F897C88D3B0107 /* LoginViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316887CB1BEC1646255E1944 /* LoginViewInput.swift */; };
 		6434CE4D3FA8C5480DCCF063 /* LoginInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05110747F4F8728DFD2EA35 /* LoginInteractorTest.swift */; };
+		67771248EFBA94CF388BA58F /* PaymentsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7F39E054D77912BEF2E691 /* PaymentsInteractorOutput.swift */; };
 		6E09CF0893A6CC13CF334832 /* MainTabBarPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E0143C03698EA25BE58F94 /* MainTabBarPresenterTest.swift */; };
 		6F181D00379504B66FBBC9CA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36D958231BEECC58CB909F /* LoginPresenter.swift */; };
 		704EE7FBC97930F3101B3943 /* MainTabBarInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6EB6984E9C80DF29C25995 /* MainTabBarInteractorTest.swift */; };
@@ -64,10 +74,18 @@
 		A0DA868E000DAEC755E1E225 /* MainTabBarInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716859836BC2E14B35418D32 /* MainTabBarInteractorOutput.swift */; };
 		A4BD685B81C4B6A149443C98 /* MainTabBarViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363473EAC9D1D0B303CD39FB /* MainTabBarViewOutput.swift */; };
 		A83B29EE2FD7FB661E205679 /* LoginInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB609514F8E5F2E28737762 /* LoginInteractorOutput.swift */; };
+		B29AC6F6ED616F55FBB3DB83 /* PaymentsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD13A65F1B3442F137ED92F /* PaymentsViewInput.swift */; };
+		B6BE9E81A1BA08B2FBDA752B /* PaymentsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA5BCC2A4B703FE9B347D03 /* PaymentsRouterInput.swift */; };
+		BA3B470494852BBF0218E78D /* PaymentsInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9EA847D950056ABC366D9 /* PaymentsInteractorTest.swift */; };
 		BC59ED1B2B73A90D8F9E7DAD /* MainTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0588C547A84D6AE809A504C6 /* MainTabBarPresenter.swift */; };
+		C3E27179AD3C40A0D5B9263D /* PaymentsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5518FDC387A9FEEF2CCF7B31 /* PaymentsModuleInput.swift */; };
 		C4E56F2455125F5E42778667 /* LoginRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D3210B6F3D7A9C79A49CA /* LoginRouterTest.swift */; };
+		CE06B151323A4C9F919D8B3C /* PaymentsConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D80989E230494DDCEA109 /* PaymentsConfiguratorTest.swift */; };
+		E1488FBD12FD4A344C5794D2 /* PaymentsRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1F214B740BB59281F8AD0 /* PaymentsRouterTest.swift */; };
 		E15BAB33198EC07C43278FB2 /* MainTabBarRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD888F68D933326E64E77CE3 /* MainTabBarRouterInput.swift */; };
+		E92D57F81E8AD1931B16A069 /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF9C16998CA561D4BDA679 /* PaymentsViewController.swift */; };
 		EA264CDD09D75A175985EA60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375E63DDC5F0D38E0DEC64E /* LoginViewController.swift */; };
+		EAD41C3C08D3EC3DB4EF04B7 /* PaymentsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2974CC69EF5C5F7FBEFBF8 /* PaymentsConfigurator.swift */; };
 		EEC52EA25BCA88B2B24EC75F /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD6B762E80B820A000E9B3 /* LoginInteractor.swift */; };
 		F408E9C844478A60058E3ECB /* LoginRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6930183B5D72EF2944044FFC /* LoginRouterInput.swift */; };
 		FBBD7E5E7BFDE86D674883CB /* LoginConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFEEB10C136FD689A141C61 /* LoginConfiguratorTest.swift */; };
@@ -93,16 +111,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00021A137CEFC8E5874A38B7 /* PaymentsInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsInitializer.swift; sourceTree = "<group>"; };
 		0588C547A84D6AE809A504C6 /* MainTabBarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarPresenter.swift; sourceTree = "<group>"; };
 		09B5A31846FBA06409C01930 /* MainTabBarRouterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarRouterTest.swift; sourceTree = "<group>"; };
+		09E105B6A36DC7A6E502B57A /* PaymentsPresenterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsPresenterTest.swift; sourceTree = "<group>"; };
 		09E5495F179F93D33FD01C63 /* LoginInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInitializer.swift; sourceTree = "<group>"; };
 		114BE982B9DB5A2CF906475B /* LoginRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		131E863AD68AC59B021DAD27 /* MainTabBarInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarInitializer.swift; sourceTree = "<group>"; };
 		1375E63DDC5F0D38E0DEC64E /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		13E0143C03698EA25BE58F94 /* MainTabBarPresenterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarPresenterTest.swift; sourceTree = "<group>"; };
 		29EC8183199AEF1A7B045989 /* LoginViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewTest.swift; sourceTree = "<group>"; };
+		2D5D80989E230494DDCEA109 /* PaymentsConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsConfiguratorTest.swift; sourceTree = "<group>"; };
 		2F4A0F432872512F00991007 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		2F4A0F482874B50E00991007 /* MainNavigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainNavigation.storyboard; sourceTree = "<group>"; };
+		2F4A0F4A2874FE8600991007 /* Payments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payments.storyboard; sourceTree = "<group>"; };
 		2F7E08AD285BE6F0009F4416 /* PagoCheveris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagoCheveris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7E08B0285BE6F0009F4416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F7E08B2285BE6F0009F4416 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,30 +154,44 @@
 		2FEF9129286C0151007A3B1F /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		2FEF912E286C01DC007A3B1F /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
 		316887CB1BEC1646255E1944 /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
+		344BEA635422AFC47E4136BB /* PaymentsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsViewOutput.swift; sourceTree = "<group>"; };
 		34E2F4217F5D44682E9A7F0B /* MainTabBarViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarViewTest.swift; sourceTree = "<group>"; };
 		363473EAC9D1D0B303CD39FB /* MainTabBarViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarViewOutput.swift; sourceTree = "<group>"; };
+		42E9EA847D950056ABC366D9 /* PaymentsInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsInteractorTest.swift; sourceTree = "<group>"; };
 		473AEF3A91BA4F6435BEC279 /* MainTabBarInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarInteractorInput.swift; sourceTree = "<group>"; };
+		487524E675EE5D500F818455 /* PaymentsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsPresenter.swift; sourceTree = "<group>"; };
 		4EFEEB10C136FD689A141C61 /* LoginConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfiguratorTest.swift; sourceTree = "<group>"; };
+		5518FDC387A9FEEF2CCF7B31 /* PaymentsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsModuleInput.swift; sourceTree = "<group>"; };
 		5A36D958231BEECC58CB909F /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		5A418CE716114D72DEB322D0 /* PaymentsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsInteractor.swift; sourceTree = "<group>"; };
 		5A837005ECD073FBD21C6F1C /* LoginModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginModuleInput.swift; sourceTree = "<group>"; };
 		5EBD6B762E80B820A000E9B3 /* LoginInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		61BB30A9A49FF58E0BDC0152 /* PaymentsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsInteractorInput.swift; sourceTree = "<group>"; };
 		646E37092A8CAEE093C50BBD /* LoginConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
 		6930183B5D72EF2944044FFC /* LoginRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterInput.swift; sourceTree = "<group>"; };
+		6CEF9C16998CA561D4BDA679 /* PaymentsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 		703D3210B6F3D7A9C79A49CA /* LoginRouterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterTest.swift; sourceTree = "<group>"; };
 		716859836BC2E14B35418D32 /* MainTabBarInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarInteractorOutput.swift; sourceTree = "<group>"; };
 		721B8D04C5116C6CC35BEE42 /* MainTabBarModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarModuleInput.swift; sourceTree = "<group>"; };
 		72F06CE03EC80D4D9D46E0F1 /* MainTabBarRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarRouter.swift; sourceTree = "<group>"; };
+		8AD13A65F1B3442F137ED92F /* PaymentsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsViewInput.swift; sourceTree = "<group>"; };
+		8B2974CC69EF5C5F7FBEFBF8 /* PaymentsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsConfigurator.swift; sourceTree = "<group>"; };
 		8B2E2BA79F154FB7A20F3D62 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenterTest.swift; sourceTree = "<group>"; };
 		924CA7BA896A50F74F99AF4D /* MainTabBarViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarViewInput.swift; sourceTree = "<group>"; };
+		93A7F004E9E0EAFF2928A272 /* PaymentsViewTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsViewTest.swift; sourceTree = "<group>"; };
 		A06E92C303A0F4D77BC2292E /* MainTabBarConfiguratorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarConfiguratorTest.swift; sourceTree = "<group>"; };
 		A1AA274215537C0823D410FD /* MainTabBarConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarConfigurator.swift; sourceTree = "<group>"; };
+		AEE1F214B740BB59281F8AD0 /* PaymentsRouterTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsRouterTest.swift; sourceTree = "<group>"; };
 		AF24E0EE56A4FCBE62F60266 /* LoginInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorInput.swift; sourceTree = "<group>"; };
 		B05110747F4F8728DFD2EA35 /* LoginInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorTest.swift; sourceTree = "<group>"; };
+		BAA5BCC2A4B703FE9B347D03 /* PaymentsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsRouterInput.swift; sourceTree = "<group>"; };
 		BFB609514F8E5F2E28737762 /* LoginInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorOutput.swift; sourceTree = "<group>"; };
 		CD6EB6984E9C80DF29C25995 /* MainTabBarInteractorTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarInteractorTest.swift; sourceTree = "<group>"; };
 		CD888F68D933326E64E77CE3 /* MainTabBarRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarRouterInput.swift; sourceTree = "<group>"; };
 		DB5DBD666B7B59C730511F9F /* MainTabBarInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarInteractor.swift; sourceTree = "<group>"; };
 		E0F5C6F9C8ACAADB1B668753 /* LoginViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewOutput.swift; sourceTree = "<group>"; };
+		E28022567B0330260A252AB4 /* PaymentsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsRouter.swift; sourceTree = "<group>"; };
+		EC7F39E054D77912BEF2E691 /* PaymentsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PaymentsInteractorOutput.swift; sourceTree = "<group>"; };
 		F3429A25405CEED503A77AE5 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,10 +263,20 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		18C51FD8F21CC43923084B85 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5518FDC387A9FEEF2CCF7B31 /* PaymentsModuleInput.swift */,
+				487524E675EE5D500F818455 /* PaymentsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		192D204BF9742F5CEA65FE7C /* Features */ = {
 			isa = PBXGroup;
 			children = (
 				014B5543349CA7ECC0F00676 /* Login */,
+				5C825B2BFED662EFF567E7DE /* Payments */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -239,8 +285,18 @@
 			isa = PBXGroup;
 			children = (
 				DB1657BCF3A458B4C030E113 /* Login */,
+				EDA2A2CF4DAEB031C75ECD54 /* Payments */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		1CCCA9089CBF0476F40ACC1D /* PaymentsHome */ = {
+			isa = PBXGroup;
+			children = (
+				E64E4C58B5DDDD1506DB9575 /* Application Logic */,
+				EBA90A4AAC446EA5310F8014 /* User Interface */,
+			);
+			path = PaymentsHome;
 			sourceTree = "<group>";
 		};
 		1E4E07E55F79AC524481E7B2 /* Application Logic */ = {
@@ -380,6 +436,7 @@
 			children = (
 				2FC7CB5A28695BD100FAADE6 /* Login.storyboard */,
 				2F4A0F482874B50E00991007 /* MainNavigation.storyboard */,
+				2F4A0F4A2874FE8600991007 /* Payments.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -471,12 +528,29 @@
 			path = "Application Logic";
 			sourceTree = "<group>";
 		};
+		3D38236AEFD910026E2CBB6C /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				76CDE05ABCC59116D02E06D2 /* Configurator */,
+				4BD2D01238D6C84D48187C71 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
 		42C343DFEBB3C82837ECB3AF /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
 				CD6EB6984E9C80DF29C25995 /* MainTabBarInteractorTest.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		47B6E9A67D1EF5E2B95B1FC0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1CCCA9089CBF0476F40ACC1D /* PaymentsHome */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		47EA6F05FF8D2651C72D14B8 /* Router */ = {
@@ -487,12 +561,32 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		4BD2D01238D6C84D48187C71 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5A418CE716114D72DEB322D0 /* PaymentsInteractor.swift */,
+				61BB30A9A49FF58E0BDC0152 /* PaymentsInteractorInput.swift */,
+				EC7F39E054D77912BEF2E691 /* PaymentsInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		57C937588ECD789729C9FDBB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				9769C87E3B00E2308502D89C /* Login */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		594754A9AB451491E1DA7372 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				18C51FD8F21CC43923084B85 /* Presenter */,
+				AFD2C431CF8CE9B47E5C4D5D /* Router */,
+				C4CB5DFD3CB4F26CD3C3E9D8 /* View */,
+			);
+			path = "User Interface";
 			sourceTree = "<group>";
 		};
 		5A7639B93CE4A232EDE59F46 /* Modules */ = {
@@ -503,6 +597,22 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		5C825B2BFED662EFF567E7DE /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				7D442D2F115D125F0992671D /* Modules */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
+		5D115A60CFB15C434B8929E5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AEE1F214B740BB59281F8AD0 /* PaymentsRouterTest.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		613A6D3831D797BDD294B600 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,6 +620,24 @@
 				069BBC93F582769C8999DDC1 /* User Interface */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		6A50395E6CC2354FF13292C4 /* PaymentsHome */ = {
+			isa = PBXGroup;
+			children = (
+				3D38236AEFD910026E2CBB6C /* Application Logic */,
+				594754A9AB451491E1DA7372 /* User Interface */,
+			);
+			path = PaymentsHome;
+			sourceTree = "<group>";
+		};
+		76CDE05ABCC59116D02E06D2 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				8B2974CC69EF5C5F7FBEFBF8 /* PaymentsConfigurator.swift */,
+				00021A137CEFC8E5874A38B7 /* PaymentsInitializer.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		7879D33A25E4BC0432A7955F /* Application Logic */ = {
@@ -536,6 +664,14 @@
 				131E863AD68AC59B021DAD27 /* MainTabBarInitializer.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		7D442D2F115D125F0992671D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6A50395E6CC2354FF13292C4 /* PaymentsHome */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		7DEE63BF2DFF86BBE8B68B02 /* Presenter */ = {
@@ -593,6 +729,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8ED9BC3F3DF5B6655D6AF995 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				42E9EA847D950056ABC366D9 /* PaymentsInteractorTest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		911AB14CFD9C7F7B09D6BC5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				93A7F004E9E0EAFF2928A272 /* PaymentsViewTest.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9769C87E3B00E2308502D89C /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -637,6 +789,15 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		AFD2C431CF8CE9B47E5C4D5D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E28022567B0330260A252AB4 /* PaymentsRouter.swift */,
+				BAA5BCC2A4B703FE9B347D03 /* PaymentsRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		B3928277B20E19504DBFD191 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -663,12 +824,30 @@
 			path = "User Interface";
 			sourceTree = "<group>";
 		};
+		C4CB5DFD3CB4F26CD3C3E9D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF9C16998CA561D4BDA679 /* PaymentsViewController.swift */,
+				8AD13A65F1B3442F137ED92F /* PaymentsViewInput.swift */,
+				344BEA635422AFC47E4136BB /* PaymentsViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C69774DED31B0306946E5CAF /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
 				B05110747F4F8728DFD2EA35 /* LoginInteractorTest.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C69ED2F1F5519E57CFBA27B3 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				2D5D80989E230494DDCEA109 /* PaymentsConfiguratorTest.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 		C893A7F5DAB94F7C5A6B60F2 /* Modules */ = {
@@ -714,6 +893,33 @@
 			path = "Application Logic";
 			sourceTree = "<group>";
 		};
+		E64E4C58B5DDDD1506DB9575 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C69ED2F1F5519E57CFBA27B3 /* Configurator */,
+				8ED9BC3F3DF5B6655D6AF995 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		EBA90A4AAC446EA5310F8014 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				5D115A60CFB15C434B8929E5 /* Router */,
+				FB08DB08A93713BEF008F8B7 /* Presenter */,
+				911AB14CFD9C7F7B09D6BC5C /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		EDA2A2CF4DAEB031C75ECD54 /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				47B6E9A67D1EF5E2B95B1FC0 /* Modules */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
 		F76B2219663428C0AF2B32A0 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -722,6 +928,14 @@
 				BFB609514F8E5F2E28737762 /* LoginInteractorOutput.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FB08DB08A93713BEF008F8B7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				09E105B6A36DC7A6E502B57A /* PaymentsPresenterTest.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		FD85B6FB14142D6F7B2437FE /* Presenter */ = {
@@ -854,6 +1068,7 @@
 				2F4A0F492874B50E00991007 /* MainNavigation.storyboard in Resources */,
 				2F7E08BA285BE6F0009F4416 /* Assets.xcassets in Resources */,
 				2FC7CB5B28695BD200FAADE6 /* Login.storyboard in Resources */,
+				2F4A0F4B2874FE8700991007 /* Payments.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -921,6 +1136,18 @@
 				99D133C7C97138003626A487 /* MainTabBarViewController.swift in Sources */,
 				FBC01F477B3BF0DB6DCF399B /* MainTabBarViewInput.swift in Sources */,
 				A4BD685B81C4B6A149443C98 /* MainTabBarViewOutput.swift in Sources */,
+				EAD41C3C08D3EC3DB4EF04B7 /* PaymentsConfigurator.swift in Sources */,
+				5391439987B2FB09FB679762 /* PaymentsInitializer.swift in Sources */,
+				0E64CD4E2FBADBFDFF4CB1F8 /* PaymentsInteractor.swift in Sources */,
+				0627F2D6E64704F837DD55B6 /* PaymentsInteractorInput.swift in Sources */,
+				67771248EFBA94CF388BA58F /* PaymentsInteractorOutput.swift in Sources */,
+				C3E27179AD3C40A0D5B9263D /* PaymentsModuleInput.swift in Sources */,
+				3772DF2F1E5529CD32F5F36B /* PaymentsPresenter.swift in Sources */,
+				04E34A07B28171AB834A2AEF /* PaymentsRouter.swift in Sources */,
+				B6BE9E81A1BA08B2FBDA752B /* PaymentsRouterInput.swift in Sources */,
+				E92D57F81E8AD1931B16A069 /* PaymentsViewController.swift in Sources */,
+				B29AC6F6ED616F55FBB3DB83 /* PaymentsViewInput.swift in Sources */,
+				2096B35886795C6604DE34E3 /* PaymentsViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -948,6 +1175,11 @@
 				04AF3E5F6821188628D8054A /* MainTabBarRouterTest.swift in Sources */,
 				6E09CF0893A6CC13CF334832 /* MainTabBarPresenterTest.swift in Sources */,
 				817F5E69FFF9BBD251FADF77 /* MainTabBarViewTest.swift in Sources */,
+				CE06B151323A4C9F919D8B3C /* PaymentsConfiguratorTest.swift in Sources */,
+				BA3B470494852BBF0218E78D /* PaymentsInteractorTest.swift in Sources */,
+				E1488FBD12FD4A344C5794D2 /* PaymentsRouterTest.swift in Sources */,
+				31C4D7E4778928130C550CE2 /* PaymentsPresenterTest.swift in Sources */,
+				004FAD707456F082EC174F9D /* PaymentsViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

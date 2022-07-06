@@ -7,13 +7,13 @@
 
 struct User: Codable {
 
-    let username: String
+    let username: String?
     let name: String
     let surname: String
     let email: String
     let requiredToken: Bool
 
-    init(username: String, name: String, surname: String, email: String, requiredToken: Bool) {
+    init(username: String? = nil, name: String, surname: String, email: String, requiredToken: Bool) {
         self.username = username
         self.name = name
         self.surname = surname
