@@ -90,6 +90,5 @@ extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable,
     func showEmptyState() {
         emptyStateLabel = UILabel()
         view.addSubview(emptyStateLabel)
-
     }
 }

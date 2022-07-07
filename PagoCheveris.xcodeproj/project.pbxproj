@@ -17,6 +17,7 @@
 		2096B35886795C6604DE34E3 /* PaymentsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BEA635422AFC47E4136BB /* PaymentsViewOutput.swift */; };
 		2C3CFC31BED8FC718ABF15EB /* MainTabBarModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721B8D04C5116C6CC35BEE42 /* MainTabBarModuleInput.swift */; };
 		2F0B4DF72876AC6D0044A644 /* PaymentsStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4DF62876AC6D0044A644 /* PaymentsStrings.swift */; };
+		2F0B4DFA28776AF00044A644 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2F0B4DF928776AF00044A644 /* SnapKit */; };
 		2F4A0F442872512F00991007 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A0F432872512F00991007 /* ErrorResponse.swift */; };
 		2F4A0F492874B50E00991007 /* MainNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A0F482874B50E00991007 /* MainNavigation.storyboard */; };
 		2F4A0F4B2874FE8700991007 /* Payments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A0F4A2874FE8600991007 /* Payments.storyboard */; };
@@ -205,6 +206,7 @@
 				2FEF9123286A6AB0007A3B1F /* IQKeyboardManagerSwift in Frameworks */,
 				2FC7CB3B2868F41A00FAADE6 /* PanModal in Frameworks */,
 				2FFDBE18286411050041DBD3 /* PagoCheverisUI in Frameworks */,
+				2F0B4DFA28776AF00044A644 /* SnapKit in Frameworks */,
 				2FEF911E286A6163007A3B1F /* PagoCheverisNetworking in Frameworks */,
 				2FC7CB552869140C00FAADE6 /* KeychainAccess in Frameworks */,
 				2FB2BE46286E4D7B00531BD8 /* Lottie in Frameworks */,
@@ -988,6 +990,7 @@
 				2FEF911D286A6163007A3B1F /* PagoCheverisNetworking */,
 				2FEF9122286A6AB0007A3B1F /* IQKeyboardManagerSwift */,
 				2FB2BE45286E4D7B00531BD8 /* Lottie */,
+				2F0B4DF928776AF00044A644 /* SnapKit */,
 			);
 			productName = PagoCheveris;
 			productReference = 2F7E08AD285BE6F0009F4416 /* PagoCheveris.app */;
@@ -1066,6 +1069,7 @@
 				2FC7CB532869140C00FAADE6 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				2FEF9121286A6AB0007A3B1F /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				2F0B4DF828776AF00044A644 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 2F7E08AE285BE6F0009F4416 /* Products */;
 			projectDirPath = "";
@@ -1514,6 +1518,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2F0B4DF828776AF00044A644 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.0;
+			};
+		};
 		2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -1549,6 +1561,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2F0B4DF928776AF00044A644 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F0B4DF828776AF00044A644 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		2FB2BE45286E4D7B00531BD8 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2FB2BE44286E4D7B00531BD8 /* XCRemoteSwiftPackageReference "lottie-ios" */;
