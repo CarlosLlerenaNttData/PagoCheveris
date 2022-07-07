@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 import PagoCheverisUI
 
 class PaymentsViewController: UIViewController {
@@ -90,5 +91,9 @@ extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable,
     func showEmptyState() {
         emptyStateLabel = UILabel()
         view.addSubview(emptyStateLabel)
+        
+        emptyStateLabel.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
     }
 }
