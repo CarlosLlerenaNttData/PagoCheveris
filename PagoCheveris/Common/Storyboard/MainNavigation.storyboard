@@ -39,10 +39,23 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="3Rk-Ck-m6a" kind="relationship" relationship="rootViewController" id="PlU-2t-r9D"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgf-Mg-BCg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2212" y="834"/>
+        </scene>
+        <!--Payments-->
+        <scene sceneID="rCv-gC-hCA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Payments" id="3Rk-Ck-m6a" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="j0H-nU-Qx6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OjA-wv-XkK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2971" y="858"/>
         </scene>
     </scenes>
     <resources>

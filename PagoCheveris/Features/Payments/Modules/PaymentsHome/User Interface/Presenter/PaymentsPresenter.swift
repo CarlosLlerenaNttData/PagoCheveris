@@ -29,6 +29,9 @@ extension PaymentsPresenter: PaymentsViewOutput {
 
     func viewIsReady() {
     }
+    
+    func didTapSortButton() {
+    }
 }
 
 

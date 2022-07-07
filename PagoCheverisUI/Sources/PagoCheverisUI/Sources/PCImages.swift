@@ -17,6 +17,7 @@ public struct PCImages {
         static let pcFaceLogo = "pcFaceLogo"
         static let pcRememberChecked = "pcRememberChecked"
         static let pcRememberUnchecked = "pcRememberUnchecked"
+        static let pcActionListLeadingArrowUpDown = "pcActionListLeadingArrowUpDown"
     }
     
     public static let pcActionCheckmark = UIImage.loadImage(named: Name.pcActionCheckmark)
@@ -26,4 +27,5 @@ public struct PCImages {
     public static let pcRememberChecked = UIImage.loadImage(named: Name.pcRememberChecked)
     public static let pcRememberUnchecked = UIImage.loadImage(named: Name.pcRememberUnchecked)
     public static let pcImageLogo = UIImage.loadImage(named: Name.pcImageLogo)
+    public static let pcActionListLeadingArrowUpDown = UIImage.loadImage(named: Name.pcActionListLeadingArrowUpDown)
 }

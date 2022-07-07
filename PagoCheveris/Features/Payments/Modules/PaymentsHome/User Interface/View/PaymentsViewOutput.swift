@@ -9,4 +9,5 @@
 protocol PaymentsViewOutput {
 
     func viewIsReady()
+    func didTapSortButton()
 }

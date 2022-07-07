@@ -12,18 +12,44 @@ import PagoCheverisUI
 class PaymentsViewController: UIViewController {
 
     // MARK: Properties
-
     var output: PaymentsViewOutput!
-
-   
+    
+    @IBOutlet weak var searchBar: UISearchBar! {
+        didSet {
+            searchBar.placeholder = CommonStrings.search
+            searchBar.backgroundImage = UIImage()
+            searchBar.searchBarStyle = .prominent
+            searchBar.backgroundColor = PCColors.viewBackground2
+            searchBar.searchTextField.backgroundColor = PCColors.viewBackground1
+        }
+    }
+    
+    @IBOutlet weak var sortButton: PCButton! {
+        didSet {
+            sortButton.tintColor = PCColors.buttonLightContent
+            sortButton.layer.cornerRadius = 8
+            sortButton.clipsToBounds = true
+            sortButton.backgroundColor = PCColors.buttonTertiary
+            sortButton.setImage(PCImages.pcActionListLeadingArrowUpDown, for: .normal)
+        }
+    }
+    
     // MARK: Life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-	    // TODO: View set up code goes here. Please remove this comment.
-
+        view.backgroundColor = PCColors.viewBackground2
+        configureMainNavigation()
         output.viewIsReady()
+    }
+    
+    func configureMainNavigation() {
+        navigationController?.isNavigationBarHidden = true
+        tabBarController?.title = PaymentsStrings.Home.title
+    }
+    
+    @IBAction func didTapSortButton(_ sender: PCButton) {
+        output.didTapSortButton()
     }
 }
 
