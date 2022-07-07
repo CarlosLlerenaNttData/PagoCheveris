@@ -34,6 +34,16 @@ class PaymentsViewController: UIViewController {
         }
     }
     
+    // MARK: Views
+
+    private var emptyStateLabel: UILabel! {
+        didSet {
+            emptyStateLabel?.text = PaymentsStrings.Home.noPendingPayments
+            emptyStateLabel?.font = PCFont.semiBold16
+            emptyStateLabel?.textColor = PCColors.labelQuinary
+        }
+    }
+    
     // MARK: Life cycle
 
     override func viewDidLoad() {
@@ -56,12 +66,30 @@ class PaymentsViewController: UIViewController {
 
 // MARK: PaymentsViewInput Methods
 
-extension PaymentsViewController: PaymentsViewInput {
+extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable, PCActivityIndicatorPresentable  {
 
     func setUpInitialState() {
     }
 
     func moduleInput() -> PaymentsModuleInput {
         return output as! PaymentsModuleInput
+    }
+    
+    func showAlert(title: String, message: String, primaryAction: PCPanModalAction, secondaryAction: PCPanModalAction?) {
+        showPCAlert(title: title, message: message, primaryAction: primaryAction, secondaryAction: secondaryAction)
+    }
+    
+    func showActivityIndicatorView() {
+        showPCActivityIndicatorView()
+    }
+    
+    func hideActivityIndicatorView() {
+        hidePCActivityIndicatorView()
+    }
+    
+    func showEmptyState() {
+        emptyStateLabel = UILabel()
+        view.addSubview(emptyStateLabel)
+
     }
 }

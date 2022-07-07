@@ -12,5 +12,6 @@ struct PaymentsStrings {
     struct Home {
         
         static let title = "Pagos"
+        static let noPendingPayments = "No hay pagos pendientes"
     }
 }
