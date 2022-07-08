@@ -13,5 +13,10 @@ struct PaymentsStrings {
         
         static let title = "Pagos"
         static let noPendingPayments = "No hay pagos pendientes"
+        static let servicesPay = "Pago de servicios"
+        static let institutionPayment = "Pago a institución"
+        static let creditCard = "Tarjetas de credito"
+        static let SUNAT = "Pago SUNAT"
+        static let rechargeCell = "Recarga de celular"
     }
 }
