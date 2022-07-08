@@ -67,9 +67,6 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
-                                <connections>
-                                    <action selector="didTapCheckboxButton:" destination="Sl2-pq-j6m" eventType="touchUpInside" id="2Eq-Ae-b9h"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KFk-mc-RdD">
                                 <rect key="frame" x="16" y="43.5" width="45" height="45"/>
@@ -115,12 +112,10 @@
             <connections>
                 <outlet property="amountLabel" destination="zpP-K3-psC" id="gq5-E2-ifM"/>
                 <outlet property="amountTitleLabel" destination="iv5-8B-Iqw" id="5wE-lM-BMM"/>
-                <outlet property="checkboxButton" destination="NyR-xI-WY5" id="gqb-hV-X8f"/>
                 <outlet property="containerView" destination="9UK-50-wH1" id="B7U-DZ-6fY"/>
                 <outlet property="contentLabel" destination="BLq-uq-lpd" id="dHm-fL-9Qy"/>
                 <outlet property="dateLabel" destination="1k6-xq-CQd" id="30C-bY-6XK"/>
                 <outlet property="typeAbbrvLabel" destination="fff-dR-bay" id="ai8-PX-TsJ"/>
-                <outlet property="typeIconImageView" destination="KFk-mc-RdD" id="QCz-9F-9lL"/>
                 <outlet property="typeLabel" destination="ega-0m-zJ0" id="Grd-bt-Tq9"/>
             </connections>
             <point key="canvasLocation" x="828.98550724637687" y="119.19642857142857"/>

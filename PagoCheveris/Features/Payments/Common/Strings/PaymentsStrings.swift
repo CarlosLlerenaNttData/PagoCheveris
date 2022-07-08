@@ -18,5 +18,6 @@ struct PaymentsStrings {
         static let creditCard = "Tarjetas de credito"
         static let SUNAT = "Pago SUNAT"
         static let rechargeCell = "Recarga de celular"
+        static let amount = "Monto"
     }
 }

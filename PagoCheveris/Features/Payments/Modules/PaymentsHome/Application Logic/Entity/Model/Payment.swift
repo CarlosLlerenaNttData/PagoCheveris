@@ -11,6 +11,7 @@ struct Payment: Codable {
     let userId: String
     let dateCharged: String
     let category: String
+    let company: String
     let amount: String
     let state: String
 }
