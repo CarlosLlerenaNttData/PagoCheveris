@@ -22,7 +22,6 @@ open class RestClient: NSObject{
     
     public func request<T: Decodable, U :Decodable>(resource: Resource,
                                                     parameters: JSON? = nil,
-                                                    headers: HTTPHeaders,
                                                     type: T.Type,
                                                     errorType: U.Type) -> AnyPublisher<T, NetworkingError> {
         let fullURLString = baseURL + resource.resource.route

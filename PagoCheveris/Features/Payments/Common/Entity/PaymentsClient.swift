@@ -14,6 +14,6 @@ protocol PaymentsClientProvider {
 
 final class PaymentsClient: RestClient, PaymentsClientProvider {
     func list(parameters: PaymentRequest) -> AnyPublisher<PaymentResponse, NetworkingError> {
-        request(resource: PaymentsResource.payments , parameters: parameters.json, headers: HTTPHeaders(), type: PaymentResponse.self, errorType: ErrorResponse.self)
+        request(resource: PaymentsResource.payments , parameters: parameters.json, type: PaymentResponse.self, errorType: ErrorResponse.self)
     }
 }
