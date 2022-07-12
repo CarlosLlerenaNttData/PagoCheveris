@@ -5,7 +5,7 @@
 //  Created by Carlos Alfredo Llerena Huayta on 27/06/22.
 //
 
-struct LoginRequest: Codable {
+struct LoginRequest: Encodable {
     
     let username: String
     let password: String
