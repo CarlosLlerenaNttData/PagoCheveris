@@ -11,9 +11,16 @@ import SnapKit
 import PagoCheverisUI
 
 class PaymentsViewController: UIViewController {
-
+    
     // MARK: Properties
     var output: PaymentsViewOutput!
+    
+    var paymentsList: [Payment] = [] {
+        didSet {
+            emptyStateLabel?.removeFromSuperview()
+            paymentsTableView.reloadData()
+        }
+    }
     
     @IBOutlet weak var searchBar: UISearchBar! {
         didSet {
@@ -35,8 +42,31 @@ class PaymentsViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var tabControl: PCTabControl! {
+        didSet {
+            let tabItems: [PCTabItem] = [PCFilters.all,
+                                         PaymentCategory.servicesPay,
+                                         PaymentCategory.creditCard,
+                                         PaymentCategory.SUNAT,
+                                         PaymentCategory.institutionPayment,
+                                         PaymentCategory.rechargeCell]
+            tabControl.configure(with: tabItems)
+            tabControl.backgroundColor = PCColors.viewBackground2
+        }
+    }
+    
+    @IBOutlet weak var paymentsTableView: UITableView! {
+        didSet {
+            paymentsTableView.delegate = self
+            paymentsTableView.dataSource = self
+            paymentsTableView.separatorStyle = .none
+            paymentsTableView.backgroundColor = PCColors.viewBackground2
+            paymentsTableView.register(PaymentTableViewCell.self)
+        }
+    }
+    
     // MARK: Views
-
+    
     private var emptyStateLabel: UILabel! {
         didSet {
             emptyStateLabel?.text = PaymentsStrings.Home.noPendingPayments
@@ -46,7 +76,7 @@ class PaymentsViewController: UIViewController {
     }
     
     // MARK: Life cycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = PCColors.viewBackground2
@@ -64,14 +94,27 @@ class PaymentsViewController: UIViewController {
     }
 }
 
+// MARK: TableView Delegate & Data source
+
+extension PaymentsViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        paymentsList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(for: indexPath) as PaymentTableViewCell
+        return cell
+    }
+}
 
 // MARK: PaymentsViewInput Methods
 
 extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable, PCActivityIndicatorPresentable  {
-
+    
     func setUpInitialState() {
     }
-
+    
     func moduleInput() -> PaymentsModuleInput {
         return output as! PaymentsModuleInput
     }

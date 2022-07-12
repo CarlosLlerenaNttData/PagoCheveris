@@ -13,7 +13,6 @@ class PaymentsPresenter {
     var router: PaymentsRouterInput!
 }
 
-
 // MARK: PaymentsModuleInput methods
 
 extension PaymentsPresenter: PaymentsModuleInput {

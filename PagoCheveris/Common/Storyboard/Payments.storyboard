@@ -34,27 +34,39 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HmU-i6-7C1">
-                                <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                                <rect key="frame" x="0.0" y="145" width="414" height="717"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SnP-a3-1nV" customClass="PCTabControl" customModule="PagoCheverisUI">
+                                <rect key="frame" x="0.0" y="95" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SZ8-XW-GUC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="02w-Qe-hcL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="02w-Qe-hcL" firstAttribute="bottom" secondItem="HmU-i6-7C1" secondAttribute="bottom" id="BYM-aS-z8p"/>
+                            <constraint firstItem="02w-Qe-hcL" firstAttribute="trailing" secondItem="SnP-a3-1nV" secondAttribute="trailing" id="HLN-Zu-OCC"/>
                             <constraint firstItem="odX-jf-RlO" firstAttribute="top" secondItem="02w-Qe-hcL" secondAttribute="top" id="IPG-7U-WMp"/>
                             <constraint firstItem="odX-jf-RlO" firstAttribute="leading" secondItem="02w-Qe-hcL" secondAttribute="leading" constant="6" id="PLN-rI-eCv"/>
                             <constraint firstItem="02w-Qe-hcL" firstAttribute="trailing" secondItem="HmU-i6-7C1" secondAttribute="trailing" id="Qm9-yG-BKB"/>
                             <constraint firstItem="oVT-g6-mpd" firstAttribute="centerY" secondItem="odX-jf-RlO" secondAttribute="centerY" id="YQg-H5-xUP"/>
                             <constraint firstItem="oVT-g6-mpd" firstAttribute="leading" secondItem="odX-jf-RlO" secondAttribute="trailing" id="Z9J-d8-Asw"/>
-                            <constraint firstItem="HmU-i6-7C1" firstAttribute="top" secondItem="odX-jf-RlO" secondAttribute="bottom" id="ZrE-gT-D4a"/>
                             <constraint firstItem="02w-Qe-hcL" firstAttribute="trailing" secondItem="oVT-g6-mpd" secondAttribute="trailing" constant="10" id="cMW-gF-Tlv"/>
+                            <constraint firstItem="HmU-i6-7C1" firstAttribute="top" secondItem="SnP-a3-1nV" secondAttribute="bottom" id="ejq-jK-R0L"/>
                             <constraint firstItem="HmU-i6-7C1" firstAttribute="leading" secondItem="02w-Qe-hcL" secondAttribute="leading" id="gSS-SO-E22"/>
+                            <constraint firstItem="SnP-a3-1nV" firstAttribute="leading" secondItem="02w-Qe-hcL" secondAttribute="leading" id="nLc-78-QdX"/>
+                            <constraint firstItem="SnP-a3-1nV" firstAttribute="top" secondItem="odX-jf-RlO" secondAttribute="bottom" id="vln-Ri-6LK"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="paymentsTableView" destination="HmU-i6-7C1" id="6FP-7y-4Pf"/>
                         <outlet property="searchBar" destination="odX-jf-RlO" id="Tuy-3h-vqZ"/>
                         <outlet property="sortButton" destination="oVT-g6-mpd" id="1sD-br-hDi"/>
+                        <outlet property="tabControl" destination="SnP-a3-1nV" id="RNg-qf-kOz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p6z-vu-oah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -64,7 +76,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="101" y="98"/>
+            <point key="canvasLocation" x="100.00000000000001" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
