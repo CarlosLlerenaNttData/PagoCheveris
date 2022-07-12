@@ -104,6 +104,8 @@ extension PaymentsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as PaymentTableViewCell
+        let payment = paymentsList[indexPath.row]
+        cell.configure(with: payment)
         return cell
     }
 }
@@ -117,6 +119,10 @@ extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable,
     
     func moduleInput() -> PaymentsModuleInput {
         return output as! PaymentsModuleInput
+    }
+    
+    func setPaymentsList(_ paymentsList: [Payment]) {
+        self.paymentsList = paymentsList
     }
     
     func showAlert(title: String, message: String, primaryAction: PCPanModalAction, secondaryAction: PCPanModalAction?) {

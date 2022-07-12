@@ -12,6 +12,7 @@ protocol PaymentsViewInput: AnyObject {
 
     func setUpInitialState()
     func moduleInput() -> PaymentsModuleInput
+    func setPaymentsList(_ paymentsList: [Payment])
     func showAlert(title: String, message: String, primaryAction: PCPanModalAction, secondaryAction: PCPanModalAction?)
     func showActivityIndicatorView()
     func hideActivityIndicatorView()

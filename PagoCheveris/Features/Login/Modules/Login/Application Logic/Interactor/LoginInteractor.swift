@@ -41,6 +41,7 @@ class LoginInteractor: LoginInteractorInput {
                 }
             }, receiveValue: { [weak self] response in
                 let user = response.user
+                SessionService.shared.refreshSessionId(sessionId: response.sessionId)
                 self?.output.didLogin(user: user)
             }).store(in: &cancellables)
     }

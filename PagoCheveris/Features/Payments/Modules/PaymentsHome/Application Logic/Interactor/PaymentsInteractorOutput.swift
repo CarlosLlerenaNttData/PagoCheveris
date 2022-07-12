@@ -7,4 +7,6 @@
 //
 
 protocol PaymentsInteractorOutput: AnyObject {
+    func didFetchPaymentsList(_ paymentsList: [Payment])
+    func didFailFetchingPaymentsList(title: String, message: String)
 }

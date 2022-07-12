@@ -7,4 +7,5 @@
 //
 
 protocol PaymentsInteractorInput {
+    func getPaymentsList(category: PaymentCategory?)
 }

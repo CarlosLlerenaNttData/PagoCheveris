@@ -22,7 +22,7 @@ class PaymentTableViewCell: UITableViewCell {
         didSet {
             typeAbbrvLabel.layer.cornerRadius = 22.5
             typeAbbrvLabel.font = PCFont.semiBold16
-            typeAbbrvLabel.textColor = PCColors.buttonLightContent
+            typeAbbrvLabel.textColor = PCColors.labelPrimary
             typeAbbrvLabel.clipsToBounds = true
         }
     }
@@ -67,7 +67,8 @@ class PaymentTableViewCell: UITableViewCell {
     }
     
     func configure(with payment: Payment) {
-        typeLabel.text = payment.category
+        typeAbbrvLabel.text = payment.amount
+        typeLabel.text = payment.categoryName
         dateLabel.text = payment.dateCharged
         amountLabel.text = payment.amount
         contentLabel.text = payment.company

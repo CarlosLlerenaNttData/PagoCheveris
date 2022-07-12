@@ -9,11 +9,11 @@ import Combine
 import PagoCheverisNetworking
 
 protocol PaymentsClientProvider {
-    func list(parameters: PaymentRequest) -> AnyPublisher<PaymentResponse, NetworkingError>
+    func paymentList(parameters: PaymentRequest) -> AnyPublisher<PaymentResponse, NetworkingError>
 }
 
 final class PaymentsClient: RestClient, PaymentsClientProvider {
-    func list(parameters: PaymentRequest) -> AnyPublisher<PaymentResponse, NetworkingError> {
-        request(resource: PaymentsResource.payments , parameters: parameters.json, type: PaymentResponse.self, errorType: ErrorResponse.self)
+    func paymentList(parameters: PaymentRequest) -> AnyPublisher<PaymentResponse, NetworkingError> {
+        request(resource: PaymentsResource.paymentsList , parameters: parameters.json, type: PaymentResponse.self, errorType: ErrorResponse.self)
     }
 }

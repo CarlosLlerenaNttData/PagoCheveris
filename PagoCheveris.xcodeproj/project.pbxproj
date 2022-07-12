@@ -30,6 +30,8 @@
 		2F0B4E18287D4A970044A644 /* PaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E17287D4A970044A644 /* PaymentRequest.swift */; };
 		2F0B4E1A287D4D040044A644 /* PaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E19287D4D040044A644 /* PaymentResponse.swift */; };
 		2F0B4E1C287DFBAA0044A644 /* PaymentsResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E1B287DFBAA0044A644 /* PaymentsResource.swift */; };
+		2F0B4E1E287DFFFB0044A644 /* PCUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E1D287DFFFB0044A644 /* PCUser.swift */; };
+		2F0B4E20287E005A0044A644 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B4E1F287E005A0044A644 /* SessionService.swift */; };
 		2F4A0F442872512F00991007 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A0F432872512F00991007 /* ErrorResponse.swift */; };
 		2F4A0F492874B50E00991007 /* MainNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A0F482874B50E00991007 /* MainNavigation.storyboard */; };
 		2F4A0F4B2874FE8700991007 /* Payments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A0F4A2874FE8600991007 /* Payments.storyboard */; };
@@ -149,6 +151,8 @@
 		2F0B4E17287D4A970044A644 /* PaymentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRequest.swift; sourceTree = "<group>"; };
 		2F0B4E19287D4D040044A644 /* PaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResponse.swift; sourceTree = "<group>"; };
 		2F0B4E1B287DFBAA0044A644 /* PaymentsResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsResource.swift; sourceTree = "<group>"; };
+		2F0B4E1D287DFFFB0044A644 /* PCUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCUser.swift; sourceTree = "<group>"; };
+		2F0B4E1F287E005A0044A644 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 		2F4A0F432872512F00991007 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		2F4A0F482874B50E00991007 /* MainNavigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainNavigation.storyboard; sourceTree = "<group>"; };
 		2F4A0F4A2874FE8600991007 /* Payments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payments.storyboard; sourceTree = "<group>"; };
@@ -520,6 +524,7 @@
 			children = (
 				2FC7CB572869145E00FAADE6 /* KeychainService.swift */,
 				2FEF9129286C0151007A3B1F /* NetworkingService.swift */,
+				2F0B4E1F287E005A0044A644 /* SessionService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -593,6 +598,7 @@
 				2F4A0F42287250C700991007 /* Models */,
 				2FEF912E286C01DC007A3B1F /* Host.swift */,
 				2F0B4E12287D45450044A644 /* PCFilters.swift */,
+				2F0B4E1D287DFFFB0044A644 /* PCUser.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -1196,6 +1202,7 @@
 				2FC7CB4228690F3700FAADE6 /* StoryboardIdentifiable.swift in Sources */,
 				2FC7CB52286911B900FAADE6 /* Routable.swift in Sources */,
 				2FEF912A286C0151007A3B1F /* NetworkingService.swift in Sources */,
+				2F0B4E20287E005A0044A644 /* SessionService.swift in Sources */,
 				2FEF9114286A5E80007A3B1F /* LoginResponse.swift in Sources */,
 				2F7E08B1285BE6F0009F4416 /* AppDelegate.swift in Sources */,
 				2F7E08B3285BE6F0009F4416 /* SceneDelegate.swift in Sources */,
@@ -1242,6 +1249,7 @@
 				E15BAB33198EC07C43278FB2 /* MainTabBarRouterInput.swift in Sources */,
 				99D133C7C97138003626A487 /* MainTabBarViewController.swift in Sources */,
 				2F0B4E18287D4A970044A644 /* PaymentRequest.swift in Sources */,
+				2F0B4E1E287DFFFB0044A644 /* PCUser.swift in Sources */,
 				FBC01F477B3BF0DB6DCF399B /* MainTabBarViewInput.swift in Sources */,
 				A4BD685B81C4B6A149443C98 /* MainTabBarViewOutput.swift in Sources */,
 				EAD41C3C08D3EC3DB4EF04B7 /* PaymentsConfigurator.swift in Sources */,
