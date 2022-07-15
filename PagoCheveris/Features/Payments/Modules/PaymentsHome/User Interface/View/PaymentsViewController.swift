@@ -123,8 +123,8 @@ extension PaymentsViewController: PCTabControlDelegate {
 
 // MARK: PaymentsViewInput Methods
 
-extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable, PCActivityIndicatorPresentable  {
-    
+extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable, PCActivityIndicatorPresentable, PCOptionListPanModalPresentable  {
+
     func setUpInitialState() {
     }
     
@@ -138,6 +138,10 @@ extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable,
     
     func showAlert(title: String, message: String, primaryAction: PCPanModalAction, secondaryAction: PCPanModalAction?) {
         showPCAlert(title: title, message: message, primaryAction: primaryAction, secondaryAction: secondaryAction)
+    }
+    
+    func showOrderList(title: String, delegate: PCOptionsPanModalDelegate, options: [PCPanModalOption]) {
+        showPCOptionList(title: title, delegate: delegate, options: options)
     }
     
     func showActivityIndicatorView() {

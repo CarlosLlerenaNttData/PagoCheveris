@@ -42,6 +42,7 @@
 		2F7E08C8285BE6F0009F4416 /* PagoCheverisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08C7285BE6F0009F4416 /* PagoCheverisTests.swift */; };
 		2F7E08D2285BE6F0009F4416 /* PagoCheverisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08D1285BE6F0009F4416 /* PagoCheverisUITests.swift */; };
 		2F7E08D4285BE6F0009F4416 /* PagoCheverisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E08D3285BE6F0009F4416 /* PagoCheverisUITestsLaunchTests.swift */; };
+		2FA718EF2881477B0006EC5B /* PaymentListOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA718EE2881477B0006EC5B /* PaymentListOrder.swift */; };
 		2FB2BE46286E4D7B00531BD8 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2FB2BE45286E4D7B00531BD8 /* Lottie */; };
 		2FC7CB3B2868F41A00FAADE6 /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC7CB3A2868F41A00FAADE6 /* PanModal */; };
 		2FC7CB4228690F3700FAADE6 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7CB4128690F3700FAADE6 /* StoryboardIdentifiable.swift */; };
@@ -167,6 +168,7 @@
 		2F7E08CD285BE6F0009F4416 /* PagoCheverisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagoCheverisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7E08D1285BE6F0009F4416 /* PagoCheverisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoCheverisUITests.swift; sourceTree = "<group>"; };
 		2F7E08D3285BE6F0009F4416 /* PagoCheverisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoCheverisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2FA718EE2881477B0006EC5B /* PaymentListOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListOrder.swift; sourceTree = "<group>"; };
 		2FC7CB4128690F3700FAADE6 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
 		2FC7CB4328690FA100FAADE6 /* UIStoryboard+StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+StoryboardIdentifiable.swift"; sourceTree = "<group>"; };
 		2FC7CB4528690FC900FAADE6 /* UIStoryboard+Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Storyboards.swift"; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 				2F0B4E092878DB070044A644 /* PaymentCategory.swift */,
 				2F0B4E17287D4A970044A644 /* PaymentRequest.swift */,
 				2F0B4E19287D4D040044A644 /* PaymentResponse.swift */,
+				2FA718EE2881477B0006EC5B /* PaymentListOrder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1234,6 +1237,7 @@
 				2F0B4E112878F2E00044A644 /* ReusableViewIdentifier.swift in Sources */,
 				2F0B4E16287D4A370044A644 /* PaymentsClient.swift in Sources */,
 				5C27C8AE88F897C88D3B0107 /* LoginViewInput.swift in Sources */,
+				2FA718EF2881477B0006EC5B /* PaymentListOrder.swift in Sources */,
 				85B88AF8681E917CF3D93D7D /* LoginViewOutput.swift in Sources */,
 				2F0B4E0628778BCC0044A644 /* PaymentTableViewCell.swift in Sources */,
 				2FEF9120286A61AC007A3B1F /* JSONUtility.swift in Sources */,

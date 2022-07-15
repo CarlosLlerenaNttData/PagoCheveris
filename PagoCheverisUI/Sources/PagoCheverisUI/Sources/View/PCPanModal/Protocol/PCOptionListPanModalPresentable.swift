@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  PCOptionListPanModalPresentable.swift
 //  
 //
 //  Created by Carlos Alfredo Llerena Huayta on 15/07/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol PCOptionListPanModal {
+public protocol PCOptionListPanModalPresentable {
     
     /**
      A custom object that displays a list of options to the user.
@@ -27,11 +27,11 @@ public protocol PCOptionListPanModal {
     func showPCOptionList(title: String, delegate: PCOptionsPanModalDelegate, options: [PCPanModalOption])
 }
 
-public extension PCOptionListPanModal where Self: UIViewController {
+public extension PCOptionListPanModalPresentable where Self: UIViewController {
     
     func showPCOptionList(title: String, delegate: PCOptionsPanModalDelegate, options: [PCPanModalOption]) {
         let storyboard = UIStoryboard(name: "PCPanModal", bundle: Bundle.module)
-        let bibOrderPanModalViewController = storyboard.instantiateViewController(withIdentifier: "PCOptionsPanModalViewController") as! PCOptionsPanModalViewController
+        let pcOrderPanModalViewController = storyboard.instantiateViewController(withIdentifier: "PCOptionsPanModalViewController") as! PCOptionsPanModalViewController
         
         var sourceRect: CGRect = .zero
         var sourceView: UIView?
@@ -41,10 +41,10 @@ public extension PCOptionListPanModal where Self: UIViewController {
             sourceView = view
         }
                 
-        self.presentPanModal(bibOrderPanModalViewController, sourceView: sourceView, sourceRect: sourceRect)
+        self.presentPanModal(pcOrderPanModalViewController, sourceView: sourceView, sourceRect: sourceRect)
         
-        bibOrderPanModalViewController.titleLabel?.text = title
-        bibOrderPanModalViewController.optionsList = options
-        bibOrderPanModalViewController.delegate = delegate
+        pcOrderPanModalViewController.titleLabel?.text = title
+        pcOrderPanModalViewController.optionsList = options
+        pcOrderPanModalViewController.delegate = delegate
     }
 }

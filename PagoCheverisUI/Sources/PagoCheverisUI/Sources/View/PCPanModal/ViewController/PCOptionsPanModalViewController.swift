@@ -67,7 +67,7 @@ class PCOptionsPanModalViewController: UIViewController, PCPanModalPresentable {
         didSet {
             optionTableView.delegate = self
             optionTableView.dataSource = self
-            optionTableView.register(UINib(nibName: "BiBOptionCell", bundle: Bundle.module), forCellReuseIdentifier: "BiBOptionCell")
+            optionTableView.register(UINib(nibName: "PCOptionCell", bundle: Bundle.module), forCellReuseIdentifier: "PCOptionCell")
             optionTableView.backgroundColor = PCColors.viewBackground2
         }
     }

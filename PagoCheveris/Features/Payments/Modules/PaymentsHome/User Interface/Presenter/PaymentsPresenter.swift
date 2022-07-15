@@ -15,6 +15,7 @@ class PaymentsPresenter {
     var router: PaymentsRouterInput!
     
     var paymentCategory: PaymentCategory?
+    var paymentsListOrder: PaymentListOrder = .descendingDate
 }
 
 // MARK: PaymentsModuleInput methods
@@ -33,16 +34,26 @@ extension PaymentsPresenter: PaymentsViewOutput {
     func viewIsReady() {
         view.showActivityIndicatorView()
         
-        interactor.getPaymentsList(category: paymentCategory)
+        interactor.getPaymentsList(category: paymentCategory,
+                                   order: paymentsListOrder)
     }
     
     func didTapSortButton() {
+        let options = [
+            PaymentListOrder.descendingAmount,
+            PaymentListOrder.ascendingAmount,
+            PaymentListOrder.descendingDate,
+            PaymentListOrder.ascendingDate
+        ]
+        
+        view.showOrderList(title: PaymentsStrings.Home.titleOrder, delegate: self, options: options)
     }
     
     func didSelectedTabControlItem(item: PCTabItem) {
         view.showActivityIndicatorView()
         paymentCategory = item as? PaymentCategory
-        interactor.getPaymentsList(category: paymentCategory)
+        interactor.getPaymentsList(category: paymentCategory,
+                                   order: paymentsListOrder)
     }
 }
 
@@ -64,4 +75,16 @@ extension PaymentsPresenter: PaymentsInteractorOutput {
         view.showAlert(title: title, message: message, primaryAction: acceptAction, secondaryAction: nil)
     }
     
+}
+
+// MARK: PCOptionsPanModal Delegate methods
+
+extension PaymentsPresenter: PCOptionsPanModalDelegate {
+    
+    func didSelect(selectedOption: PCPanModalOption) {
+        view.showActivityIndicatorView()
+        paymentsListOrder = selectedOption as! PaymentListOrder
+        interactor.getPaymentsList(category: paymentCategory,
+                                   order: paymentsListOrder)
+    }
 }

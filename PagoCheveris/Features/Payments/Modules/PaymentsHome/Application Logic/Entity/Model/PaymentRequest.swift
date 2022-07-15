@@ -9,9 +9,11 @@ struct PaymentRequest: Encodable {
 
     let sessionId: String
     let paymentCategory: PaymentCategory?
+    let order: PaymentListOrder
     
-    init(sessionId: String, paymentCategory: PaymentCategory? = nil){
+    init(sessionId: String, paymentCategory: PaymentCategory? = nil, order: PaymentListOrder){
         self.sessionId = sessionId
         self.paymentCategory = paymentCategory
+        self.order = order
     }
 }

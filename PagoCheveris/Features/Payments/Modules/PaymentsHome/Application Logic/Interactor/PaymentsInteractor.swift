@@ -16,14 +16,14 @@ class PaymentsInteractor: PaymentsInteractorInput {
     lazy var paymentsClient: PaymentsClientProvider = PaymentsClient(configuration: NetworkingService().configuration)
     var cancellables: Set<AnyCancellable> = []
 
-    func getPaymentsList(category: PaymentCategory?) {
+    func getPaymentsList(category: PaymentCategory?, order: PaymentListOrder) {
         
         guard let sessionId = SessionService.shared.sessionId else {
             output.didFailFetchingPaymentsList(title: CommonStrings.alertTitleGenericError, message: CommonStrings.alertMessageGenericError)
             return
         }
 
-        let parameters = PaymentRequest(sessionId: sessionId, paymentCategory: category)
+        let parameters = PaymentRequest(sessionId: sessionId, paymentCategory: category, order: order)
         paymentsClient.paymentList(parameters: parameters)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] completion in
