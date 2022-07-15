@@ -38,6 +38,12 @@ extension PaymentsPresenter: PaymentsViewOutput {
     
     func didTapSortButton() {
     }
+    
+    func didSelectedTabControlItem(item: PCTabItem) {
+        view.showActivityIndicatorView()
+        paymentCategory = item as? PaymentCategory
+        interactor.getPaymentsList(category: paymentCategory)
+    }
 }
 
 

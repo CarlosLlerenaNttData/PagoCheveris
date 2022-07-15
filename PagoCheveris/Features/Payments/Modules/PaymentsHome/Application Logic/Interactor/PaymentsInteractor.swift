@@ -23,7 +23,7 @@ class PaymentsInteractor: PaymentsInteractorInput {
             return
         }
 
-        let parameters = PaymentRequest(sessionId: sessionId)
+        let parameters = PaymentRequest(sessionId: sessionId, paymentCategory: category)
         paymentsClient.paymentList(parameters: parameters)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { [weak self] completion in

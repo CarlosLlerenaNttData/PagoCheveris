@@ -6,5 +6,12 @@
 //
 
 struct PaymentRequest: Encodable {
+
     let sessionId: String
+    let paymentCategory: PaymentCategory?
+    
+    init(sessionId: String, paymentCategory: PaymentCategory? = nil){
+        self.sessionId = sessionId
+        self.paymentCategory = paymentCategory
+    }
 }

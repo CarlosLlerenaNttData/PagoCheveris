@@ -51,6 +51,7 @@ class PaymentsViewController: UIViewController {
                                          PaymentCategory.institutionPayment,
                                          PaymentCategory.rechargeCell]
             tabControl.configure(with: tabItems)
+            tabControl.delegate = self
             tabControl.backgroundColor = PCColors.viewBackground2
         }
     }
@@ -107,6 +108,15 @@ extension PaymentsViewController: UITableViewDelegate, UITableViewDataSource {
         let payment = paymentsList[indexPath.row]
         cell.configure(with: payment)
         return cell
+    }
+}
+
+// MARK: PCTabControlDelegate Delegate
+
+extension PaymentsViewController: PCTabControlDelegate {
+    
+    func didSelect(tab: PCTabItem) {
+        output.didSelectedTabControlItem(item: tab)
     }
 }
 
