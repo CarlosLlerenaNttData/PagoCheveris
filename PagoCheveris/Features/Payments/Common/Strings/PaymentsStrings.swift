@@ -18,7 +18,7 @@ struct PaymentsStrings {
         static let institutionPayment = "Pago a institución"
         static let creditCard = "Tarjetas de crédito"
         static let SUNAT = "Pago SUNAT"
-        static let rechargeCell = "Recarga de celular"
+        static let rechargeCell = "Recibo de celular"
         static let amount = "Monto"
         static let descendingAmount = "Monto: mayor a menor"
         static let ascendingAmount = "Monto: menor a mayor"
