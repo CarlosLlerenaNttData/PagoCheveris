@@ -46,4 +46,34 @@ class PaymentsInteractor: PaymentsInteractorInput {
                 self?.output.didFetchPaymentsList(response.payments)
             }).store(in: &cancellables)
     }
+    
+    func performPayment(for payments: [Payment]) {
+        guard let sessionId = SessionService.shared.sessionId else {
+            output.didFailFetchingPaymentsList(title: CommonStrings.alertTitleGenericError, message: CommonStrings.alertMessageGenericError)
+            return
+        }
+
+        let parameters = PaymentPerformRequest(sessionId: sessionId, payments: payments)
+        paymentsClient.paymentPerform(parameters: parameters)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { [weak self] completion in
+                switch completion {
+                case .failure(let networkingError):
+                    switch networkingError {
+                    case .apiError(error: let error as ErrorResponse):
+                        self?.output.didFailPerformingAction(title: error.title, message: error.message)
+                    case .notConnectionInternet(_):
+                        self?.output.didFailPerformingAction(title: CommonStrings.alertTitleGenericError, message: CommonStrings.alertMessageInternetError)
+                    case .unexpectedError(_):
+                        self?.output.didFailPerformingAction(title: CommonStrings.alertTitleGenericError, message: CommonStrings.alertMessageGenericError)
+                    default:
+                        self?.output.didFailPerformingAction(title: CommonStrings.alertTitleGenericError, message: CommonStrings.alertMessageGenericError)
+                    }
+                default:
+                    break
+                }
+            }, receiveValue: { [weak self] response in
+                self?.output.didPerformAction(payments: payments)
+            }).store(in: &cancellables)
+    }
 }

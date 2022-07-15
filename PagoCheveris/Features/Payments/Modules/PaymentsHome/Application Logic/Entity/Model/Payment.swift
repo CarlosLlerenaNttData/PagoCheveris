@@ -14,7 +14,7 @@ struct Payment: Codable {
     let company: String
     let amount: String
     let state: String
-    
+
     var categoryName: String? {
         return PaymentCategory(rawValue: Int(categoryId)!)?.title
     }

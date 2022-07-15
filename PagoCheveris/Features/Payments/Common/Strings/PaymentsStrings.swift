@@ -25,5 +25,7 @@ struct PaymentsStrings {
         static let descendingDate = "Más reciente"
         static let ascendingDate = "Más antiguo"
         static let payConfirmationAlertMessage = "¿Estás seguro que deseas pagar la transacción seleccionada?"
+        static let multipleSelectionPaymentConfirmationAlertMessage = "¿Estás seguro que deseas autorizar el pago las transacciones seleccionadas?"
+        static let payFinishAlertMessage = "Pago realizado con éxito"
     }
 }

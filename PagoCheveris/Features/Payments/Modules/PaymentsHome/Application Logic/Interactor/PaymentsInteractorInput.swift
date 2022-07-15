@@ -8,4 +8,5 @@
 
 protocol PaymentsInteractorInput {
     func getPaymentsList(category: PaymentCategory?, order: PaymentListOrder)
+    func performPayment(for payments: [Payment])
 }

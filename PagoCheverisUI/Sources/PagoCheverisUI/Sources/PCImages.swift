@@ -15,6 +15,8 @@ public enum PCImages {
         static let pcActionEye = "pcActionEye"
         static let pcActionEyeStrikethrough = "pcActionEyeStrikethrough"
         static let pcActionLogout = "pcActionLogout"
+        static let pcActionsCircleCheckmark = "pcActionsCircleCheckmark"
+        static let pcActionCircleFillCheckmark = "pcActionCircleFillCheckmark"
         static let pcFaceLogo = "pcFaceLogo"
         static let pcRememberChecked = "pcRememberChecked"
         static let pcRememberUnchecked = "pcRememberUnchecked"
@@ -25,6 +27,8 @@ public enum PCImages {
     public static let pcActionEye = UIImage.loadImage(named: Name.pcActionEye)
     public static let pcActionEyeStrikethrough = UIImage.loadImage(named: Name.pcActionEyeStrikethrough)
     public static let pcActionLogout = UIImage.loadImage(named: Name.pcActionLogout)
+    public static let pcActionsCircleCheckmark = UIImage.loadImage(named: Name.pcActionsCircleCheckmark)
+    public static let pcActionCircleFillCheckmark = UIImage.loadImage(named: Name.pcActionCircleFillCheckmark)
     public static let pcFaceLogo = UIImage.loadImage(named: Name.pcFaceLogo)
     public static let pcRememberChecked = UIImage.loadImage(named: Name.pcRememberChecked)
     public static let pcRememberUnchecked = UIImage.loadImage(named: Name.pcRememberUnchecked)

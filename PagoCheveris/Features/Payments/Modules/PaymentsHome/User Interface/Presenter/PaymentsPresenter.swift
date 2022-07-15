@@ -16,6 +16,9 @@ class PaymentsPresenter {
     
     var paymentCategory: PaymentCategory?
     var paymentsListOrder: PaymentListOrder = .descendingDate
+    
+    var swipeActionCompletion: ((Bool) -> Void)?
+
 }
 
 // MARK: PaymentsModuleInput methods
@@ -30,7 +33,7 @@ extension PaymentsPresenter: PaymentsModuleInput {
 // MARK: PaymentsViewOutput methods
 
 extension PaymentsPresenter: PaymentsViewOutput {
-
+    
     func viewIsReady() {
         view.showActivityIndicatorView()
         
@@ -55,6 +58,36 @@ extension PaymentsPresenter: PaymentsViewOutput {
         interactor.getPaymentsList(category: paymentCategory,
                                    order: paymentsListOrder)
     }
+    
+    func didTapPaymentAction(for payment: Payment, completion: @escaping (Bool) -> Void) {
+        let cancelAction = PCPanModalAction(title: CommonStrings.cancel) { [weak self] in
+            self?.swipeActionCompletion?(false)
+        }
+        
+        let authorizeAction = PCPanModalAction(title: CommonStrings.pay) { [weak self] in
+            self?.view.showActivityIndicatorView()
+            self?.interactor.performPayment(for: [payment])
+        }
+        
+        swipeActionCompletion = completion
+        view.showAlert(title: CommonStrings.pay, message: PaymentsStrings.Home.payConfirmationAlertMessage,
+                       primaryAction: authorizeAction, secondaryAction: cancelAction)
+    }
+    
+    func didTapConfirmSelectionButton(withSelection list: [Payment]) {
+        let payAction = PCPanModalAction(title: CommonStrings.pay) { [weak self] in
+            self?.view.showActivityIndicatorView()
+            self?.interactor.performPayment(for: list)
+        }
+        
+        let cancelAction = PCPanModalAction(title: CommonStrings.cancel) { [weak self] in
+            self?.view.resetPaymentsSelection()
+        }
+        
+        view.showAlert(title: CommonStrings.pay, message: PaymentsStrings.Home.multipleSelectionPaymentConfirmationAlertMessage,
+                       primaryAction: payAction,
+                       secondaryAction: cancelAction)
+    }
 }
 
 
@@ -75,6 +108,24 @@ extension PaymentsPresenter: PaymentsInteractorOutput {
         view.showAlert(title: title, message: message, primaryAction: acceptAction, secondaryAction: nil)
     }
     
+    func didPerformAction(payments: [Payment]) {
+        view.hideActivityIndicatorView()
+        view.removeFromPaymentList(payments: payments)
+        view.resetPaymentsSelection()
+
+        let acceptAction = PCPanModalAction(title: CommonStrings.accept)
+        let icon = PCImages.pcActionsCircleCheckmark
+        let iconTint = PCColors.success
+        view.showAlert(message: PaymentsStrings.Home.payFinishAlertMessage, icon: icon, iconTint: iconTint, primaryAction: acceptAction)
+    }
+    
+    func didFailPerformingAction(title: String, message: String) {
+        view.hideActivityIndicatorView()
+
+        let acceptAction = PCPanModalAction(title: CommonStrings.accept)
+        view.showAlert(title: title, message: message, primaryAction: acceptAction, secondaryAction: nil)
+    }
+ 
 }
 
 // MARK: PCOptionsPanModal Delegate methods

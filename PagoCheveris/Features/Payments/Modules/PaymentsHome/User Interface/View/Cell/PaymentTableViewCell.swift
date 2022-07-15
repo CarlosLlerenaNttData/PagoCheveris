@@ -8,9 +8,16 @@
 import UIKit
 import PagoCheverisUI
 
+protocol PaymentTableViewCellDelegate: AnyObject {
+    
+    func didTapCheckBoxButton(for payment: Payment, isSelected: Bool)
+}
+
 class PaymentTableViewCell: UITableViewCell {
     
     var payment: Payment!
+    
+    weak var delegate: PaymentTableViewCellDelegate?
     
     @IBOutlet weak var containerView: UIView! {
         didSet {
@@ -58,6 +65,32 @@ class PaymentTableViewCell: UITableViewCell {
         }
     }
     
+    
+    @IBOutlet weak var checkboxButton: UIButton! {
+        didSet {
+            let configuration = UIButton.Configuration.plain()
+            
+            checkboxButton.configuration = configuration
+            checkboxButton.configuration?.background.cornerRadius = 11
+            checkboxButton.configurationUpdateHandler = { button in
+                switch button.state {
+                case .selected:
+                    button.configuration?.image = PCImages.pcActionCircleFillCheckmark
+                    button.configuration?.background.backgroundColor = PCColors.viewBackground1
+                    button.configuration?.baseForegroundColor = PCColors.buttonPrimary
+                default:
+                    button.configuration?.image = nil
+                    button.configuration?.background.backgroundColor = PCColors.buttonSecondary.withAlphaComponent(0.15)
+                }
+            }
+        }
+    }
+    
+    @IBAction func didTapCheckboxButton(_ sender: UIButton) {
+        checkboxButton.isSelected.toggle()
+        delegate?.didTapCheckBoxButton(for: payment, isSelected: checkboxButton.isSelected)
+    }
+    
     @IBOutlet weak var contentLabel: UILabel! {
         didSet {
             contentLabel.numberOfLines = 0
@@ -66,11 +99,13 @@ class PaymentTableViewCell: UITableViewCell {
         }
     }
     
-    func configure(with payment: Payment) {
+    func configure(with payment: Payment, shouldSetSelected isSelected: Bool) {
         typeAbbrvLabel.text = payment.amount
         typeLabel.text = payment.categoryName
         dateLabel.text = payment.dateCharged
         amountLabel.text = payment.amount
         contentLabel.text = payment.company
+        checkboxButton.isSelected = isSelected
+        self.payment = payment
     }
 }

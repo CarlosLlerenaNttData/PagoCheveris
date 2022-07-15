@@ -22,6 +22,12 @@ class PaymentsViewController: UIViewController {
         }
     }
     
+    var selectedPaymentsList: [Payment] = [] {
+        didSet {
+            configureConfirmSelectionButton()
+        }
+    }
+    
     @IBOutlet weak var searchBar: UISearchBar! {
         didSet {
             searchBar.placeholder = CommonStrings.search
@@ -77,6 +83,17 @@ class PaymentsViewController: UIViewController {
         }
     }
     
+    private var confirmSelectionButton: UIButton? {
+        didSet {
+            confirmSelectionButton?.clipsToBounds = true
+            confirmSelectionButton?.layer.cornerRadius = 30
+            confirmSelectionButton?.tintColor = PCColors.buttonLightContent
+            confirmSelectionButton?.backgroundColor = PCColors.buttonPrimary
+            confirmSelectionButton?.setImage(PCImages.pcActionCheckmark, for: .normal)
+            confirmSelectionButton?.addTarget(self, action: #selector(didTapConfirmSelectionButton), for: .touchUpInside)
+        }
+    }
+    
     // MARK: Life cycle
     
     override func viewDidLoad() {
@@ -91,8 +108,30 @@ class PaymentsViewController: UIViewController {
         tabBarController?.title = PaymentsStrings.Home.title
     }
     
+    
+    func configureConfirmSelectionButton() {
+        if selectedPaymentsList.isEmpty {
+            confirmSelectionButton?.removeFromSuperview()
+            confirmSelectionButton = nil
+        } else {
+            guard confirmSelectionButton == nil else { return }
+            
+            confirmSelectionButton = UIButton(type: .custom)
+            view.addSubview(confirmSelectionButton!)
+            
+            confirmSelectionButton?.snp.makeConstraints { make in
+                make.width.height.equalTo(60)
+                make.trailing.bottom.equalTo(paymentsTableView).inset(16)
+            }
+        }
+    }
+    
     @IBAction func didTapSortButton(_ sender: PCButton) {
         output.didTapSortButton()
+    }
+    
+    @objc func didTapConfirmSelectionButton() {
+        output.didTapConfirmSelectionButton(withSelection: selectedPaymentsList)
     }
 }
 
@@ -107,7 +146,9 @@ extension PaymentsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as PaymentTableViewCell
         let payment = paymentsList[indexPath.row]
-        cell.configure(with: payment)
+        let shouldSetRowSelected = selectedPaymentsList.contains(where: { $0.id == payment.id })
+        cell.configure(with: payment, shouldSetSelected: shouldSetRowSelected)
+        cell.delegate = self
         return cell
     }
     
@@ -124,6 +165,19 @@ extension PaymentsViewController: UITableViewDelegate, UITableViewDataSource {
         config.performsFirstActionWithFullSwipe = false
      
         return config
+    }
+}
+
+// MARK: AuthorizationTableViewCellDelegate Delegate
+
+extension PaymentsViewController: PaymentTableViewCellDelegate {
+    
+    func didTapCheckBoxButton(for payment: Payment, isSelected: Bool) {
+        if isSelected {
+            selectedPaymentsList.append(payment)
+        } else {
+            selectedPaymentsList.removeAll(where: { $0.id == payment.id } )
+        }
     }
 }
 
@@ -151,8 +205,25 @@ extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable,
         self.paymentsList = paymentsList
     }
     
+    func removeFromPaymentList(payments: [Payment]) {
+        payments.forEach { payment in
+            self.paymentsList.removeAll(where: { $0.id == payment.id } )
+        }
+        
+        paymentsTableView.reloadData()
+    }
+    
+    func resetPaymentsSelection() {
+        selectedPaymentsList = []
+        paymentsTableView.reloadData()
+    }
+
     func showAlert(title: String, message: String, primaryAction: PCPanModalAction, secondaryAction: PCPanModalAction?) {
         showPCAlert(title: title, message: message, primaryAction: primaryAction, secondaryAction: secondaryAction)
+    }
+    
+    func showAlert(message: String, icon: UIImage, iconTint: UIColor, primaryAction: PCPanModalAction) {
+        showPCAlert(message: message, icon: icon, iconTint: iconTint, primaryAction: primaryAction)
     }
     
     func showOrderList(title: String, delegate: PCOptionsPanModalDelegate, options: [PCPanModalOption]) {
