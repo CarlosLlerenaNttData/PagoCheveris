@@ -15,9 +15,7 @@ class PaymentsViewController: UIViewController {
     // MARK: Properties
     var output: PaymentsViewOutput!
     
-    var paymentsList: [Payment] = []
-    
-    var filteredPaymentsList: [Payment] = [] {
+    var paymentsList: [Payment] = [] {
         didSet {
             paymentsTableView.reloadData()
         }
@@ -146,9 +144,7 @@ class PaymentsViewController: UIViewController {
     }
     
     func filterContent(searchText: String){
-        filteredPaymentsList = searchText.isEmpty ? paymentsList : paymentsList.filter { payment in
-            return payment.company.lowercased().contains(searchText)
-        }
+        output.didSearchBarText(searchText: searchText)
     }
 }
 
@@ -167,12 +163,12 @@ extension PaymentsViewController: UISearchBarDelegate {
 extension PaymentsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        filteredPaymentsList.count
+        paymentsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as PaymentTableViewCell
-        let payment = filteredPaymentsList[indexPath.row]
+        let payment = paymentsList[indexPath.row]
         let shouldSetRowSelected = selectedPaymentsList.contains(where: { $0.paymentId == payment.paymentId })
         cell.configure(with: payment, shouldSetSelected: shouldSetRowSelected)
         cell.delegate = self
@@ -181,7 +177,7 @@ extension PaymentsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let payAction = UIContextualAction(style: .normal, title: CommonStrings.pay) { [weak self] _, _, completion in
-            guard let payment = self?.filteredPaymentsList[indexPath.row] else { return }
+            guard let payment = self?.paymentsList[indexPath.row] else { return }
             self?.output.didTapPaymentAction(for: payment, completion: completion)
         }
         
@@ -230,7 +226,6 @@ extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable,
     
     func setPaymentsList(_ paymentsList: [Payment]) {
         self.paymentsList = paymentsList
-        self.filteredPaymentsList = self.paymentsList
     }
     
     func removeFromPaymentList(payments: [Payment]) {

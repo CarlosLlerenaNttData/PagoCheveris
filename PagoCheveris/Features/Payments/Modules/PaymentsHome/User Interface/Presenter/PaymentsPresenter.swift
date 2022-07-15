@@ -17,8 +17,9 @@ class PaymentsPresenter {
     var paymentCategory: PaymentCategory?
     var paymentsListOrder: PaymentListOrder = .descendingDate
     
+    var paymentsList: [Payment] = []
+    
     var swipeActionCompletion: ((Bool) -> Void)?
-
 }
 
 // MARK: PaymentsModuleInput methods
@@ -33,6 +34,14 @@ extension PaymentsPresenter: PaymentsModuleInput {
 // MARK: PaymentsViewOutput methods
 
 extension PaymentsPresenter: PaymentsViewOutput {
+    
+    func didSearchBarText(searchText: String) {
+        let filteredPaymentsList = searchText.isEmpty ? paymentsList : paymentsList.filter { payment in
+            return payment.company.lowercased().contains(searchText)
+        }
+        view.setPaymentsList(filteredPaymentsList)
+    }
+    
     
     func viewIsReady() {
         view.showActivityIndicatorView()
@@ -101,7 +110,7 @@ extension PaymentsPresenter: PaymentsInteractorOutput {
     
     func didFetchPaymentsList(_ paymentsList: [Payment]) {
         view.hideActivityIndicatorView()
-
+        self.paymentsList = paymentsList
         view.setPaymentsList(paymentsList)
     }
     

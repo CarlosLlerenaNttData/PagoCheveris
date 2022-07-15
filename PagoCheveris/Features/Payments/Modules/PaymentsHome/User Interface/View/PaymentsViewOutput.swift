@@ -13,6 +13,7 @@ protocol PaymentsViewOutput {
     func viewIsReady()
     func didTapSortButton()
     func didTapQrRead()
+    func didSearchBarText(searchText: String)
     func didSelectedTabControlItem(item: PCTabItem)
     func didTapPaymentAction(for payment: Payment, completion: @escaping (Bool) -> Void)
     func didTapConfirmSelectionButton(withSelection list: [Payment])
