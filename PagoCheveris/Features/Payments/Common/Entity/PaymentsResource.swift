@@ -10,11 +10,14 @@ import PagoCheverisNetworking
 enum PaymentsResource: Resource {
 
     case paymentsList
+    case paymentsPerform
 
     var resource: (method: HTTPMethod, route: String) {
         switch self {
         case .paymentsList:
             return (.post, "/payments")
+        case .paymentsPerform:
+            return (.post, "/paymentsPerform")
         }
     }
 }

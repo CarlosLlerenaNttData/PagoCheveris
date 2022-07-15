@@ -9,6 +9,7 @@ enum CommonStrings {
     
     static let accept = "Aceptar"
     static let cancel = "Cancelar"
+    static let pay = "Pagar"
     static let alertTitleGenericError = "Atención"
     static let alertMessageGenericError = "Ha ocurrido un error inesperado."
     static let alertMessageInternetError = "Ocurrió un error con su conexión."
