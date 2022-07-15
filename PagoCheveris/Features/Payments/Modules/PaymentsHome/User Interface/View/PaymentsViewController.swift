@@ -100,6 +100,7 @@ class PaymentsViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = PCColors.viewBackground2
         configureMainNavigation()
+        configureQrReadButton()
         output.viewIsReady()
     }
     
@@ -108,6 +109,14 @@ class PaymentsViewController: UIViewController {
         tabBarController?.title = PaymentsStrings.Home.title
     }
     
+    private func configureQrReadButton() {
+        let qrButtonItem = UIBarButtonItem(image: PCImages.pcQrReadLogo, style: .done, target: self, action: #selector(didTapQrRead(_:)))
+        tabBarController?.navigationItem.setLeftBarButton(qrButtonItem, animated: false)
+    }
+    
+    @objc func didTapQrRead(_ sender: UIBarButtonItem) {
+        output.didTapQrRead()
+    }
     
     func configureConfirmSelectionButton() {
         if selectedPaymentsList.isEmpty {
@@ -146,7 +155,7 @@ extension PaymentsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as PaymentTableViewCell
         let payment = paymentsList[indexPath.row]
-        let shouldSetRowSelected = selectedPaymentsList.contains(where: { $0.id == payment.id })
+        let shouldSetRowSelected = selectedPaymentsList.contains(where: { $0.paymentId == payment.paymentId })
         cell.configure(with: payment, shouldSetSelected: shouldSetRowSelected)
         cell.delegate = self
         return cell
@@ -176,7 +185,7 @@ extension PaymentsViewController: PaymentTableViewCellDelegate {
         if isSelected {
             selectedPaymentsList.append(payment)
         } else {
-            selectedPaymentsList.removeAll(where: { $0.id == payment.id } )
+            selectedPaymentsList.removeAll(where: { $0.paymentId == payment.paymentId } )
         }
     }
 }
@@ -192,7 +201,7 @@ extension PaymentsViewController: PCTabControlDelegate {
 
 // MARK: PaymentsViewInput Methods
 
-extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable, PCActivityIndicatorPresentable, PCOptionListPanModalPresentable  {
+extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable, PCActivityIndicatorPresentable, PCOptionListPanModalPresentable, PCQrReadPresentable {
 
     func setUpInitialState() {
     }
@@ -207,7 +216,7 @@ extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable,
     
     func removeFromPaymentList(payments: [Payment]) {
         payments.forEach { payment in
-            self.paymentsList.removeAll(where: { $0.id == payment.id } )
+            self.paymentsList.removeAll(where: { $0.paymentId == payment.paymentId } )
         }
         
         paymentsTableView.reloadData()
@@ -228,6 +237,10 @@ extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable,
     
     func showOrderList(title: String, delegate: PCOptionsPanModalDelegate, options: [PCPanModalOption]) {
         showPCOptionList(title: title, delegate: delegate, options: options)
+    }
+    
+    func showQrReadView(delegate: PCQrReadDelegate) {
+        showQrRead(delegate: delegate)
     }
     
     func showActivityIndicatorView() {

@@ -52,6 +52,10 @@ extension PaymentsPresenter: PaymentsViewOutput {
         view.showOrderList(title: PaymentsStrings.Home.titleOrder, delegate: self, options: options)
     }
     
+    func didTapQrRead() {
+        view.showQrReadView(delegate: self)
+    }
+    
     func didSelectedTabControlItem(item: PCTabItem) {
         view.showActivityIndicatorView()
         paymentCategory = item as? PaymentCategory
@@ -137,5 +141,14 @@ extension PaymentsPresenter: PCOptionsPanModalDelegate {
         paymentsListOrder = selectedOption as! PaymentListOrder
         interactor.getPaymentsList(category: paymentCategory,
                                    order: paymentsListOrder)
+    }
+}
+
+// MARK: PCQrReadDelegate Delegate methods
+
+extension PaymentsPresenter: PCQrReadDelegate {
+
+    func didQrResponse(code: String) {
+        
     }
 }

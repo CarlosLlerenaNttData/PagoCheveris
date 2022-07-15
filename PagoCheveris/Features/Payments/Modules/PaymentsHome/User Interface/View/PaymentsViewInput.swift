@@ -19,6 +19,7 @@ protocol PaymentsViewInput: AnyObject {
     func showAlert(title: String, message: String, primaryAction: PCPanModalAction, secondaryAction: PCPanModalAction?)
     func showAlert(message: String, icon: UIImage, iconTint: UIColor, primaryAction: PCPanModalAction)
     func showOrderList(title: String, delegate: PCOptionsPanModalDelegate, options: [PCPanModalOption])
+    func showQrReadView(delegate: PCQrReadDelegate)
     func showActivityIndicatorView()
     func hideActivityIndicatorView()
     func showEmptyState()

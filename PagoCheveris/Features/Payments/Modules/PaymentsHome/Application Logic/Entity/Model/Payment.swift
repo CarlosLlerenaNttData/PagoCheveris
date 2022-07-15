@@ -7,7 +7,7 @@
 
 struct Payment: Codable {
     
-    let id: String
+    let paymentId: String
     let userId: String
     let categoryId: String
     let dateCharged: String

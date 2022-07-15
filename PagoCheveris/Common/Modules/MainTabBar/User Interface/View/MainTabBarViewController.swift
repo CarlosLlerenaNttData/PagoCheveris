@@ -17,6 +17,7 @@ class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate, 
 
     var output: MainTabBarViewOutput!
     var logoutBarButtonItem: UIBarButtonItem!
+    var qrButtonItem: UIBarButtonItem!
 
     // MARK: Life cycle
 
