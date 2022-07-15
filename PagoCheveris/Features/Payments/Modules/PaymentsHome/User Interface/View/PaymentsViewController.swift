@@ -110,6 +110,21 @@ extension PaymentsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(with: payment)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let payAction = UIContextualAction(style: .normal, title: CommonStrings.pay) { [weak self] _, _, completion in
+            guard let payment = self?.paymentsList[indexPath.row] else { return }
+            self?.output.didTapPaymentAction(for: payment, completion: completion)
+        }
+        
+        payAction.image = PCImages.pcActionCheckmark
+        payAction.backgroundColor =  PCColors.success
+     
+        let config = UISwipeActionsConfiguration(actions: [payAction])
+        config.performsFirstActionWithFullSwipe = false
+     
+        return config
+    }
 }
 
 // MARK: PCTabControlDelegate Delegate
