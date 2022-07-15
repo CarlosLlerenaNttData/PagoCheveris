@@ -10,8 +10,8 @@ import PagoCheverisNetworking
 
 protocol PaymentsClientProvider {
     func paymentList(parameters: PaymentRequest) -> AnyPublisher<PaymentResponse, NetworkingError>
-    
     func paymentPerform(parameters: PaymentPerformRequest) ->  AnyPublisher<EmptyResponse, NetworkingError>
+    func active(parameters: PaymentActiveRequest) ->  AnyPublisher<EmptyResponse, NetworkingError>
 }
 
 final class PaymentsClient: RestClient, PaymentsClientProvider {
@@ -23,4 +23,9 @@ final class PaymentsClient: RestClient, PaymentsClientProvider {
     func paymentPerform(parameters: PaymentPerformRequest) -> AnyPublisher<EmptyResponse, NetworkingError> {
         request(resource: PaymentsResource.paymentsPerform , parameters: parameters.json, type: EmptyResponse.self, errorType: ErrorResponse.self)
     }
+    
+    func active(parameters: PaymentActiveRequest) -> AnyPublisher<EmptyResponse, NetworkingError> {
+        request(resource: PaymentsResource.paymentsActive , parameters: parameters.json, type: EmptyResponse.self, errorType: ErrorResponse.self)
+    }
+    
 }

@@ -29,8 +29,7 @@ public extension PCQrReadPresentable where Self: UIViewController {
     func showQrRead(delegate: PCQrReadDelegate) {
         let storyboard = UIStoryboard(name: "PCQrReadViewController", bundle: Bundle.module)
         let alertPanModalController = storyboard.instantiateViewController(withIdentifier: "PCQrReadViewController") as! PCQrReadViewController
-        
-        
+        alertPanModalController.delegate = delegate
         self.present(alertPanModalController, animated: true)
     }
 }

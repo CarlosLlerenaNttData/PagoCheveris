@@ -11,6 +11,7 @@ enum PaymentsResource: Resource {
 
     case paymentsList
     case paymentsPerform
+    case paymentsActive
 
     var resource: (method: HTTPMethod, route: String) {
         switch self {
@@ -18,6 +19,9 @@ enum PaymentsResource: Resource {
             return (.post, "/payments")
         case .paymentsPerform:
             return (.post, "/paymentsPerform")
+        case .paymentsActive:
+            return (.post, "/paymentsActive")
+
         }
     }
 }

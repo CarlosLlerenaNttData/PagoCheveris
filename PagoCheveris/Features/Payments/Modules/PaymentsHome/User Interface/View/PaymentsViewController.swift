@@ -15,9 +15,10 @@ class PaymentsViewController: UIViewController {
     // MARK: Properties
     var output: PaymentsViewOutput!
     
-    var paymentsList: [Payment] = [] {
+    var paymentsList: [Payment] = []
+    
+    var filteredPaymentsList: [Payment] = [] {
         didSet {
-            emptyStateLabel?.removeFromSuperview()
             paymentsTableView.reloadData()
         }
     }
@@ -35,6 +36,7 @@ class PaymentsViewController: UIViewController {
             searchBar.searchBarStyle = .prominent
             searchBar.backgroundColor = PCColors.viewBackground2
             searchBar.searchTextField.backgroundColor = PCColors.viewBackground1
+            searchBar.delegate = self
         }
     }
     
@@ -142,6 +144,22 @@ class PaymentsViewController: UIViewController {
     @objc func didTapConfirmSelectionButton() {
         output.didTapConfirmSelectionButton(withSelection: selectedPaymentsList)
     }
+    
+    func filterContent(searchText: String){
+        filteredPaymentsList = searchText.isEmpty ? paymentsList : paymentsList.filter { payment in
+            return payment.company.lowercased().contains(searchText)
+        }
+    }
+}
+
+// MARK: TableView Delegate & Data source
+
+extension PaymentsViewController: UISearchBarDelegate {
+
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        guard let searchText = searchBar.text else { return }
+        filterContent(searchText: searchText.lowercased())
+    }
 }
 
 // MARK: TableView Delegate & Data source
@@ -149,12 +167,12 @@ class PaymentsViewController: UIViewController {
 extension PaymentsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        paymentsList.count
+        filteredPaymentsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(for: indexPath) as PaymentTableViewCell
-        let payment = paymentsList[indexPath.row]
+        let payment = filteredPaymentsList[indexPath.row]
         let shouldSetRowSelected = selectedPaymentsList.contains(where: { $0.paymentId == payment.paymentId })
         cell.configure(with: payment, shouldSetSelected: shouldSetRowSelected)
         cell.delegate = self
@@ -163,7 +181,7 @@ extension PaymentsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let payAction = UIContextualAction(style: .normal, title: CommonStrings.pay) { [weak self] _, _, completion in
-            guard let payment = self?.paymentsList[indexPath.row] else { return }
+            guard let payment = self?.filteredPaymentsList[indexPath.row] else { return }
             self?.output.didTapPaymentAction(for: payment, completion: completion)
         }
         
@@ -212,6 +230,7 @@ extension PaymentsViewController: PaymentsViewInput, PCAlertPanModalPresentable,
     
     func setPaymentsList(_ paymentsList: [Payment]) {
         self.paymentsList = paymentsList
+        self.filteredPaymentsList = self.paymentsList
     }
     
     func removeFromPaymentList(payments: [Payment]) {

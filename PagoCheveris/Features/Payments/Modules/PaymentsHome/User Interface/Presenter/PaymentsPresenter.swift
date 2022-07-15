@@ -129,7 +129,13 @@ extension PaymentsPresenter: PaymentsInteractorOutput {
         let acceptAction = PCPanModalAction(title: CommonStrings.accept)
         view.showAlert(title: title, message: message, primaryAction: acceptAction, secondaryAction: nil)
     }
- 
+    
+    func didActivedPayment() {
+        view.showActivityIndicatorView()
+        
+        interactor.getPaymentsList(category: paymentCategory,
+                                   order: paymentsListOrder)
+    }
 }
 
 // MARK: PCOptionsPanModal Delegate methods
@@ -149,6 +155,6 @@ extension PaymentsPresenter: PCOptionsPanModalDelegate {
 extension PaymentsPresenter: PCQrReadDelegate {
 
     func didQrResponse(code: String) {
-        
+        interactor.activePayment(for: code)
     }
 }
