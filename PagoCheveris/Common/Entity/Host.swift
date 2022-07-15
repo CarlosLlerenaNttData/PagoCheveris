@@ -7,5 +7,5 @@
 
 enum Host {
     
-    static let baseUrl = "https://localhost/pagocheveris/api/autoload.php?PATH_INFO=/1.0"
+    static let baseUrl = "https://pagocheveris.com/app/api/autoload.php?PATH_INFO=/1.0"
 }

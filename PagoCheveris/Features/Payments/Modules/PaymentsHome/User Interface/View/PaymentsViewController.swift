@@ -61,6 +61,7 @@ class PaymentsViewController: UIViewController {
             paymentsTableView.delegate = self
             paymentsTableView.dataSource = self
             paymentsTableView.separatorStyle = .none
+            paymentsTableView.keyboardDismissMode = .onDrag
             paymentsTableView.backgroundColor = PCColors.viewBackground2
             paymentsTableView.register(PaymentTableViewCell.self)
         }

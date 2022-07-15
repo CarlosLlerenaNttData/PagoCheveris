@@ -16,7 +16,7 @@ class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate, 
     @IBOutlet weak var tabBarMenu: UITabBar!
 
     var output: MainTabBarViewOutput!
-
+    var logoutBarButtonItem: UIBarButtonItem!
 
     // MARK: Life cycle
 
@@ -27,19 +27,33 @@ class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate, 
         tabBarMenu.tintColor = PCColors.tabBarTint
         view.backgroundColor = PCColors.viewBackground2
         primaryStyle()
+        configureSignoutButton()
         output.viewIsReady()
+    }
+    
+    private func configureSignoutButton() {
+        logoutBarButtonItem = UIBarButtonItem(image: PCImages.pcActionLogout, style: .done, target: self, action: #selector(didTapLogoutButton(_:)))
+        navigationItem.setRightBarButton(logoutBarButtonItem, animated: false)
+    }
+    
+    @objc func didTapLogoutButton(_ sender: UIBarButtonItem) {
+        output.didTapLogoutButton()
     }
 }
 
 
 // MARK: MainTabBarViewInput Methods
 
-extension MainTabBarViewController: MainTabBarViewInput {
+extension MainTabBarViewController: MainTabBarViewInput, PCAlertPanModalPresentable {
 
     func setUpInitialState() {
     }
 
     func moduleInput() -> MainTabBarModuleInput {
         return output as! MainTabBarModuleInput
+    }
+    
+    func showAlert(title: String, message: String, primaryAction: PCPanModalAction, secondaryAction: PCPanModalAction?) {
+        showPCAlert(title: title, message: message, primaryAction: primaryAction, secondaryAction: secondaryAction)
     }
 }

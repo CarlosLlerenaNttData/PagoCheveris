@@ -24,9 +24,12 @@ public extension NavigationBarStyle where Self: UIViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         navigationController?.navigationBar.tintColor = UIColor.white
         navigationItem.backButtonTitle = ""
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     func primaryStyle() {
+
         let appearance = UINavigationBarAppearance()
         
         appearance.configureWithOpaqueBackground()
@@ -36,6 +39,8 @@ public extension NavigationBarStyle where Self: UIViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         navigationController?.navigationBar.tintColor = PCColors.tintedNavigationBarItem
         navigationItem.backButtonTitle = ""
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
 }

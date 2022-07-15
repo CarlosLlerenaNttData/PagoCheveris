@@ -18,6 +18,7 @@ class MainTabBarModuleConfigurator {
     private func configure(viewController: MainTabBarViewController) {
 
         let router = MainTabBarRouter()
+        router.viewController = viewController
 
         let presenter = MainTabBarPresenter()
         presenter.view = viewController

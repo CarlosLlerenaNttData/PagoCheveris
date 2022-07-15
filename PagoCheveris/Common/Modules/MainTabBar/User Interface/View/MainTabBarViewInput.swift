@@ -6,8 +6,11 @@
 //  Copyright © 2022 NTT DATA Europe & Latam. All rights reserved.
 //
 
+import PagoCheverisUI
+
 protocol MainTabBarViewInput: AnyObject {
 
     func setUpInitialState()
     func moduleInput() -> MainTabBarModuleInput
+    func showAlert(title: String, message: String, primaryAction: PCPanModalAction, secondaryAction: PCPanModalAction?)
 }

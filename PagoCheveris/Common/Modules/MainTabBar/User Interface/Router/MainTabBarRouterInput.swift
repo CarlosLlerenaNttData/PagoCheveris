@@ -7,4 +7,6 @@
 //
 
 protocol MainTabBarRouterInput {
+
+    func routeToLogin()
 }

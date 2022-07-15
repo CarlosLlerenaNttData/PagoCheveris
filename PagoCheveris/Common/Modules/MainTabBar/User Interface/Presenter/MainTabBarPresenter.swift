@@ -6,6 +6,8 @@
 //  Copyright © 2022 NTT DATA Europe & Latam. All rights reserved.
 //
 
+import PagoCheverisUI
+
 class MainTabBarPresenter {
 
     weak var view: MainTabBarViewInput!
@@ -28,6 +30,16 @@ extension MainTabBarPresenter: MainTabBarModuleInput {
 extension MainTabBarPresenter: MainTabBarViewOutput {
 
     func viewIsReady() {
+    }
+    
+    func didTapLogoutButton() {
+        let exitAction = PCPanModalAction(title: CommonStrings.exit) { [weak self] in
+            self?.router.routeToLogin()
+        }
+        
+        let cancelAction = PCPanModalAction(title: CommonStrings.cancel)
+        
+        view.showAlert(title: CommonStrings.exit, message: CommonStrings.alertMessageSignOut, primaryAction: exitAction, secondaryAction: cancelAction)
     }
 }
 

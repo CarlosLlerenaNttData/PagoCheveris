@@ -12,6 +12,7 @@ enum CommonStrings {
     static let alertTitleGenericError = "Atención"
     static let alertMessageGenericError = "Ha ocurrido un error inesperado."
     static let alertMessageInternetError = "Ocurrió un error con su conexión."
+    static let alertMessageSignOut = "¿Desea cerrar la sesión?"
     static let exit = "Salir"
     
     static let search = "Buscar"

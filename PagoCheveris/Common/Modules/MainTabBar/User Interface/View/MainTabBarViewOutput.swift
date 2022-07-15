@@ -9,4 +9,5 @@
 protocol MainTabBarViewOutput {
 
     func viewIsReady()
+    func didTapLogoutButton()
 }

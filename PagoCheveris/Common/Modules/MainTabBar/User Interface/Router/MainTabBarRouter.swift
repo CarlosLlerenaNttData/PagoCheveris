@@ -6,5 +6,16 @@
 //  Copyright © 2022 NTT DATA Europe & Latam. All rights reserved.
 //
 
-class MainTabBarRouter: MainTabBarRouterInput {
+class MainTabBarRouter: MainTabBarRouterInput, Routable {
+
+    weak var viewController: MainTabBarViewController!
+
+    func routeToLogin() {
+        replaceRoot(withIdentifier: LoginViewController.storyboardIdentifier,
+                    type: LoginViewController.self,
+                    in: .login,
+                    from: viewController) { controller in
+            controller.moduleInput().initializeModule()
+        }
+    }
 }
